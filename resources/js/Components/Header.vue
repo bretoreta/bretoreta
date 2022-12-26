@@ -27,7 +27,7 @@
                 <div class="hidden lg:flex items-center space-x-12">
                     <Link :href="route('home')" class="text-sm" :class="route().current('home') ? 'font-semibold text-sky-600' : 'text-gray-500'">Home</Link>
                     <Link :href="route('about_me')" class="text-sm" :class="route().current('about_me') ? 'font-semibold text-sky-600' : 'text-gray-500'">About Me</Link>
-                    <Link :href="route('what_i_do')" class="text-sm" :class="route().current('what_i_do') ? 'font-semibold text-sky-600' : 'text-gray-500'">What I Do</Link>
+                    <!-- <Link :href="route('what_i_do')" class="text-sm" :class="route().current('what_i_do') ? 'font-semibold text-sky-600' : 'text-gray-500'">What I Do</Link> -->
                     <Link :href="route('projects')" class="text-sm" :class="route().current('projects') ? 'font-semibold text-sky-600' : 'text-gray-500'">Projects</Link>
                     <Link :href="route('testimonials')" class="text-sm" :class="route().current('testimonials') ? 'font-semibold text-sky-600' : 'text-gray-500'">Testimonials</Link>
                 </div>
