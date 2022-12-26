@@ -116,7 +116,7 @@
                 <div class="col-span-2">
                     <h4 class="text-7xl text-white font-bold">My Education</h4>
                     <div class="mt-10">
-                        <h4 class="text-2xl font-semibold text-lime-800">Bsc. Computer Science</h4>
+                        <h4 class="text-2xl font-semibold text-lime-200">Bsc. Computer Science</h4>
                         <div class="flex items-center space-x-6 mt-2">
                             <div class="flex items-center space-x-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-lime-800">
@@ -133,7 +133,7 @@
                         </div>
                     </div>
                     <div class="mt-10">
-                        <h4 class="text-2xl font-semibold text-lime-900">Kenya Certificate of Secondary Education</h4>
+                        <h4 class="text-2xl font-semibold text-lime-200">Kenya Certificate of Secondary Education</h4>
                         <div class="flex items-center space-x-6 mt-2">
                             <div class="flex items-center space-x-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-lime-800">
@@ -150,7 +150,7 @@
                         </div>
                     </div>
                     <div class="mt-10">
-                        <h4 class="text-2xl font-semibold text-lime-900">Kenya Certificate of Primary Education</h4>
+                        <h4 class="text-2xl font-semibold text-lime-200">Kenya Certificate of Primary Education</h4>
                         <div class="flex items-center space-x-6 mt-2">
                             <div class="flex items-center space-x-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-lime-800">

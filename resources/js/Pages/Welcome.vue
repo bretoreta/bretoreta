@@ -1,8 +1,13 @@
 <script setup>
     import { Head, Link } from '@inertiajs/inertia-vue3';
+    import { Inertia } from '@inertiajs/inertia';
     import Header from '@/Components/Header.vue';
     import Footer from '@/Components/Footer.vue';
     import PrimaryButton from '@/Components/PrimaryButton.vue'
+
+    const goToProjects = () => {
+        Inertia.visit(route('projects'));
+    }
 </script>
 
 <template>
@@ -152,7 +157,7 @@
                     <div class="bg-white rounded-2xl shadow-md p-1">
                         <div class="flex flex-col lg:flex-row items-center">
                             <div class="w-full lg:w-1/3">
-                                <img src="../../assets/logos/clockstribute_logo.webp" alt="Clickstribute Logo" class="w-full rounded-2xl">
+                                <img src="../../assets/logos/prime_charters_itl_logo.svg" alt="Prime Charters International Logo" class="w-full rounded-2xl">
                             </div>
                             <div class="w-full lg:w-2/3">
                                 <div class="block p-4">
@@ -189,7 +194,7 @@
                     <div class="bg-white rounded-2xl shadow-md p-1">
                         <div class="flex flex-col lg:flex-row items-center">
                             <div class="w-full lg:w-1/3">
-                                <img src="../../assets/logos/clockstribute_logo.webp" alt="Clickstribute Logo" class="w-full rounded-2xl">
+                                <img src="../../assets/logos/aussie_association_logo.svg" alt="Aussie Association Of Somalia Logo" class="w-full rounded-2xl">
                             </div>
                             <div class="w-full lg:w-2/3">
                                 <div class="block p-4">
@@ -224,7 +229,7 @@
                 </div>
             </div>
             <div class="w-full flex justify-center mt-10">
-                <PrimaryButton class="px-8">View All</PrimaryButton>
+                <PrimaryButton class="px-8" @click="goToProjects">View More</PrimaryButton>
             </div>
         </div>
 
