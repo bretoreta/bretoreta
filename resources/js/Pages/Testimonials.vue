@@ -276,11 +276,25 @@
             </div>
         </div>
 
+        <div class="cta bg-customBlue w-full px-10 md:px-20 lg:px-40 pt-20 pb-10 lg:pt-40 lg:pb-20">
+            <div class="relative text-center">
+                <div class="bg-gray-900/60 rounded-full w-40 h-40 absolute -top-20 left-60 -z-10" />
+                <h4 class="text-5xl lg:text-7xl font-bold text-white">Convinced Yet?</h4>
+                <p class="text-white font-light mt-5">Let's discuss your next big project idea and let me do all the hard work for you.</p>
+            </div>
+            <div class="mt-10 flex items-center justify-center">
+                <PrimaryButton class="px-8 py-3">Hire Me</PrimaryButton>
+            </div>
+        </div>
+
         <Footer />
     </div>
 </template>
 <style scoped>
     .hero {
         clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    }
+    .cta {
+        clip-path: polygon(45% 3%, 64% 10%, 100% 10%, 100% 70%, 100% 100%, 0 100%, 0% 70%, 0 10%);
     }
 </style>
