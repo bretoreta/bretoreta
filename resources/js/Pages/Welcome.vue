@@ -43,7 +43,7 @@
                 </div>
                 <div class="col-span-4 lg:col-span-2">
                     <div class="relative mt-10 lg:mt-0">
-                        <div class="bg-gray-900/60 rounded-full w-40 h-40 absolute -top-12 -left-20 z-0" />
+                        <div class="bg-gray-900/60 rounded-full w-32 lg:w-40 h-32 lg:h-40 absolute -top-10 lg:-top-12 -left-20 z-0" />
                         <h4 class="text-5xl lg:text-7xl font-bold text-gray-700">Let Me Tell You About Myself.</h4>
                         <p class="text-gray-500 mt-10 w-full lg:max-w-lg">
                             I am a full-stack web developer with 4+ years experience (and counting...) using Laravel + Vue Js and Talwind CSS as my styling library.
