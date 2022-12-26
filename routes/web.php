@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -39,6 +40,7 @@ Route::get('/contact_me', function() {
     return Inertia::render('Contact');
 })->name('contact_me');
 
+Route::post('/contact', [ContactController::class, 'sendMessage'])->name('contact.sendmessage');
 
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',])->group(function () {
     Route::get('/dashboard', function () {

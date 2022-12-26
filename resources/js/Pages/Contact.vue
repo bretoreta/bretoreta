@@ -18,11 +18,9 @@
     });
 
     const submit = () => {
-        form.transform(data => ({
-            ...data,
-            subscribe: form.subscribe ? 'on' : '',
-        })).post(route('login'), {
-            onFinish: () => form.reset('password'),
+        form.post(route('contact.sendmessage'), {
+            onSuccess: () => form.reset(),
+            preserveScroll: true,
         });
     };
 </script>
