@@ -23,6 +23,259 @@
             </div>
         </div>
 
+        <div class="bg-gray-100 p-40 w-full">
+            <h4 class="text-7xl text-gray-700 font-bold">What Peple Say</h4>
+            <div class="mt-10">
+                <h4 class="text-2xl font-semibold text-gray-600">Current Employers</h4>
+                <div class="grid grid-cols-3 gap-6 mt-4">
+                    <div class="col-span-1">
+                        <div class="bg-white rounded-md shadow-md p-6 my-2">
+                            <div class="text-gray-800">``Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi placeat itaque consequuntur nisi aliquid optio atque, saepe a incidunt eius.</div>
+                            <div class="flex items-center space-x-4 mt-5">
+                                <div>
+                                    <img src="../../assets/logos/clockstribute_logo.webp" alt="Clickstribute Logo" class="w-12 h-12 rounded-full">
+                                </div>
+                                <div>
+                                    <p class="text-gray-700 font-semibold">Nicholas Nicholas</p>
+                                    <p class="text-gray-500">CEO at ClicksTribute</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-md shadow-md p-6 my-2">
+                            <div class="text-gray-800">``Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi placeat itaque consequuntur nisi aliquid optio atque, saepe a incidunt eius.</div>
+                            <div class="flex items-center space-x-4 mt-5">
+                                <div>
+                                    <img src="../../assets/logos/clockstribute_logo.webp" alt="Clickstribute Logo" class="w-12 h-12 rounded-full">
+                                </div>
+                                <div>
+                                    <p class="text-gray-700 font-semibold">Nicholas Nicholas</p>
+                                    <p class="text-gray-500">CEO at ClicksTribute</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-1 pt-10">
+                        <div class="bg-white rounded-md shadow-md p-6 my-2">
+                            <div class="text-gray-800">``Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi placeat itaque consequuntur nisi aliquid optio atque, saepe a incidunt eius.</div>
+                            <div class="flex items-center space-x-4 mt-5">
+                                <div>
+                                    <img src="../../assets/logos/clockstribute_logo.webp" alt="Clickstribute Logo" class="w-12 h-12 rounded-full">
+                                </div>
+                                <div>
+                                    <p class="text-gray-700 font-semibold">Nicholas Nicholas</p>
+                                    <p class="text-gray-500">CEO at ClicksTribute</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-md shadow-md p-6 my-2">
+                            <div class="text-gray-800">``Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi placeat itaque consequuntur nisi aliquid optio atque, saepe a incidunt eius.</div>
+                            <div class="flex items-center space-x-4 mt-5">
+                                <div>
+                                    <img src="../../assets/logos/clockstribute_logo.webp" alt="Clickstribute Logo" class="w-12 h-12 rounded-full">
+                                </div>
+                                <div>
+                                    <p class="text-gray-700 font-semibold">Nicholas Nicholas</p>
+                                    <p class="text-gray-500">CEO at ClicksTribute</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-1 pt-4">
+                        <div class="bg-white rounded-md shadow-md p-6 my-2">
+                            <div class="text-gray-800">``Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi placeat itaque consequuntur nisi aliquid optio atque, saepe a incidunt eius.</div>
+                            <div class="flex items-center space-x-4 mt-5">
+                                <div>
+                                    <img src="../../assets/logos/clockstribute_logo.webp" alt="Clickstribute Logo" class="w-12 h-12 rounded-full">
+                                </div>
+                                <div>
+                                    <p class="text-gray-700 font-semibold">Nicholas Nicholas</p>
+                                    <p class="text-gray-500">CEO at ClicksTribute</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-md shadow-md p-6 my-2">
+                            <div class="text-gray-800">``Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi placeat itaque consequuntur nisi aliquid optio atque, saepe a incidunt eius.</div>
+                            <div class="flex items-center space-x-4 mt-5">
+                                <div>
+                                    <img src="../../assets/logos/clockstribute_logo.webp" alt="Clickstribute Logo" class="w-12 h-12 rounded-full">
+                                </div>
+                                <div>
+                                    <p class="text-gray-700 font-semibold">Nicholas Nicholas</p>
+                                    <p class="text-gray-500">CEO at ClicksTribute</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-20">
+                <h4 class="text-2xl font-semibold text-gray-600">Past Employers</h4>
+                <div class="grid grid-cols-3 gap-6 mt-4">
+                    <div class="col-span-1">
+                        <div class="bg-white rounded-md shadow-md p-6 my-2">
+                            <div class="text-gray-800">``Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi placeat itaque consequuntur nisi aliquid optio atque, saepe a incidunt eius.</div>
+                            <div class="flex items-center space-x-4 mt-5">
+                                <div>
+                                    <img src="../../assets/logos/clockstribute_logo.webp" alt="Clickstribute Logo" class="w-12 h-12 rounded-full">
+                                </div>
+                                <div>
+                                    <p class="text-gray-700 font-semibold">Nicholas Nicholas</p>
+                                    <p class="text-gray-500">CEO at ClicksTribute</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-md shadow-md p-6 my-2">
+                            <div class="text-gray-800">``Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi placeat itaque consequuntur nisi aliquid optio atque, saepe a incidunt eius.</div>
+                            <div class="flex items-center space-x-4 mt-5">
+                                <div>
+                                    <img src="../../assets/logos/clockstribute_logo.webp" alt="Clickstribute Logo" class="w-12 h-12 rounded-full">
+                                </div>
+                                <div>
+                                    <p class="text-gray-700 font-semibold">Nicholas Nicholas</p>
+                                    <p class="text-gray-500">CEO at ClicksTribute</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-1 pt-10">
+                        <div class="bg-white rounded-md shadow-md p-6 my-2">
+                            <div class="text-gray-800">``Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi placeat itaque consequuntur nisi aliquid optio atque, saepe a incidunt eius.</div>
+                            <div class="flex items-center space-x-4 mt-5">
+                                <div>
+                                    <img src="../../assets/logos/clockstribute_logo.webp" alt="Clickstribute Logo" class="w-12 h-12 rounded-full">
+                                </div>
+                                <div>
+                                    <p class="text-gray-700 font-semibold">Nicholas Nicholas</p>
+                                    <p class="text-gray-500">CEO at ClicksTribute</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-md shadow-md p-6 my-2">
+                            <div class="text-gray-800">``Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi placeat itaque consequuntur nisi aliquid optio atque, saepe a incidunt eius.</div>
+                            <div class="flex items-center space-x-4 mt-5">
+                                <div>
+                                    <img src="../../assets/logos/clockstribute_logo.webp" alt="Clickstribute Logo" class="w-12 h-12 rounded-full">
+                                </div>
+                                <div>
+                                    <p class="text-gray-700 font-semibold">Nicholas Nicholas</p>
+                                    <p class="text-gray-500">CEO at ClicksTribute</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-1 pt-4">
+                        <div class="bg-white rounded-md shadow-md p-6 my-2">
+                            <div class="text-gray-800">``Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi placeat itaque consequuntur nisi aliquid optio atque, saepe a incidunt eius.</div>
+                            <div class="flex items-center space-x-4 mt-5">
+                                <div>
+                                    <img src="../../assets/logos/clockstribute_logo.webp" alt="Clickstribute Logo" class="w-12 h-12 rounded-full">
+                                </div>
+                                <div>
+                                    <p class="text-gray-700 font-semibold">Nicholas Nicholas</p>
+                                    <p class="text-gray-500">CEO at ClicksTribute</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-md shadow-md p-6 my-2">
+                            <div class="text-gray-800">``Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi placeat itaque consequuntur nisi aliquid optio atque, saepe a incidunt eius.</div>
+                            <div class="flex items-center space-x-4 mt-5">
+                                <div>
+                                    <img src="../../assets/logos/clockstribute_logo.webp" alt="Clickstribute Logo" class="w-12 h-12 rounded-full">
+                                </div>
+                                <div>
+                                    <p class="text-gray-700 font-semibold">Nicholas Nicholas</p>
+                                    <p class="text-gray-500">CEO at ClicksTribute</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-20">
+                <h4 class="text-2xl font-semibold text-gray-600">Fellow Developers</h4>
+                <div class="grid grid-cols-3 gap-6 mt-4">
+                    <div class="col-span-1">
+                        <div class="bg-white rounded-md shadow-md p-6 my-2">
+                            <div class="text-gray-800">``Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi placeat itaque consequuntur nisi aliquid optio atque, saepe a incidunt eius.</div>
+                            <div class="flex items-center space-x-4 mt-5">
+                                <div>
+                                    <img src="../../assets/logos/clockstribute_logo.webp" alt="Clickstribute Logo" class="w-12 h-12 rounded-full">
+                                </div>
+                                <div>
+                                    <p class="text-gray-700 font-semibold">Nicholas Nicholas</p>
+                                    <p class="text-gray-500">CEO at ClicksTribute</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-md shadow-md p-6 my-2">
+                            <div class="text-gray-800">``Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi placeat itaque consequuntur nisi aliquid optio atque, saepe a incidunt eius.</div>
+                            <div class="flex items-center space-x-4 mt-5">
+                                <div>
+                                    <img src="../../assets/logos/clockstribute_logo.webp" alt="Clickstribute Logo" class="w-12 h-12 rounded-full">
+                                </div>
+                                <div>
+                                    <p class="text-gray-700 font-semibold">Nicholas Nicholas</p>
+                                    <p class="text-gray-500">CEO at ClicksTribute</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-1 pt-10">
+                        <div class="bg-white rounded-md shadow-md p-6 my-2">
+                            <div class="text-gray-800">``Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi placeat itaque consequuntur nisi aliquid optio atque, saepe a incidunt eius.</div>
+                            <div class="flex items-center space-x-4 mt-5">
+                                <div>
+                                    <img src="../../assets/logos/clockstribute_logo.webp" alt="Clickstribute Logo" class="w-12 h-12 rounded-full">
+                                </div>
+                                <div>
+                                    <p class="text-gray-700 font-semibold">Nicholas Nicholas</p>
+                                    <p class="text-gray-500">CEO at ClicksTribute</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-md shadow-md p-6 my-2">
+                            <div class="text-gray-800">``Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi placeat itaque consequuntur nisi aliquid optio atque, saepe a incidunt eius.</div>
+                            <div class="flex items-center space-x-4 mt-5">
+                                <div>
+                                    <img src="../../assets/logos/clockstribute_logo.webp" alt="Clickstribute Logo" class="w-12 h-12 rounded-full">
+                                </div>
+                                <div>
+                                    <p class="text-gray-700 font-semibold">Nicholas Nicholas</p>
+                                    <p class="text-gray-500">CEO at ClicksTribute</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-1 pt-4">
+                        <div class="bg-white rounded-md shadow-md p-6 my-2">
+                            <div class="text-gray-800">``Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi placeat itaque consequuntur nisi aliquid optio atque, saepe a incidunt eius.</div>
+                            <div class="flex items-center space-x-4 mt-5">
+                                <div>
+                                    <img src="../../assets/logos/clockstribute_logo.webp" alt="Clickstribute Logo" class="w-12 h-12 rounded-full">
+                                </div>
+                                <div>
+                                    <p class="text-gray-700 font-semibold">Nicholas Nicholas</p>
+                                    <p class="text-gray-500">CEO at ClicksTribute</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-md shadow-md p-6 my-2">
+                            <div class="text-gray-800">``Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi placeat itaque consequuntur nisi aliquid optio atque, saepe a incidunt eius.</div>
+                            <div class="flex items-center space-x-4 mt-5">
+                                <div>
+                                    <img src="../../assets/logos/clockstribute_logo.webp" alt="Clickstribute Logo" class="w-12 h-12 rounded-full">
+                                </div>
+                                <div>
+                                    <p class="text-gray-700 font-semibold">Nicholas Nicholas</p>
+                                    <p class="text-gray-500">CEO at ClicksTribute</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <Footer />
     </div>
 </template>
