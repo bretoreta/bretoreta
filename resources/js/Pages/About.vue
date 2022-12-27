@@ -25,7 +25,7 @@
 
         <div class="bg-gray-100 p-40 w-full">
             <h4 class="text-7xl text-gray-700 font-bold">My Experience</h4>
-            <div class="mt-10">
+            <div class="mt-20">
                 <h4 class="text-2xl font-semibold text-gray-700">Full Stack Developer - Remote</h4>
                 <div class="flex items-center space-x-6 mt-2">
                     <div class="flex items-center space-x-2">
@@ -46,7 +46,7 @@
                     <p class="text-gray-700 mt-3">I also contribute a key role in debugging and fixing issues with the application in development. I identify, assess, verify and come up with mitigating methods and solutions for the bugs discovered within the system. I am also responsible for handling the security of users who will be using the system, ensuring that their data remains confidential and that the system is strongly protected from attackers and or hackers.</p>
                 </div>
             </div>
-            <div class="mt-10">
+            <div class="mt-20">
                 <h4 class="text-2xl font-semibold text-gray-700">Backend Developer - Remote</h4>
                 <div class="flex items-center space-x-6 mt-2">
                     <div class="flex items-center space-x-2">
@@ -67,7 +67,7 @@
                     <p class="text-gray-700 mt-3">I also participated in coming up with amicable solutions to the existing user interface designs in order to give the website a new look. The existing user interface was not the best so we had to come up with another design that would give users the best experience using the platform.</p>
                 </div>
             </div>
-            <div class="mt-10">
+            <div class="mt-20">
                 <h4 class="text-2xl font-semibold text-gray-700">Web Developer & Designer - On Site</h4>
                 <div class="flex items-center space-x-6 mt-2">
                     <div class="flex items-center space-x-2">
@@ -88,8 +88,8 @@
                     <p class="text-gray-700 mt-3">I developed and made logos for Belya Fiber Exporters and Prime Charters International. The official logos for both projects are used in their live projects, also developed by me, and the live projects can be accessed using these links: <a class="text-sky-500 hover:underline" href="https://belyafiberexporters.co.ke" target="_blank" rel="noopener noreferrer">Belya Fiber Exporters</a> and <a class="text-sky-500 hover:underline" href="https://primechartersinternational.co.ke" target="_blank" rel="noopener noreferrer">Prime Charters International</a></p>
                 </div>
             </div>
-            <div class="mt-10">
-                <h4 class="text-2xl font-semibold text-gray-700">Lead Designer</h4>
+            <div class="mt-20">
+                <h4 class="text-2xl font-semibold text-gray-700">Lead Designer - On Site</h4>
                 <div class="flex items-center space-x-6 mt-2">
                     <div class="flex items-center space-x-2">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">

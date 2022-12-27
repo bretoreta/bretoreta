@@ -25,7 +25,7 @@
 
         <div class="bg-gray-100 p-40 w-full">
             <h4 class="text-7xl text-gray-700 font-bold">My Projects</h4>
-            <div class="mt-10">
+            <div class="mt-20">
                 <h4 class="text-2xl font-semibold text-gray-700">Portfolio - Personal Website</h4>
                 <div class="flex items-center space-x-6 mt-2">
                     <div class="flex items-center space-x-2">
@@ -51,7 +51,7 @@
                     <p class="text-gray-700">This is a project I have thought of over the years and finally got to make it possible. While developing this project, I learned new technologies and CSS properties e.g. background-clipping that I have used widely in this project. This was a personal inspiration to make a clean minimal and expressive website for my self and eventually turn in into a blog. I am yet to realise this dream but plans are in place.</p>
                 </div>
             </div>
-            <div class="mt-10">
+            <div class="mt-20">
                 <h4 class="text-2xl font-semibold text-gray-700">Electra - Online Voting Platform</h4>
                 <div class="flex items-center space-x-6 mt-2">
                     <div class="flex items-center space-x-2">
@@ -77,7 +77,7 @@
                     <p class="text-gray-700">Soon as I joined campus I had a dream, of builing my own system then use it as a SAAS. I had several ideas in mind but after a long mind battle of what I deserve best and what the market needs, I settled on building an online voting platform. As simple as it seems this project has taken most of my time as it required a lot of research. I released the first verion on <a class="text-blue-600 font-semibold hover:underline" href="http://github.com/bretoreta/electra" target="_blank" rel="noopener noreferrer">GitHub</a> and have been working on an update to that for the past 1 Year. I know 1 year is such a long time, but you must consider I was a student then, and didn't have so much time available. The project is under active development and I hope to put up a team and make Electra an inernationally recognized SAAS.</p>
                 </div>
             </div>
-            <div class="mt-10">
+            <div class="mt-20">
                 <h4 class="text-2xl font-semibold text-gray-700">Netflix Clone - Cloned Platform</h4>
                 <div class="flex items-center space-x-6 mt-2">
                     <div class="flex items-center space-x-2">
@@ -103,7 +103,7 @@
                     <p class="text-gray-700">The major purpose of this project was to learn React, a popular frontend technology that is widely used among the tech community. I however fell apart with React after I met Vue Js which, according to me, was easier to learn and I quickly grasped Vue's concepts. I however challenged myself to build a react project and made it happen. The project is not hosted however, the project files can be found on the GitHub link mentioned above. The project is very basic and only replicates the basic Netflix use bases i.e. showing movies on homepage and playing trailers if any, only. Plans are in place to make it live.</p>
                 </div>
             </div>
-            <div class="mt-10">
+            <div class="mt-20">
                 <h4 class="text-2xl font-semibold text-gray-700">Tuska - Task Management Platform</h4>
                 <div class="flex items-center space-x-6 mt-2">
                     <div class="flex items-center space-x-2">

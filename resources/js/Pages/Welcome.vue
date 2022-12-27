@@ -72,21 +72,21 @@
                             <div class="mb-8">
                                 <p class="text-lime-200 text-lg font-semibold">1. The Laravel Framework</p>
                                 <p class="text-lime-300 text-sm my-2">I use Laravel for backend programming. I can also use Laravel to build APIs for mobile apps. Laravel is a stable PHP framwork and I love it's elegant and expressive syntax.</p>
-                                <div class="w-full mt-1 bg-lime-500 rounded-full h-2.5">
+                                <div class="w-full mt-4 bg-lime-500 rounded-full h-2.5">
                                     <div class="bg-lime-900 h-2.5 rounded-full" style="width: 90%"></div>
                                 </div>
                             </div>
                             <div class="mb-8">
                                 <p class="text-lime-200 text-lg font-semibold">2. Vue Js Framework</p>
                                 <p class="text-lime-300 text-sm my-2">I use Vue for frontend programming. I choose Vue because as their documentation says, "It's a progressive framwork". Vue Js is also robust and can build Single Page Apps that are fast and scalable.</p>
-                                <div class="w-full mt-1 bg-lime-500 rounded-full h-2.5">
+                                <div class="w-full mt-4 bg-lime-500 rounded-full h-2.5">
                                     <div class="bg-lime-900 h-2.5 rounded-full" style="width: 80%"></div>
                                 </div>
                             </div>
                             <div class="mb-8">
                                 <p class="text-lime-200 text-lg font-semibold">3. Tailwind CSS</p>
                                 <p class="text-lime-300 text-sm my-2">I use Tailwind for styling purposes. I love Tailwind because of its flexibility to build functional components just the way you like it. Tailwind also ships with a minifier to ensure you only export the classes you used in production, making it fast.</p>
-                                <div class="w-full mt-1 bg-lime-500 rounded-full h-2.5">
+                                <div class="w-full mt-4 bg-lime-500 rounded-full h-2.5">
                                     <div class="bg-lime-900 h-2.5 rounded-full" style="width: 93%"></div>
                                 </div>
                             </div>
@@ -167,10 +167,10 @@
                                     </div>
                                     <div class="flex flex-col space-y-1 mt-10">
                                         <div class="flex space-x-3 items-center text-blue-600">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 shrink-0">
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
                                             </svg>
-                                            <p class="text-sm font-semibold">https://primechartersinternational.co.ke</p>
+                                            <p class="text-sm font-semibold break-words w-full">https://primechartersinternational.co.ke</p>
                                         </div>
                                         <div class="flex space-x-3 items-center text-gray-500">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
