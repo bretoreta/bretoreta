@@ -56,7 +56,7 @@
                         <p class="text-gray-500 mt-4 w-full lg:max-w-lg">
                             I have built amazing projects over the years (I’ll show you) and is consistently learning new trends to be up to date with the latest tech.
                         </p>
-                        <PrimaryButton class="mt-10">Read More</PrimaryButton>
+                        <PrimaryButton class="mt-10 py-3 px-6">Read More</PrimaryButton>
                     </div>
                 </div>
             </div>
@@ -229,7 +229,7 @@
                 </div>
             </div>
             <div class="w-full flex justify-center mt-10">
-                <PrimaryButton class="px-8" @click="goToProjects">View More</PrimaryButton>
+                <PrimaryButton class="px-6 py-3" @click="goToProjects">View More</PrimaryButton>
             </div>
         </div>
 

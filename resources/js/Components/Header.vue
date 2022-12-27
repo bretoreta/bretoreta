@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="hidden lg:flex">
-                <PrimaryButton @click="goToContactMe" class="bg-lime-500">Contact Me</PrimaryButton>
+                <PrimaryButton @click="goToContactMe" class="bg-lime-500 py-3 px-6">Contact Me</PrimaryButton>
             </div>
         </div>
     </header>
