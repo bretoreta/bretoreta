@@ -3,7 +3,10 @@
     
     defineProps({
         modelValue: String,
-        rows: Number,
+        rows: {
+            type: Number,
+            default: 4
+        },
     });
     
     defineEmits(['update:modelValue']);
