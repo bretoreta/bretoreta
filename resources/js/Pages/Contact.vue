@@ -101,10 +101,10 @@
                                 <InputError class="mt-2" :message="form.errors.message" />
                             </div>
 
-                            <div class="block mt-4">
-                                <label class="flex items-center">
-                                    <Checkbox v-model:checked="form.subscribe" name="subscribe" />
-                                    <span class="ml-2 text-sm text-gray-600">Subscribe To Maling List</span>
+                            <div class="block mt-6">
+                                <label class="flex items-start">
+                                    <Checkbox v-model:checked="form.subscribe" name="subscribe" class="mt-1" />
+                                    <span class="ml-2 text-sm text-gray-600">Subscribe To Maling List, for my monthly newsletter and for updates on projects I am currently working on. I also occassionaly write on tips that make me a better developer (if you're a dev).</span>
                                 </label>
                             </div>
 
@@ -113,7 +113,7 @@
                                     Forgot your password?
                                 </Link>
 
-                                <PrimaryButton class="ml-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
+                                <PrimaryButton class="ml-4 px-4 py-3" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
                                     Send Message
                                 </PrimaryButton>
                             </div>
