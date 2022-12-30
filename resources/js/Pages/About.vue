@@ -113,7 +113,7 @@
 
         <div class="bg-lime-600 p-40 w-full">
             <div class="grid grid-cols-4 items-center">
-                <div class="col-span-2">
+                <div class="col-span-2 mx-auto">
                     <h4 class="text-7xl text-white font-bold">My Education</h4>
                     <div class="mt-10">
                         <h4 class="text-2xl font-semibold text-lime-200">Bsc. Computer Science</h4>
