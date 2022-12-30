@@ -8,6 +8,11 @@
     const goToProjects = () => {
         Inertia.visit(route('projects'));
     }
+
+    const goToAboutMe = () => {
+        Inertia.visit(route('about_me'));
+    }
+    
 </script>
 
 <template>
@@ -56,7 +61,7 @@
                         <p class="text-gray-500 mt-4 w-full lg:max-w-lg">
                             I have built amazing projects over the years (I’ll show you) and is consistently learning new trends to be up to date with the latest tech.
                         </p>
-                        <PrimaryButton class="mt-10 py-3 px-6">Read More</PrimaryButton>
+                        <PrimaryButton @click="goToAboutMe" class="mt-10 py-3 px-6">Read More</PrimaryButton>
                     </div>
                 </div>
             </div>
