@@ -31,6 +31,9 @@ deployment:
 # Clear compiled views
     - php artisan view:clear
 
+# Activate Virtual Env
+    - source /home/infinitylabs/nodevenv/bretoreta.infinitylabs.africa/16/bin/activate && cd /home/infinitylabs/bretoreta.infinitylabs.africa
+
 # Install node modules
     - npm install
 
