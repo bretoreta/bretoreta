@@ -13,7 +13,7 @@
 ```yaml
 name: Bret Oreta
 located_in: Nairobi, Kenya
-current_job: Full Stack Developer at ClicksTribute
+cuurently_looking_for: Full Stack Developer Role
 education: [
     "Bsc. in Computer Science",
     "Maseno University, Kenya",
