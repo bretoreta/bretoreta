@@ -39,9 +39,9 @@ hobbies: ["Watching YouTube Tutorials, Gaming, Art"]
 
 <h2> 🚀 &nbsp;Some Tools I Have Used and Learned</h2>
 <p align="left">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="vscode" width="45" height="45"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="vscode" width="45" height="45"/>
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="php" width="45" height="45"/>
-    <img width="45" height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" width="45" height="45" />
     <img width="45" height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
     <img width="45" height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg" />
     <img width="45" height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg" />
@@ -72,6 +72,7 @@ hobbies: ["Watching YouTube Tutorials, Gaming, Art"]
           <img height="137px" src="https://github-readme-streak-stats.herokuapp.com/?user=bretoreta&hide_border=true&theme=nightowl" />
       </p>
       <p align="center">
-          <img height="137px" src="https://github-readme-stats.vercel.app/api?username=bretoreta&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&count_private=true&line_height=21&theme=nightowl" /> <img height="137px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bretoreta&hide=html&hide_title=true&hide_border=true&layout=compact&langs_count=8&theme=nightowl" />
+          <img height="137px" src="https://github-readme-stats.vercel.app/api?username=bretoreta&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&count_private=true&line_height=21&theme=nightowl" /> 
+          <img height="137px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bretoreta&hide=html&hide_title=true&hide_border=true&layout=compact&langs_count=8&theme=nightowl" />
       </p>
 </details>
