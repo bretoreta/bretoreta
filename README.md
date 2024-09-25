@@ -8,12 +8,11 @@
     <a href="https://twitter.com/bret_oreta"><img width="50" src="https://www.vectorlogo.zone/logos/twitter/twitter-tile.svg" alt="Twitter Logo"></a>
     <a href="https://www.linkedin.com/in/bretoreta/"><img width="50" src="https://www.vectorlogo.zone/logos/linkedin/linkedin-tile.svg" alt="LinkedIn Logo"></a>
     <a href="https://www.instagram.com/bret_oreta/"><img width="50" src="https://www.vectorlogo.zone/logos/instagram/instagram-icon.svg" alt="Instagram Logo"></a>
-    [![TikTok](https://img.shields.io/badge/TikTok-%23000000.svg?logo=TikTok&logoColor=white)](https://tiktok.com/@bretoreta)
 </p>
 
 ```yaml
 name: Bret Oreta
-located_in: Nairobi, Kenya
+located_in: Mombasa, Kenya
 cuurently_looking_for: Full Stack Developer Role
 education: [
     "Bsc. in Computer Science",
@@ -31,10 +30,10 @@ fields_of_interest: [
 ]
 technical_background: [
     "Full Stack Web Developer",
-    "Database Administrator",
-    "Junior Mobile Developer",
+    "Website & Database Administrator",
+    "Junior DevOps Engineer",
 ]
-currently_learning: ["Docker, Kubernetes, React, React Native and Flutter"]
+currently_learning: ["Docker, Golang, DevOps, Data Science"]
 hobbies: ["Watching YouTube Tutorials, Gaming, Art"]
 ```
 
