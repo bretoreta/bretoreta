@@ -65,26 +65,17 @@ hobbies: ["Watching YouTube Tutorials, Gaming, Art"]
     <img width="45" height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original-wordmark.svg" />
 </p>
 
-<details>
-    <summary><b>:gear: &nbsp;GitHub Statistics</b></summary>
-    <br/>
-      <p align="center">
-          <img height="137px" src="https://github-readme-streak-stats.herokuapp.com/?user=bretoreta&hide_border=true&theme=nightowl" />
-      </p>
-      <p align="center">
-          <img height="137px" src="https://github-readme-stats.vercel.app/api?username=bretoreta&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&count_private=true&line_height=21&theme=nightowl" /> 
-          <img height="137px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bretoreta&hide=html&hide_title=true&hide_border=true&layout=compact&langs_count=8&theme=nightowl" />
-      </p>
-</details>
+## 🏆 GitHub Statistics
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=bretoreta&show_icons=true&theme=dark#gh-dark-mode-only)](https://github.com/bretoreta/bretoreta#gh-dark-mode-only)
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=bretoreta&show_icons=true&theme=default#gh-light-mode-only)](https://github.com/bretoreta/bretoreta#gh-light-mode-only)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bretoreta&layout=compact&theme=dark)
+![](https://github-contributor-stats.vercel.app/api?username=bretoreta&limit=3&theme=dark&combine_all_yearly_contributions=true)
 
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=bretoreta&theme=radical&no-frame=false&no-bg=true&margin-w=4)
 
 ### ✍️ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
-
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=bretoreta&limit=5&theme=dark&combine_all_yearly_contributions=true)
 
 ---
 [![](https://visitcount.itsvg.in/api?id=bretoreta&icon=0&color=0)](https://visitcount.itsvg.in)
