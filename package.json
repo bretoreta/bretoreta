@@ -16,6 +16,7 @@
     "@nuxt/image": "1.10.0",
     "@nuxt/ui": "^3.1.1",
     "@sglara/cn": "^1.0.0",
+    "@splinetool/runtime": "^1.9.92",
     "@tailwindcss/vite": "^4.1.6",
     "class-variance-authority": "^0.7.1",
     "nuxt": "^3.17.2",

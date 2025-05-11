@@ -26,6 +26,9 @@ importers:
       '@sglara/cn':
         specifier: ^1.0.0
         version: 1.0.0
+      '@splinetool/runtime':
+        specifier: ^1.9.92
+        version: 1.9.92
       '@tailwindcss/vite':
         specifier: ^4.1.6
         version: 4.1.6(vite@6.3.5(@types/node@22.15.17)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))
@@ -978,6 +981,9 @@ packages:
 
   '@speed-highlight/core@1.2.7':
     resolution: {integrity: sha512-0dxmVj4gxg3Jg879kvFS/msl4s9F3T9UXC1InxgOf7t5NvcPD97u/WTA5vL/IxWHMn7qSxBozqrnnE2wvl1m8g==}
+
+  '@splinetool/runtime@1.9.92':
+    resolution: {integrity: sha512-lzVMDQh+cWzitNvXID3lUCwZ6aMh+G+sNGLQorljXv9WzU+jEMuuRulTe/sXFnJBOBzyfIfq0QoiCbyuVSIOvQ==}
 
   '@sqlite.org/sqlite-wasm@3.49.1-build4':
     resolution: {integrity: sha512-TBbTTWhiI6v2CT7J1hij5shx+RGL4iICprVGYhO+LKv5Nbn3NeJPWCY8kMKL5vA6b33NeWkBk4dy6RFbNh3jBw==}
@@ -3436,6 +3442,10 @@ packages:
   ohash@2.0.11:
     resolution: {integrity: sha512-RdR9FQrFwNBNXAr4GixM8YaRZRJ5PUWbKYbE5eOsrwAjJW0q2REGcf79oYPsLyskQCZG1PLN+S/K1V00joZAoQ==}
 
+  on-change@4.0.2:
+    resolution: {integrity: sha512-cMtCyuJmTx/bg2HCpHo3ZLeF7FZnBOapLqZHr2AlLeJ5Ul0Zu2mUJJz051Fdwu/Et2YW04ZD+TtU+gVy0ACNCA==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+
   on-change@5.0.1:
     resolution: {integrity: sha512-n7THCP7RkyReRSLkJb8kUWoNsxUIBxTkIp3JKno+sEz6o/9AJ3w3P9fzQkITEkMwyTKJjZciF3v/pVoouxZZMg==}
     engines: {node: '>=18'}
@@ -4014,6 +4024,9 @@ packages:
 
   scule@1.3.0:
     resolution: {integrity: sha512-6FtHJEvt+pVMIB9IBY+IcCJ6Z5f1iQnytgyfKMhDKgmzYG+TeH/wx1y3l27rshSbLiSanrR9ffZDrEsmjlQF2g==}
+
+  semver-compare@1.0.0:
+    resolution: {integrity: sha512-YM3/ITh2MJ5MtzaM429anh+x2jiLVjqILF4m4oyQB18W7Ggea7BfqdH/wGMK7dDiMghv/6WG7znWMwUDzJiXow==}
 
   semver@6.3.1:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
@@ -6254,6 +6267,11 @@ snapshots:
   '@socket.io/component-emitter@3.1.2': {}
 
   '@speed-highlight/core@1.2.7': {}
+
+  '@splinetool/runtime@1.9.92':
+    dependencies:
+      on-change: 4.0.2
+      semver-compare: 1.0.0
 
   '@sqlite.org/sqlite-wasm@3.49.1-build4': {}
 
@@ -9236,6 +9254,8 @@ snapshots:
 
   ohash@2.0.11: {}
 
+  on-change@4.0.2: {}
+
   on-change@5.0.1: {}
 
   on-finished@2.4.1:
@@ -9924,6 +9944,8 @@ snapshots:
   safe-stable-stringify@2.5.0: {}
 
   scule@1.3.0: {}
+
+  semver-compare@1.0.0: {}
 
   semver@6.3.1: {}
 
