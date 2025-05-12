@@ -23,20 +23,50 @@
             <div class="flex items-center px-2">
                 <!-- First set (visible) -->
                 <div class="flex shrink-0 items-center justify-around min-w-full animate-scroll">
-                    <img src="https://fairdealfurniture.co.ke/wp-content/uploads/2023/04/FFL-logo--scaled-220x71.webp" alt="Logo 1" class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity">
-                    <img src="https://fairdealfurniture.co.ke/wp-content/uploads/2023/04/AHS_INT_Logo_Horizontal_OrgHouse_WteLetters-260x80.webp" alt="Logo 1" class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity">
-                    <img src="https://www.koeedo.org/img/logo.jpeg" alt="Logo 1" class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity">
-                    <img src="https://infinitylabs.africa/wp-content/uploads/2024/10/INFINITY-LABS-BLK-TRANSPARENTAsset-3.png" alt="Logo 1" class="h-12 mx-8 grayscale invert hover:grayscale-0 transition-opacity">
-                    <img src="https://inkpotgroup.co.ke/wp-content/uploads/2024/06/INKPOT-GROUP-300x75.png" alt="Logo 1" class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity">
+                    <NuxtImg
+                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                      src="https://fairdealfurniture.co.ke/wp-content/uploads/2023/04/FFL-logo--scaled-220x71.webp"
+                    />
+                    <NuxtImg
+                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                      src="https://fairdealfurniture.co.ke/wp-content/uploads/2023/04/AHS_INT_Logo_Horizontal_OrgHouse_WteLetters-260x80.webp"
+                    />
+                    <NuxtImg
+                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                      src="https://www.koeedo.org/img/logo.jpeg"
+                    />
+                    <NuxtImg
+                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity invert"
+                      src="https://infinitylabs.africa/wp-content/uploads/2024/10/INFINITY-LABS-BLK-TRANSPARENTAsset-3.png"
+                    />
+                    <NuxtImg
+                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                      src="https://inkpotgroup.co.ke/wp-content/uploads/2024/06/INKPOT-GROUP-300x75.png"
+                    />
                 </div>
             
                 <!-- Duplicate set (for seamless looping) -->
                 <div class="flex shrink-0 items-center justify-around min-w-full animate-scroll" aria-hidden="true">
-                    <img src="https://fairdealfurniture.co.ke/wp-content/uploads/2023/04/FFL-logo--scaled-220x71.webp" alt="Logo 1" class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity">
-                    <img src="https://fairdealfurniture.co.ke/wp-content/uploads/2023/04/AHS_INT_Logo_Horizontal_OrgHouse_WteLetters-260x80.webp" alt="Logo 1" class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity">
-                    <img src="https://www.koeedo.org/img/logo.jpeg" alt="Logo 1" class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity">
-                    <img src="https://infinitylabs.africa/wp-content/uploads/2024/10/INFINITY-LABS-BLK-TRANSPARENTAsset-3.png" alt="Logo 1" class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity">
-                    <img src="https://inkpotgroup.co.ke/wp-content/uploads/2024/06/INKPOT-GROUP-300x75.png" alt="Logo 1" class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity">
+                    <NuxtImg
+                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                      src="https://fairdealfurniture.co.ke/wp-content/uploads/2023/04/FFL-logo--scaled-220x71.webp"
+                    />
+                    <NuxtImg
+                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                      src="https://fairdealfurniture.co.ke/wp-content/uploads/2023/04/AHS_INT_Logo_Horizontal_OrgHouse_WteLetters-260x80.webp"
+                    />
+                    <NuxtImg
+                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                      src="https://www.koeedo.org/img/logo.jpeg"
+                    />
+                    <NuxtImg
+                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity invert"
+                      src="https://infinitylabs.africa/wp-content/uploads/2024/10/INFINITY-LABS-BLK-TRANSPARENTAsset-3.png"
+                    />
+                    <NuxtImg
+                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                      src="https://inkpotgroup.co.ke/wp-content/uploads/2024/06/INKPOT-GROUP-300x75.png"
+                    />
                 </div>
             </div>
         </div>

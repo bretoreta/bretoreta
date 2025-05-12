@@ -10,7 +10,9 @@ useSeoMeta({
   title: 'Bret Oreta | AI Automator and Website Developer',
   ogTitle: 'Bret Oreta | AI Automator and Website Developer',
   description: 'Let AI do the heavy-lifting, you deserve a vacation',
-  ogDescription: 'Let AI do the heavy-lifting, you deserve a vacation'
+  ogDescription: 'Let AI do the heavy-lifting, you deserve a vacation',
+  ogImage: "/images/og-image.webp",
+  twitterCard: 'summary_large_image',
 })
 </script>
 
