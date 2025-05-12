@@ -1,5 +1,5 @@
 <template>
-    <div id="hero" class="grid content-center min-h-[80dvh]">
+    <div id="hero" class="grid content-center min-h-[40rem] lg:min-h-[80dvh]">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center relative z-10">
             <div>
                 <span class="text-primary border-l-2 pl-2">Let AI do the heavy-lifting, you deserve a rest</span>

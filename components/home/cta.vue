@@ -1,10 +1,10 @@
 <template>
-    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div class="px-4 py-8 md:px-24 lg:px-8 lg:py-20 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
         <div class="grid gap-5 row-gap-10 lg:grid-cols-2">
             <div class="flex flex-col justify-center">
                 <div class="max-w-xl mb-10 md:mx-auto lg:max-w-2xl md:mb-12">
                     <div class="mb-4">
-                        <UBadge>Built with military-grade encryption and compliance protocols</UBadge>
+                        <UBadge>Built with military-grade protocols</UBadge>
                     </div>
                     <h2 class="max-w-lg mb-6 text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none">
                         Your Business, Supercharged by 
@@ -19,7 +19,7 @@
                         members—processing data, automating tasks, and delivering insights 24/7.
                     </p>
                 </div>
-                <div class="mt-8">
+                <div class="mt-0 lg:mt-8">
                     <StartTrialButton />
                 </div>
             </div>

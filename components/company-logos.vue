@@ -1,5 +1,5 @@
 <template>
-    <div class="grig gap-12 py-12">
+    <div class="grid gap-12 py-12">
         <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
           <h2 class="max-w-lg mb-6 text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none">
                 Join companies that innovate with
@@ -14,13 +14,13 @@
         </div>
         <div class="relative overflow-hidden">
             <!-- Fade overlay on left side -->
-            <div class="absolute left-0 top-0 bottom-0 w-32 z-10 bg-gradient-to-r from-gray-50 dark:from-[var(--ui-bg)] to-transparent"></div>
+            <div class="absolute left-0 top-0 bottom-0 w-32 z-10 bg-gradient-to-r from-[var(--ui-bg)] to-transparent"></div>
             
             <!-- Fade overlay on right side -->
-            <div class="absolute right-0 top-0 bottom-0 w-32 z-10 bg-gradient-to-l from-gray-50 dark:from-[var(--ui-bg)] to-transparent"></div>
+            <div class="absolute right-0 top-0 bottom-0 w-32 z-10 bg-gradient-to-l from-[var(--ui-bg)] to-transparent"></div>
         
             <!-- Scrolling logos container -->
-            <div class="flex items-center">
+            <div class="flex items-center px-2">
                 <!-- First set (visible) -->
                 <div class="flex shrink-0 items-center justify-around min-w-full animate-scroll">
                     <img src="https://fairdealfurniture.co.ke/wp-content/uploads/2023/04/FFL-logo--scaled-220x71.webp" alt="Logo 1" class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity">
