@@ -17,4 +17,12 @@ export default defineNuxtConfig({
   fonts: {
     families: [{ name: "Plus Jakarta Sans", provider: "google" }],
   },
+  app: {
+    head: {
+      title: "Bret Oreta",
+      htmlAttrs: {
+        lang: "en",
+      },
+    },
+  },
 });
