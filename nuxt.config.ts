@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "@nuxt/image",
     "@nuxt/ui",
+    "@nuxtjs/seo",
   ],
   fonts: {
     families: [
@@ -40,5 +41,9 @@ export default defineNuxtConfig({
       "2xl": 1536,
     },
     domains: ["bretoreta.me"],
+  },
+  site: {
+    url: "https://bretoreta.me",
+    name: "Bret Oreta",
   },
 });
