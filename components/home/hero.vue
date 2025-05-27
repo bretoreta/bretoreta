@@ -16,7 +16,7 @@
                     <span class="text-muted text-xs mt-2">No upfront payment &middot; Free for One Month</span>
                 </div>
             </div>
-            <div class="hidden lg:block lg:absolute z-0 -top-72 -right-60 w-full">
+            <!-- <div class="hidden lg:block lg:absolute z-0 -top-72 -right-60 w-full">
                 <div class="relative grid h-screen place-content-center">
                     <InteractiveGrid
                     :class="'[mask-image:radial-gradient(350px_circle_at_center,white,transparent)]'"
@@ -26,9 +26,9 @@
                     squares-class-name="hover:fill-primary"
                     />
                 </div>
-            </div>
+            </div> -->
             <div>
-                <!-- <RobotModel /> -->
+                <NuxtImg src="/images/bret_oreta.png" format="webp,avif" alt="Bret Oreta" />
             </div>
         </div>
     </div>

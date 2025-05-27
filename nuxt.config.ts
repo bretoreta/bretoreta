@@ -46,4 +46,13 @@ export default defineNuxtConfig({
     url: "https://bretoreta.me",
     name: "Bret Oreta",
   },
+  content: {
+    build: {
+      markdown: {
+        toc: {
+          depth: 3,
+        },
+      },
+    },
+  },
 });

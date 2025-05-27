@@ -1,14 +1,14 @@
 <script setup lang="ts">
 useHead({
-  title: 'Bret Oreta | AI Automations Expert and Website Developer',
+  title: 'AI Automations Expert and Website Developer',
   meta: [
     { name: 'description', content: 'Let AI do the heavy-lifting, you deserve a vacation' }
   ]
 })
 
 useSeoMeta({
-  title: 'Bret Oreta | AI Automations Expert and Website Developer',
-  ogTitle: 'Bret Oreta | AI Automations Expert and Website Developer',
+  title: 'AI Automations Expert and Website Developer',
+  ogTitle: 'AI Automations Expert and Website Developer',
   description: 'Let AI do the heavy-lifting, you deserve a vacation',
   ogDescription: 'Let AI do the heavy-lifting, you deserve a vacation',
   ogImage: "/images/og-image.webp",

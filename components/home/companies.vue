@@ -36,7 +36,7 @@ const features = [
 </script>
 
 <template>
-    <div class="px-4 py-8 md:px-24 lg:px-8 lg:py-20 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
+    <div class="relative pb-10">
         <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
             <div class="mb-4">
                 <UBadge>Building tools that transform workflows</UBadge>
@@ -53,17 +53,17 @@ const features = [
                     </svg>
                     <span class="relative"></span>
                 </span>
-                Accelerating growth through 
+                Accelerating growth through intelligent
                 <span class="relative px-1">
                     <div class="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-primary/20"></div>
-                    <span class="relative inline-block text-primary">intelligent technology</span>
+                    <span class="relative inline-block text-primary">technology</span>
                 </span>
             </h2>
             <p class="text-base text-muted md:text-lg">
                 We build custom AI agents that automate complex tasks, and streamline operations—helping your business scale smarter, not harder.
             </p>
         </div>
-        <div class="grid gap-5 mb-8 md:grid-cols-2 lg:grid-cols-3">
+        <div class="px-4 lg:px-8 grid gap-5 mb-8 md:grid-cols-2 lg:grid-cols-3">
             <div v-for="feature in features" class="p-5 border border-accented rounded shadow-sm">
                 <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-primary/20">
                     <Icon :name="'lucide:' + feature.icon" />

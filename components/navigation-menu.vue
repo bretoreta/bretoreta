@@ -4,13 +4,13 @@ import type { NavigationMenuItem } from '@nuxt/ui'
 const items = ref<NavigationMenuItem[]>([
   {
     label: 'Home',
-    icon: 'i-lucide-layout-panel-left',
+    icon: 'i-lucide-house',
     to: '/',
   },
   {
-    label: 'Portfolio',
-    icon: 'i-lucide-shopping-bag',
-    to: '/portfolio'
+    label: 'Blog',
+    icon: 'i-lucide-notebook-text',
+    to: '/blog'
   },
   {
     label: 'About',
@@ -26,5 +26,5 @@ const items = ref<NavigationMenuItem[]>([
 </script>
 
 <template>
-  <UNavigationMenu :items="items" color="neutral" variant="pill" highlight class="w-full justify-center gap-4" />
+  <UNavigationMenu :items="items" highlight class="w-full justify-center gap-4" />
 </template>
