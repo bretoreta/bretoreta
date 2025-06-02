@@ -13,24 +13,24 @@
           </div>
         </div>
         <div class="space-y-2 text-sm">
-          <p class="text-base font-bold tracking-wide text-gray-900">Contacts</p>
+          <p class="text-base font-bold tracking-wide">Contacts</p>
           <div class="flex">
             <p class="mr-1 text-muted">Phone:</p>
             <a href="tel:+254740821859" aria-label="Our phone" title="Our phone" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">+254 740 821 859</a>
           </div>
           <div class="flex">
             <p class="mr-1 text-muted">Email:</p>
-            <a href="mailto:admin@bretoreta.me" aria-label="Our email" title="Our email" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">admin@bretoreta.me</a>
+            <a href="mailto:bretoreta@gmail.com" aria-label="Our email" title="Our email" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">bretoreta@gmail.com</a>
           </div>
           <div class="flex">
             <p class="mr-1 text-muted">Address:</p>
             <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" aria-label="Our address" title="Our address" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
-              Mwembe Tayari, Mombasa - KENYA
+              Mombasa, KENYA
             </a>
           </div>
         </div>
         <div>
-          <span class="text-base font-bold tracking-wide text-gray-900">Social</span>
+          <!-- <span class="text-base font-bold tracking-wide">Social</span>
           <div class="flex items-center mt-1 space-x-3">
             <a href="/" class="text-slate-300 transition-colors duration-300 hover:text-primary">
               <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
@@ -57,7 +57,7 @@
             <a href="/" class="text-slate-300 transition-colors duration-300 hover:text-primary">
               <svg class="h-5" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.358 2.145a8.2 8.2 0 0 0-3.716 0c-.706-.433-1.245-.632-1.637-.716a2.2 2.2 0 0 0-.51-.053 1.3 1.3 0 0 0-.232.028l-.01.002-.004.002h-.003l.137.481-.137-.48a.5.5 0 0 0-.32.276 3.12 3.12 0 0 0-.159 2.101A3.35 3.35 0 0 0 2 5.93c0 1.553.458 2.597 1.239 3.268.547.47 1.211.72 1.877.863a2.3 2.3 0 0 0-.116.958v.598c-.407.085-.689.058-.89-.008-.251-.083-.444-.25-.629-.49a5 5 0 0 1-.27-.402l-.057-.093a9 9 0 0 0-.224-.354c-.19-.281-.472-.633-.928-.753l-.484-.127-.254.968.484.127c.08.02.184.095.355.346a7 7 0 0 1 .19.302l.068.11c.094.152.202.32.327.484.253.33.598.663 1.11.832.35.116.748.144 1.202.074V14.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-3.562c0-.316-.014-.605-.103-.874.663-.14 1.322-.39 1.866-.86.78-.676 1.237-1.73 1.237-3.292v-.001a3.35 3.35 0 0 0-.768-2.125 3.12 3.12 0 0 0-.159-2.1.5.5 0 0 0-.319-.277l-.137.48c.137-.48.136-.48.135-.48l-.002-.001-.004-.002-.009-.002-.075-.015a1 1 0 0 0-.158-.013 2.2 2.2 0 0 0-.51.053c-.391.084-.93.283-1.636.716" fill="currentColor"/></svg>
             </a>
-          </div>
+          </div> -->
           <p class="mt-4 text-sm text-muted">
             Architecting solutions where uptime meets innovation. Specialized in distributed systems, AI/ML pipelines, and server environments engineered for 99.99% reliability without compromising scalability.
           </p>
