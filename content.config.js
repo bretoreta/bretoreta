@@ -17,6 +17,20 @@ const blogSchema = z.object({
   }),
 })
 
+const projectSchema = z.object({
+  title: z.string(),
+  link: z.string().url(),
+  description: z.string(),
+  image: z.string(),
+  category: z.string(),
+  date: z.date(),
+  path: z.string(),
+  client_name: z.string(),
+  client_logo: z.string(),
+  status: z.string(),
+  published: z.boolean(),
+})
+
 export const collections = {
   blog: defineCollection(
     asSeoCollection({
@@ -27,5 +41,15 @@ export const collections = {
       },
       schema: blogSchema,
     }),
-  )
+  ),
+  project: defineCollection(
+    asSeoCollection({
+      type: 'page',
+      source: {
+        include: 'project/*.md',
+        prefix: '/project',
+      },
+      schema: projectSchema,
+    }),
+  ),
 }

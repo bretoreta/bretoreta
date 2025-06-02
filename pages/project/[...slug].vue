@@ -3,16 +3,16 @@ import { useRoute } from 'vue-router'
 
 const route = useRoute()
 
-const { data: post } = await useAsyncData('blog', () =>
-  queryCollection('blog').path(route.path).first()
+const { data: project } = await useAsyncData('project', () =>
+  queryCollection('project').path(route.path).first()
 )
 
-if (!post.value) {
-  throw createError({ statusCode: 404, statusMessage: 'Post not found' })
+if (!project.value) {
+  throw createError({ statusCode: 404, statusMessage: 'Project not found' })
 }
 
-const { data: sorroundLinks } = await useAsyncData('blogSorround', () => {
-  return queryCollectionItemSurroundings('blog', route.path)
+const { data: sorroundLinks } = await useAsyncData('projectSorround', () => {
+  return queryCollectionItemSurroundings('project', route.path)
     .order('date', 'DESC')
 })
 </script>
@@ -27,33 +27,34 @@ const { data: sorroundLinks } = await useAsyncData('blogSorround', () => {
         <div class="h-full max-2xl:hidden text-muted/20 border-l border-dashed border-current bg-[repeating-linear-gradient(315deg,currentColor_0,currentColor_1px,transparent_0,transparent_50%)] bg-[length:10px_10px] bg-fixed" />
 
         <div>
-          <div v-if="post" class="grid justify-center max-w-4xl">
+          <div v-if="project" class="grid justify-center max-w-4xl">
             <div class="my-8">
               <div class="flex items-center gap-x-4 text-xs">
-                <time class="text-gray-500 dark:text-muted">{{ new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric'}) }}</time>
-                <UBadge>{{ post.category }}</UBadge>
+                <time class="text-gray-500 dark:text-muted">{{ new Date(project.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric'}) }}</time>
+                <UBadge>{{ project.category }}</UBadge>
               </div>
               <div class="mt-4">
-                <h1 class="text-4xl font-bold">{{ post.title }}</h1>
-                <p class="mt-2 line-clamp-1 text-sm/6 text-muted">{{ post.description }}</p>
+                <h1 class="text-4xl font-bold">{{ project.title }}</h1>
+                <p class="mt-2 line-clamp-1 text-sm/6 text-muted">{{ project.description }}</p>
               </div>
               <div class="relative mt-8 flex items-center gap-x-4">
-                <NuxtImg :src="post.author.imageUrl" alt="Author Profile Picture" class="size-10 rounded-full bg-gray-50" />
+                <NuxtImg :src="project.client_logo" alt="Author Profile Picture" class="size-10 object-contain rounded-full bg-gray-50" />
                 <div class="text-sm/6">
                   <p class="font-semibold">
-                    <a :href="post.author.href">
-                      <span class="absolute inset-0" />
-                      {{ post.author.name }}
-                    </a>
+                    {{ project.client_name }}
                   </p>
-                  <p class="text-muted">{{ post.author.role }}</p>
+                </div>
+                <div class="ml-auto">
+                  <UButton icon="i-lucide-arrow-up-right" variant="ghost" :to="project.link" target="_blank">
+                    Visit Project
+                  </UButton>
                 </div>
               </div>
             </div>
-            <NuxtImg :src="post.image" class="rounded-lg object-cover" alt="Cover image for this blog post" />
+            <NuxtImg :src="project.image" class="rounded-lg object-cover" alt="Cover image for this blog project" />
           </div>
           <article class="mt-12 max-w-4xl">
-            <ContentRenderer v-if="post" :value="post" :prose="true" class="content" />
+            <ContentRenderer v-if="project" :value="project" :prose="true" class="content" />
           </article>
           
           <div class="mt-32 mb-4">

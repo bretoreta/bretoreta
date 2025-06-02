@@ -17,7 +17,11 @@ export default defineNuxtConfig({
   ],
   fonts: {
     families: [
-      { name: "Plus Jakarta Sans", provider: "google", weights: [400, 800] },
+      {
+        name: "Plus Jakarta Sans",
+        provider: "google",
+        weights: [400, 600, 800],
+      },
     ],
   },
   app: {
