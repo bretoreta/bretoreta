@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/ui",
     "@nuxtjs/seo",
+    "nuxt-umami",
   ],
   fonts: {
     families: [
@@ -58,5 +59,10 @@ export default defineNuxtConfig({
         },
       },
     },
+  },
+  umami: {
+    id: "f5b3a8df-db38-4d3b-9156-a4ea6e6e508c",
+    host: "https://analytics.bretoreta.me",
+    autoTrack: true,
   },
 });
