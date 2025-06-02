@@ -40,7 +40,7 @@
 
 <script setup>
 const { data } = await useAsyncData('/', () => {
-  return queryCollection('blog').all()
+  return queryCollection('blog').order('date', 'DESC').all()
 })
 
 function formatDate(dateStr) {
