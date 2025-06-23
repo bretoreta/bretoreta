@@ -32,7 +32,7 @@ export default defineNuxtConfig({
       },
       script: [
         {
-          src: "https://app.rybbit.io/api/script.js",
+          src: "https://analytics.bretoreta.me/api/script.js",
           async: true,
           defer: true,
           "data-site-id": "1",
