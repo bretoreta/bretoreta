@@ -14,7 +14,6 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/ui",
     "@nuxtjs/seo",
-    "nuxt-umami",
   ],
   fonts: {
     families: [
