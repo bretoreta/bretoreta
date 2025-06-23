@@ -5,7 +5,7 @@
         <h2 class="text-4xl font-semibold tracking-tight text-pretty sm:text-5xl">From the blog</h2>
         <p class="mt-2 text-lg/8 text-muted">Learn how to grow your business with our expert advice.</p>
       </div>
-      <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 dark:border-muted border-dashed pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+      <div class="mx-auto mt-6 md:mt-14 grid max-w-2xl grid-cols-1 gap-x-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
         <article v-for="post in data" :key="post.id" class="flex max-w-xl flex-col items-start justify-between">
           <div class="flex items-center gap-x-4 text-xs">
             <time class="text-gray-500 dark:text-muted">{{ formatDate(post.date) }}</time>
@@ -21,7 +21,7 @@
             <p class="mt-5 line-clamp-3 text-sm/6 text-muted">{{ post.description }}</p>
           </div>
           <div class="relative mt-8 flex items-center gap-x-4">
-            <NuxtImg :src="post.author.imageUrl" alt="Author Profile Picture" class="size-10 rounded-full bg-gray-50" />
+            <NuxtImg :src="post.author.imageUrl" alt="Author Profile Picture" class="size-10 rounded-full object-cover bg-gray-50" />
             <div class="text-sm/6">
               <p class="font-semibold">
                 <a :href="post.author.href">
@@ -40,7 +40,7 @@
 
 <script setup>
 const { data } = await useAsyncData('/', () => {
-  return queryCollection('blog').order('date', 'DESC').all()
+  return queryCollection('blog').order('date', 'DESC').limit(3).all()
 })
 
 function formatDate(dateStr) {

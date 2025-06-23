@@ -25,23 +25,45 @@
                 <div class="flex shrink-0 items-center justify-around min-w-full animate-scroll">
                     <NuxtImg
                       class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                      src="https://fairdealfurniture.co.ke/wp-content/uploads/2023/04/FFL-logo--scaled-220x71.webp"
+                      format="webp,avif"
+                      alt="Fairdeal Furniture's Logo"
+                      src="/images/logo/fairdealfurniture.webp"
                     />
                     <NuxtImg
                       class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                      src="https://fairdealfurniture.co.ke/wp-content/uploads/2023/04/AHS_INT_Logo_Horizontal_OrgHouse_WteLetters-260x80.webp"
+                      format="webp,avif"
+                      alt="Inkpot Group's Logo"
+                      src="/images/logo/inkpotgroup.png"
+                    />
+                    <NuxtImg
+                      class="h-12 mx-8 grayscale invert-100 hover:grayscale-0 hover:invert-0 transition-opacity"
+                      format="webp,avif"
+                      alt="Zurika by Wambui's Logo"
+                      src="/images/logo/zurikabywambui.webp"
                     />
                     <NuxtImg
                       class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                      src="https://www.koeedo.org/img/logo.jpeg"
+                      format="webp,avif"
+                      alt="Ashley Furniture's Logo"
+                      src="/images/logo/ashleyfurniture.webp"
                     />
                     <NuxtImg
-                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity invert"
-                      src="https://infinitylabs.africa/wp-content/uploads/2024/10/INFINITY-LABS-BLK-TRANSPARENTAsset-3.png"
+                      class="h-12 mx-8 grayscale invert-100 hover:grayscale-0 transition-opacity"
+                      format="webp,avif"
+                      alt="Infinity Labs' Logo"
+                      src="/images/logo/infinitylabs.png"
                     />
                     <NuxtImg
                       class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                      src="https://inkpotgroup.co.ke/wp-content/uploads/2024/06/INKPOT-GROUP-300x75.png"
+                      format="webp,avif"
+                      alt="XIMI Vogue's Logo"
+                      src="/images/logo/ximivogue.png"
+                    />
+                    <NuxtImg
+                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                      format="webp,avif"
+                      alt="Emerge Global's Logo"
+                      src="/images/logo/emergeglobal.jpg"
                     />
                 </div>
             
@@ -49,23 +71,45 @@
                 <div class="flex shrink-0 items-center justify-around min-w-full animate-scroll" aria-hidden="true">
                     <NuxtImg
                       class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                      src="https://fairdealfurniture.co.ke/wp-content/uploads/2023/04/FFL-logo--scaled-220x71.webp"
+                      format="webp,avif"
+                      alt="Fairdeal Furniture's Logo"
+                      src="/images/logo/fairdealfurniture.webp"
                     />
                     <NuxtImg
                       class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                      src="https://fairdealfurniture.co.ke/wp-content/uploads/2023/04/AHS_INT_Logo_Horizontal_OrgHouse_WteLetters-260x80.webp"
+                      format="webp,avif"
+                      alt="Inkpot Group's Logo"
+                      src="/images/logo/inkpotgroup.png"
+                    />
+                    <NuxtImg
+                      class="h-12 mx-8 grayscale invert-100 hover:grayscale-0 hover:invert-0 transition-opacity"
+                      format="webp,avif"
+                      alt="Zurika by Wambui's Logo"
+                      src="/images/logo/zurikabywambui.webp"
                     />
                     <NuxtImg
                       class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                      src="https://www.koeedo.org/img/logo.jpeg"
+                      format="webp,avif"
+                      alt="Ashley Furniture's Logo"
+                      src="/images/logo/ashleyfurniture.webp"
                     />
                     <NuxtImg
-                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity invert"
-                      src="https://infinitylabs.africa/wp-content/uploads/2024/10/INFINITY-LABS-BLK-TRANSPARENTAsset-3.png"
+                      class="h-12 mx-8 grayscale invert-100 hover:grayscale-0 transition-opacity"
+                      format="webp,avif"
+                      alt="Infinity Labs' Logo"
+                      src="/images/logo/infinitylabs.png"
                     />
                     <NuxtImg
                       class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                      src="https://inkpotgroup.co.ke/wp-content/uploads/2024/06/INKPOT-GROUP-300x75.png"
+                      format="webp,avif"
+                      alt="XIMI Vogue's Logo"
+                      src="/images/logo/ximivogue.png"
+                    />
+                    <NuxtImg
+                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                      format="webp,avif"
+                      alt="Emerge Global's Logo"
+                      src="/images/logo/emergeglobal.jpg"
                     />
                 </div>
             </div>
@@ -83,6 +127,6 @@
       }
     }
     .animate-scroll {
-      animation: scroll 40s linear infinite;
+      animation: scroll 60s linear infinite;
     }
   </style>

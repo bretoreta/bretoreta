@@ -21,7 +21,7 @@ useSeoMeta({
 </script>
 
 <template>
-    <div class="flex items-center py-4 md:py-2 justify-between px-4 sm:px-20 md:px-40 xl:px-72 border-b border-default sticky top-0 z-40 bg-default/80 backdrop-blur-sm">
+    <div class="flex items-center py-4 md:py-2 justify-between px-4 sm:px-20 md:px-20 xl:px-36 border-b border-default sticky top-0 z-40 bg-gray-50 dark:bg-[#0d1117]/80 backdrop-blur-sm">
         <div class="flex items-center divide-x divide-accented">
           <div class="pr-5 flex items-center">
             <Logo />
@@ -48,7 +48,7 @@ useSeoMeta({
           </SlideOver>
         </div>
     </div>
-    <div class="mx-4 sm:mx-20 md:mx-40 xl:mx-72 relative">
+    <div class="px-4 sm:px-20 md:px-20 xl:px-36 relative bg-gray-50 dark:bg-[#0d1117]">
         <slot />
     </div>
 </template>
