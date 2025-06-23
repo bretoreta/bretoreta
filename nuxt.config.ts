@@ -31,6 +31,14 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "en",
       },
+      script: [
+        {
+          src: "https://app.rybbit.io/api/script.js",
+          async: true,
+          defer: true,
+          "data-site-id": "1",
+        },
+      ],
     },
   },
   image: {
@@ -59,10 +67,5 @@ export default defineNuxtConfig({
         },
       },
     },
-  },
-  umami: {
-    id: "f5b3a8df-db38-4d3b-9156-a4ea6e6e508c",
-    host: "https://analytics.bretoreta.me",
-    autoTrack: true,
   },
 });
