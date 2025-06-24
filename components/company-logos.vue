@@ -14,10 +14,10 @@
         </div>
         <div class="relative overflow-hidden">
             <!-- Fade overlay on left side -->
-            <div class="absolute left-0 top-0 bottom-0 w-32 z-10 bg-gradient-to-r from-[var(--ui-bg)] to-transparent"></div>
+            <div class="absolute left-0 top-0 bottom-0 w-32 z-10 bg-gradient-to-r from-gray-50 dark:from-[#0d1117] to-transparent"></div>
             
             <!-- Fade overlay on right side -->
-            <div class="absolute right-0 top-0 bottom-0 w-32 z-10 bg-gradient-to-l from-[var(--ui-bg)] to-transparent"></div>
+            <div class="absolute right-0 top-0 bottom-0 w-32 z-10 bg-gradient-to-l from-gray-50 dark:from-[#0d1117] to-transparent"></div>
         
             <!-- Scrolling logos container -->
             <div class="flex items-center px-2">
