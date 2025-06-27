@@ -38,10 +38,10 @@ const features = [
 <template>
     <div class="relative pb-10">
         <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-            <div class="mb-4">
+            <div v-motion-slide-visible-once-bottom class="mb-4">
                 <UBadge>Building tools that transform workflows</UBadge>
             </div>
-            <h2 class="max-w-lg mb-6 text-3xl font-black leading-none tracking-tight bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text sm:text-4xl md:mx-auto">
+            <h2 v-motion-slide-visible-once-bottom :delay="100" class="max-w-lg mb-6 text-3xl font-black leading-none tracking-tight bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text sm:text-4xl md:mx-auto">
                 <span class="relative inline-block text-green-900">
                     <svg viewBox="0 0 52 24" fill="currentColor" class="absolute top-0 left-0 -z-10 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
                         <defs>
@@ -59,11 +59,11 @@ const features = [
                     <span class="relative inline-block text-primary">technology</span>
                 </span>
             </h2>
-            <p class="text-base text-muted md:text-lg">
+            <p v-motion-slide-visible-once-bottom :delay="150" class="text-base text-muted md:text-lg">
                 We build custom AI agents that automate complex tasks, and streamline operations—helping your business scale smarter, not harder.
             </p>
         </div>
-        <div class="px-4 lg:px-8 grid gap-5 mb-8 md:grid-cols-2 lg:grid-cols-3">
+        <div class="px-4 lg:px-8 grid gap-5 mb-8 md:grid-cols-2 lg:grid-cols-3" v-motion-slide-visible-once-bottom :delay="200">
             <div v-for="feature in features" class="p-5 border border-accented rounded shadow-sm">
                 <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-primary/20">
                     <Icon :name="'lucide:' + feature.icon" />

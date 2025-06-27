@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/ui",
     "@nuxtjs/seo",
+    "@vueuse/motion/nuxt",
   ],
   fonts: {
     families: [

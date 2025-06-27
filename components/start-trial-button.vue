@@ -16,5 +16,5 @@ defineProps({
 </script>
 
 <template>
-    <UButton :color="color" :size="size" :variant="variant" icon="i-lucide-rocket">Start Your Free Trial</UButton>
+    <UButton :color="color" :size="size" :variant="variant" icon="i-lucide-rocket" to="/contact">Start Your Free Trial</UButton>
 </template>

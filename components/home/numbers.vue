@@ -1,10 +1,10 @@
 <template>
     <div class="pb-8">
         <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-            <div class="mb-4">
+            <div class="mb-4" v-motion-slide-visible-once-bottom>
                 <UBadge>We are growing</UBadge>
             </div>
-            <h2 class="max-w-lg mb-6 text-3xl font-black leading-none tracking-tight bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text sm:text-4xl md:mx-auto">
+            <h2 v-motion-slide-visible-once-bottom :delay="100" class="max-w-lg mb-6 text-3xl font-black leading-none tracking-tight bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text sm:text-4xl md:mx-auto">
                 <span class="relative inline-block text-green-900">
                     <svg viewBox="0 0 52 24" fill="currentColor" class="absolute top-0 left-0 -z-10 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
                         <defs>
@@ -22,11 +22,11 @@
                     <span class="relative inline-block text-primary">Forward</span>
                 </span>
             </h2>
-            <p class="text-base text-muted md:text-lg">
+            <p v-motion-slide-visible-once-bottom :delay="150" class="text-base text-muted md:text-lg">
                 We don’t just promise outcomes—we deliver them. Here’s how our solutions translate into tangible success for businesses like yours
             </p>
         </div>
-        <div class="relative w-full p-px mx-auto mb-4 overflow-hidden transition-shadow duration-300 border border-accented rounded lg:mb-8 lg:max-w-4xl group hover:shadow-xl">
+        <div v-motion-pop-visible-once :delay="100" class="relative w-full p-px mx-auto mb-4 overflow-hidden transition-shadow duration-300 border border-accented rounded lg:mb-8 lg:max-w-4xl group hover:shadow-xl">
             <div class="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-primary group-hover:scale-x-100"></div>
             <div class="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-primary group-hover:scale-y-100"></div>
             <div class="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-primary group-hover:scale-x-100"></div>

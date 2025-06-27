@@ -1,6 +1,6 @@
 <template>
     <div class="relative grid grid-cols-1 lg:grid-cols-2 gap-10 items-center pb-10 lg:pb-20 px-0 lg:px-14">
-        <div class="mb-8 lg:mt-0">
+        <div class="mb-8 lg:mt-0" v-motion-slide-visible-once-bottom :delay="200">
             <NuxtPicture
                 format="webp,avif"
                 class="cover"
@@ -9,7 +9,7 @@
             />
         </div>
         <div>
-            <h5 class="mb-2 lg:mb-8 text-4xl font-extrabold leading-none md:pl-2">
+            <h5 class="mb-2 lg:mb-8 text-4xl font-extrabold leading-none md:pl-2" v-motion-slide-visible-once-bottom>
                 Innovation That<br class="hidden md:block" />
                 Moves At
                 <span class="relative px-1">
@@ -17,7 +17,7 @@
                     <span class="relative inline-block text-primary">Your Pace</span>
                 </span>
             </h5>
-            <div class="grid gap-3 row-gap-3 lg:grid-cols-2">
+            <div class="grid gap-3 row-gap-3 lg:grid-cols-2" v-motion-slide-visible-once-bottom :delay="100">
                 <ul class="space-y-3">
                     <li class="flex items-start">
                         <span class="mr-1">

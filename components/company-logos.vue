@@ -1,18 +1,18 @@
 <template>
     <div class="grid gap-12 py-12">
         <div class="max-w-xl mb-10 md:mx-auto flex flex-col items-center sm:text-center lg:max-w-2xl md:mb-12">
-          <h2 class="max-w-lg mb-6 text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none">
+          <h2 v-motion-slide-visible-once-bottom class="max-w-lg mb-6 text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none">
               Join companies that innovate with
               <span class="relative px-1">
                   <div class="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-primary/20"></div>
                   <span class="relative inline-block text-primary">confidence</span>
               </span>
           </h2>
-          <p class="text-base text-muted md:text-lg">
+          <p v-motion-slide-visible-once-bottom :delay="100" class="text-base text-muted md:text-lg">
               These industry leaders chose our solutions to power their growth—and we're ready to help you write your success story next.
           </p>
         </div>
-        <div class="relative overflow-hidden">
+        <div class="relative overflow-hidden" v-motion-fade-visible-once :delay="200">
             <!-- Fade overlay on left side -->
             <div class="absolute left-0 top-0 bottom-0 w-32 z-10 bg-gradient-to-r from-gray-50 dark:from-[#0d1117] to-transparent"></div>
             
