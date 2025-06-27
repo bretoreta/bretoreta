@@ -44,7 +44,7 @@ const { data } = await useAsyncData('/', () => {
 })
 
 function formatDate(dateStr) {
-  return new Date(dateStr).toLocaleDateString(undefined, {
+  return new Date(dateStr).toLocaleDateString("en-KE", {
     year: 'numeric',
     month: 'long',
     day: 'numeric',

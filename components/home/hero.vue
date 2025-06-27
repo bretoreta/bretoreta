@@ -1,6 +1,6 @@
 <template>
     <div id="hero" class="grid content-center min-h-[40rem] lg:min-h-[80dvh]">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center relative z-10 pl-4 lg:pl-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center relative z-10 pl-4 lg:pl-10 pt-20 md:pt-4">
             <div>
                 <Availability v-motion-slide-bottom />
                 <h1 v-motion-slide-bottom class="text-5xl font-black mt-4 mb-8 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text">Hello 👋, I'm Bret Oreta <br> I make Websites and AI Agents</h1>
