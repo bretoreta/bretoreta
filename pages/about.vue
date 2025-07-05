@@ -33,7 +33,7 @@
             </div>
         </div>
         <div class="hidden md:flex justify-center" v-motion-slide-visible-once-bottom :delay="200">
-            <NuxtImg format="webp,avif" src="/images/squatting-illustration.svg" class="w-96" alt="Illustration showing a squatting person" />
+            <NuxtImg format="webp,avif" src="/images/pro-juggler.webp" class="w-96" alt="Illustration showing a squatting person" />
         </div>
     </div>
     <div class="mt-10 border-b border-accented border-dashed grid grid-cols-1 md:grid-cols-2 gap-8 items-center">

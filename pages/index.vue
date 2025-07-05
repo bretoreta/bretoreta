@@ -4,9 +4,9 @@
       <div class="divide-y divide-dashed divide-accented w-full">
         <HomeHero />
         <div class="grid gap-y-12 lg:gap-y-20 divide-y divide-dashed divide-accented">
+          <Bookings />
           <CompanyLogos />
           <HomeCompanies />
-          <HomeHighlights />
           <HomeNumbers />
           <HomeCta />
           <BlogHighlights />
