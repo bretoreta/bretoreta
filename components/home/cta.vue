@@ -18,7 +18,7 @@
                     members—processing data, automating tasks, and delivering insights 24/7.
                 </p>
                 <div class="mt-8" v-motion-slide-visible-once-bottom :delay="200">
-                    <StartTrialButton />
+                    <StartTrialButton size="lg" />
                 </div>
             </div>
         </div>

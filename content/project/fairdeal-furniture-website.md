@@ -1,5 +1,5 @@
 ---
-title: "Fairdeal Furniture's Website"
+title: "Furniture e-commerce Website for Fairdeal"
 link: "https://fairdealfurniture.co.ke"
 description: "An online e-commerce website for Fairdeal Furniture, a well known furniture brand in Kenya"
 category: "Website"
@@ -7,6 +7,7 @@ image: "/images/project/fairdealfurniture.png"
 date: "2024-12-01T10:00:00Z"
 status: "published"
 published: true
+featured: true
 client_name: "Fairdeal Furniture"
 client_logo: "/images/logo/fairdealfurniture.webp"
 tags: 
@@ -15,6 +16,11 @@ tags:
   - website
   - servercore
   - seo
+stack: 
+  - woocommerce
+  - wordpress
+  - mariadb
+  - redis
 ---
 
 # 🚀 Case Study: Fairdeal Furniture – E-Commerce Overhaul with AI-Driven Automation

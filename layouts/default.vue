@@ -22,7 +22,7 @@ useSeoMeta({
 </script>
 
 <template>
-    <div class="flex items-center py-4 md:py-2 justify-between px-4 sm:px-20 md:px-20 xl:px-56 border-b border-default sticky top-0 z-40 bg-gray-50 dark:bg-[#0d1117]/80 backdrop-blur-sm">
+    <div class="flex items-center py-4 md:py-2 justify-between px-4 sm:px-20 md:px-20 xl:px-32 border-b border-default sticky top-0 z-40 bg-gray-50 dark:bg-[#0d1117]/80 backdrop-blur-sm">
         <div class="flex items-center divide-x divide-accented">
           <div class="pr-5 flex items-center">
             <Logo />
@@ -49,7 +49,7 @@ useSeoMeta({
           </SlideOver>
         </div>
     </div>
-    <div class="px-4 sm:px-20 md:px-20 xl:px-56 relative bg-gray-50 dark:bg-[#0d1117]">
+    <div class="px-4 sm:px-10 md:px-20 xl:px-32 relative bg-gray-50 dark:bg-[#0d1117]">
       <main class="flex min-h-screen flex-col">
         <!-- Grid container with custom column widths -->
         <div class="grid grid-cols-1 lg:grid-cols-[16px_1fr_16px]">

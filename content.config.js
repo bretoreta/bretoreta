@@ -29,6 +29,8 @@ const projectSchema = z.object({
   client_logo: z.string(),
   status: z.string(),
   published: z.boolean(),
+  featured: z.boolean(),
+  stack: z.array(),
 })
 
 export const collections = {

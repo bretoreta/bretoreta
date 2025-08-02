@@ -10,7 +10,7 @@
           <span class="hidden lg:inline-flex flex-wrap">
             I'm Bret Oreta, I Make
             <span class="text-green-600 dark:text-green-400">
-                <ContainerFlip :words="['Effortless Automations', 'Websites That Sell', 'Growth Machines', 'SaaS-ready Solutions', 'AI Agents']" />
+                <ContainerFlip :words="['Automations', 'Websites That Sell', 'Growth Machines', 'SaaS Solutions', 'AI Agents']" />
             </span>
           </span>
         </h1>
@@ -28,16 +28,16 @@
           <li class="flex items-center"><LucideCheck class="w-4 h-4 mr-2 text-green-500" /> Full Access to My Community</li>
         </ul>
 
-        <div class="mt-6 text-sm text-gray-500 dark:text-gray-400" v-motion-slide-bottom :delay="250">
+        <div class="my-6 text-sm text-gray-500 dark:text-gray-400" v-motion-slide-bottom :delay="250">
           Trusted by 20+ founders & businesses
         </div>
       </div>
 
       <!-- Image Section -->
       <div class="md:col-span-5 flex justify-center relative">
-        <div class="absolute z-0 size-72 lg:size-96 rounded-full bg-green-500/50 blur-3xl" v-motion-slide-visible-bottom :duration="1500" :delay="500" />
+        <div class="absolute z-0 size-72 lg:size-96 rounded-full bg-green-500/50 blur-[150px]" v-motion-slide-visible-bottom :duration="1500" :delay="500" />
         <BlurReveal>
-            <NuxtImg src="/images/bret_oreta.png" format="webp,avif" alt="Bret Oreta" width="650px" />
+            <NuxtImg src="/images/bret_oreta.png" format="webp,avif" alt="Bret Oreta" height="800px" />
         </BlurReveal>
       </div>
     </div>

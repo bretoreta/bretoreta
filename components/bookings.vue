@@ -40,19 +40,19 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     img: "/images/testimonials/sarah-k.jpg",
-    quote: "Bret's AI agents automated 90% of our customer service. We went from 200 daily emails to just 20 needing human review. Game-changer!",
+    quote: "Bret's AI agents automated 90% of our customer service. We went from 200 daily emails to just 20 needing human review.",
     name: "Sarah K.",
     role: "E-commerce Manager, XIMI Vogue"
   },
   {
     img: "/images/testimonials/nicholas-wetzel.jpg",
-    quote: "The website Bret built converted 35% better than our old one. His blend of design and AI integrations is unmatched in Kenya.",
+    quote: "The website Bret built converted 35% better than our old one. His blend of design and AI integrations is unmatched.",
     name: "Nicholas W.",
     role: "CEO, Clickstribute"
   },
   {
     img: "/images/testimonials/priya-a.jpg",
-    quote: "After deploying Bret's AI agents, our team gained 15 hours/week. Finally took that Maldives vacation while business ran smoothly!",
+    quote: "After deploying Bret's AI agents, our team gained 15 hours/week. Finally took that Maldives vacation!",
     name: "Priya A.",
     role: "Operations Director, Inkpot Group."
   },
