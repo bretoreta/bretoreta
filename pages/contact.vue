@@ -1,6 +1,7 @@
 <template>
   <!-- Main Content -->
-  <div class="mt-10 px-4">
+  <div class="mt-10 px-5 relative md:pt-20">
+    <div class="page-grid-top"></div>
     <div class="mx-auto max-w-2xl lg:mx-0">
       <h2 v-motion-slide-visible-once-bottom class="text-4xl font-bold tracking-tight text-pretty sm:text-5xl">Contact Me</h2>
       <p v-motion-slide-visible-once-bottom :delay="100" class="mt-2 text-lg/8 text-muted">Let's build something together! I'm always open to discussing projects, partnerships, or just geeking out about tech. Reach out below—I respond to every thoughtful message.</p>

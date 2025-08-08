@@ -32,6 +32,16 @@ const scrollToSection = (id) => {
   }
 }
 
+useSeoMeta({
+  title: `${post.value.title} | Bret Oreta`,
+  ogTitle: `${post.value.title} | Bret Oreta`,
+  description: post.value.description,
+  ogDescription: post.value.description,
+  ogImage: post.value.image,
+  twitterCard: 'summary_large_image',
+  ogType: "post",
+})
+
 // Setup Intersection Observer after content render
 onMounted(() => {
   nextTick(() => {
@@ -107,7 +117,8 @@ watch(activeSection, (newSection) => {
 <template>
   <div class="px-5 pt-14">
     <div v-if="post" class="grid justify-center">
-      <div class="relative grid-cols-3 gap-20 lg:grid">
+      <div class="relative grid-cols-3 gap-20 lg:grid md:pt-20">
+        <div class="page-grid-top"></div>
         <!-- MAIN BLOG CONTENT -->
         <div class="lg:col-span-2">
           <div>

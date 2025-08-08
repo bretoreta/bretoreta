@@ -15,3 +15,16 @@
       </div>
     </div>
 </template>
+<style>
+.page-grid-top {
+  position: absolute;
+  left: 0;
+  top:0;
+  background-image: url('/svg/grid-top.svg');
+  background-repeat: repeat-x;
+  height: 24.625rem;
+  width: 100%;
+  z-index: 0;
+  margin-top: -60px;
+}
+</style>

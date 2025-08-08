@@ -2,14 +2,25 @@
 const { data: posts } = await useAsyncData('blog-posts', () => {
   return queryCollection('blog').order('date', 'DESC').all()
 })
+
+useSeoMeta({
+  title: 'Digital Garden | Bret Oreta',
+  ogTitle: 'Digital Garden | Bret Oreta',
+  description: "Welcome to my little corner of the web! I'm excited to share what I've learned about building amazing products and growing as both a engineer and developer.",
+  ogDescription: "Welcome to my little corner of the web! I'm excited to share what I've learned about building amazing products and growing as both a engineer and developer.",
+  ogImage: "/images/og-image.webp",
+  twitterCard: 'summary_large_image',
+  ogType: "website",
+})
 </script>
 
 <template>
   <!-- Main Content -->
-  <div class="mt-10 px-5">
+  <div class="mt-10 px-5 relative md:pt-20">
+    <div class="page-grid-top"></div>
     <div class="mx-auto max-w-2xl lg:mx-0">
       <h2 v-motion-slide-visible-once-bottom class="text-4xl font-bold tracking-tight text-pretty sm:text-5xl">From the blog</h2>
-      <p v-motion-slide-visible-once-bottom :delay="100" class="mt-2 text-lg/8 text-muted">Welcome to my little corner of the web! I'm excited to share what I've learned about building amazing products and growing as both a designer and developer. Hope you find something useful and inspiring!</p>
+      <p v-motion-slide-visible-once-bottom :delay="100" class="mt-2 text-lg/8 text-muted">Welcome to my little corner of the web! I'm excited to share what I've learned about building amazing products and growing as both a engineer and developer. Hope you find something useful and inspiring!</p>
     </div>
     <div v-if="posts?.length" class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 dark:border-muted border-dashed pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
       <article v-for="(post, index) in posts" :key="post.id" class="flex max-w-xl flex-col items-start justify-between" v-motion-slide-visible-once-bottom :delay="100 * index">

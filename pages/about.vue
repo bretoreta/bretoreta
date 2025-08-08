@@ -1,6 +1,7 @@
 <template>
   <!-- Main Content -->
-  <div class="mt-10 px-4">
+  <div class="mt-10 px-5 relative md:pt-20">
+    <div class="page-grid-top"></div>
     <div class="mx-auto max-w-2xl lg:mx-0">
       <h2 v-motion-slide-visible-once-bottom class="text-4xl font-bold tracking-tight text-pretty sm:text-5xl">Who is Bret Oreta?</h2>
       <p v-motion-slide-visible-once-bottom :delay="100" class="mt-2 text-lg/8 text-muted">Welcome to the story behind the keyboard! I'm a builder at heart, and this space is where I share the journey—failures, wins, and the mindset that keeps me pushing forward.</p>

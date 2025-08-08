@@ -1,7 +1,7 @@
 ---
-title: "Furniture e-commerce Website for Fairdeal"
+title: "Fairdeal Furniture – eCommerce for a leading furniture company"
 link: "https://fairdealfurniture.co.ke"
-description: "An online e-commerce website for Fairdeal Furniture, a well known furniture brand in Kenya"
+description: "The website is built on WordPress with WooCommerce for seamless online sales and Pesapal payment integration to facilitate secure mobile money and card payments for customers in Kenya and beyond."
 category: "Website"
 image: "/images/project/fairdealfurniture.png"
 date: "2024-12-01T10:00:00Z"

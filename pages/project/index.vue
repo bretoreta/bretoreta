@@ -6,7 +6,8 @@ const { data: projects } = await useAsyncData('projects', () => {
 
 <template>
   <!-- Main Content -->
-  <div class="mt-10 px-5">
+  <div class="mt-10 px-5 relative md:pt-20">
+    <div class="page-grid-top"></div>
     <div class="mx-auto max-w-2xl lg:mx-0">
       <h2 v-motion-slide-visible-once-bottom class="text-4xl font-bold tracking-tight text-pretty sm:text-5xl">From the projects</h2>
       <p v-motion-slide-visible-once-bottom :delay="100" class="mt-2 text-lg/8 text-muted">Welcome to my digital workshop! This is where I share the projects that fuel my curiosity—each one a stepping stone in my journey as a creator. From elegant code to thoughtful design, these experiments capture what happens when problem-solving meets passion. Dive in and explore!</p>
@@ -23,11 +24,11 @@ const { data: projects } = await useAsyncData('projects', () => {
               {{ project.title }}
             </NuxtLink>
           </h3>
-          <NuxtImg :src="project.image" class="mt-4 rounded-md" />
+          <NuxtImg height="200px" :src="project.image" class="mt-4 rounded-md" />
           <p class="mt-5 line-clamp-3 text-sm/6 text-muted">{{ project.description }}</p>
         </div>
         <div class="relative mt-8 flex items-center gap-x-4 w-full">
-          <NuxtImg :src="project.client_logo" alt="Author Profile Picture" class="size-10 object-contain rounded-full bg-gray-50" />
+          <NuxtImg :src="project.client_logo" alt="Author Profile Picture" class="size-10 object-contain" />
           <div class="text-sm/6">
             <p class="font-semibold">
               {{ project.client_name }}
@@ -46,3 +47,16 @@ const { data: projects } = await useAsyncData('projects', () => {
     </div>
   </div>
 </template>
+<style>
+.page-grid-top {
+  position: absolute;
+  left: 0;
+  top:0;
+  background-image: url('/svg/grid-top.svg');
+  background-repeat: repeat-x;
+  height: 24.625rem;
+  width: 100%;
+  z-index: 0;
+  margin-top: -60px;
+}
+</style>
