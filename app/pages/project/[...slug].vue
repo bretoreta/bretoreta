@@ -109,9 +109,9 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="px-5">
+  <div class="lg:px-5 pt-10 lg:pt-14">
     <div v-if="project" class="grid justify-center">
-      <div class="relative grid-cols-3 gap-20 lg:grid md:pt-20">
+      <div class="relative grid-cols-1 lg:grid-cols-3 gap-20 grid md:pt-20">
         <div class="page-grid-top"></div>
         <div class="lg:col-span-2">
           <div>
@@ -120,7 +120,7 @@ onUnmounted(() => {
               <UBadge>{{ project.category }}</UBadge>
             </div>
             <div v-motion-slide-visible-once-bottom :delay="100" class="mt-4">
-              <h1 class="text-4xl font-bold">{{ project.title }}</h1>
+              <h1 class="text-2xl lg:text-4xl font-bold">{{ project.title }}</h1>
               <p class="mt-2 line-clamp-1 text-sm/6 text-muted">{{ project.description }}</p>
             </div>
             <div v-motion-slide-visible-once-bottom :delay="200" class="relative my-8 flex items-center gap-x-4">

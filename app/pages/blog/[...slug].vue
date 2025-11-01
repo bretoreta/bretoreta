@@ -108,9 +108,9 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="px-5 pt-14">
-    <div v-if="post" class="grid justify-center">
-      <div class="relative grid-cols-3 gap-20 lg:grid md:pt-20">
+  <div class="lg:px-5 pt-10 lg:pt-14">
+    <div v-if="post" class="grid justify-center w-full">
+      <div class="relative grid-cols-1 lg:grid-cols-3 gap-20 grid md:pt-20">
         <div class="page-grid-top"></div>
         <!-- MAIN BLOG CONTENT -->
         <div class="lg:col-span-2">
@@ -122,7 +122,7 @@ onUnmounted(() => {
               <UBadge>{{ post.category }}</UBadge>
             </div>
             <div v-motion-slide-visible-once-bottom :delay="100" class="my-4">
-              <h1 class="text-4xl font-bold">{{ post.title }}</h1>
+              <h1 class="text-2xl lg:text-4xl font-bold">{{ post.title }}</h1>
               <p class="mt-2 line-clamp-1 text-sm/6 text-muted">{{ post.description }}</p>
             </div>
             <NuxtImg height="42rem" :src="post.image" class="rounded-lg w-full object-cover" alt="Cover image for this blog post" placeholder />
