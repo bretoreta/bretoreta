@@ -1,8 +1,8 @@
 ---
-title: "5 Powerful Ways AI Automations Are Revolutionizing the Kenyan Business Scene"
-description: "How artificial intelligence is transforming industries across Kenya, from finance to agriculture"
-category: "Automation"
-image: "https://images.unsplash.com/photo-1712002641088-9d76f9080889?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+title: "The Importance of Website Accessibility in Kenya: Building an Inclusive Digital Future"
+description: "In Kenya's rapidly evolving digital landscape, where internet penetration growing website accessibility has emerged as a critical priority"
+category: "Accessibility"
+image: "/images/blog/the-importance-of-website-accessibility-in-kenya.jpg"
 date: "2025-05-27"
 published: true
 author:

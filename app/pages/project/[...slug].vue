@@ -124,7 +124,7 @@ onUnmounted(() => {
               <p class="mt-2 line-clamp-1 text-sm/6 text-muted">{{ project.description }}</p>
             </div>
             <div v-motion-slide-visible-once-bottom :delay="200" class="relative my-8 flex items-center gap-x-4">
-              <NuxtImg :src="project.client_logo" alt="Author Profile Picture" class="size-10 object-contain rounded-full" />
+              <NuxtImg height="42rem" :src="project.client_logo" alt="Author Profile Picture" class="size-10 object-contain rounded-full" placeholder />
               <div class="text-sm/6">
                 <p class="font-semibold">
                   {{ project.client_name }}
@@ -141,7 +141,7 @@ onUnmounted(() => {
           </div>
 
           <article class="mt-12">
-            <ContentRenderer v-if="project" :value="project" :prose="true" class="content" />
+            <ContentRenderer v-if="project" :value="project" :prose="true" class="prose dark:prose-invert" />
           </article>
 
           <div class="mt-32 mb-4">

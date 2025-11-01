@@ -128,7 +128,7 @@ onUnmounted(() => {
             <NuxtImg height="42rem" :src="post.image" class="rounded-lg w-full object-cover" alt="Cover image for this blog post" placeholder />
           </div>
           <article class="mt-12 max-w-4xl">
-            <ContentRenderer v-if="post" :value="post" :prose="true" class="content" />
+            <ContentRenderer v-if="post" :value="post" :prose="true" class="prose dark:prose-invert" />
           </article>
           <div class="mt-32 mb-4">
             <UContentSurround :surround="sorroundLinks" />

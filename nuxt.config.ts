@@ -44,7 +44,7 @@ export default defineNuxtConfig({
   },
   image: {
     quality: 80,
-    format: ["webp"],
+    format: ["avif", "webp"],
     screens: {
       xs: 320,
       sm: 640,
@@ -65,6 +65,29 @@ export default defineNuxtConfig({
       markdown: {
         toc: {
           depth: 3,
+        },
+        highlight: {
+          theme: {
+            default: "github-light",
+            dark: "github-dark",
+          },
+          preload: [
+            "json",
+            "js",
+            "ts",
+            "html",
+            "css",
+            "vue",
+            "diff",
+            "shell",
+            "markdown",
+            "mdc",
+            "yaml",
+            "bash",
+            "ini",
+            "dotenv",
+            "php",
+          ],
         },
       },
     },

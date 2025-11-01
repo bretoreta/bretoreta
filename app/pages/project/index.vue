@@ -24,7 +24,7 @@ const { data: projects } = await useAsyncData('projects', () => {
               {{ project.title }}
             </NuxtLink>
           </h3>
-          <NuxtImg height="200px" :src="project.image" class="mt-4 rounded-md" />
+          <NuxtImg height="200px" :src="project.image" class="mt-4 rounded-md" placeholder />
           <p class="mt-5 line-clamp-3 text-sm/6 text-muted">{{ project.description }}</p>
         </div>
         <div class="relative mt-8 flex items-center gap-x-4 w-full">
