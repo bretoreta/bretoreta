@@ -4,7 +4,7 @@ link: "https://tahasabit.com"
 description: "A visually striking, SEO-optimized portfolio and blog for TahaSabit Photography, built to attract corporate, commercial, event, and fashion clients."
 category: "Website"
 image: "/images/project/tahasabit.png"
-date: "2025-08-01T10:00:00Z"
+date: "2025-08-01"
 status: "published"
 published: true
 featured: true

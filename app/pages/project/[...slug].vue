@@ -4,12 +4,13 @@ import { useRoute } from 'vue-router'
 import { cn } from '@sglara/cn'
 import { AlignLeft } from 'lucide-vue-next'
 
-// Active section state
-const activeSection = ref(null)
-let observer = null
+/** Track ALL visible sections */
+const activeSections = ref(new Set())
+let observer;
+
 const route = useRoute()
 
-const { data: project } = await useAsyncData('project', () =>
+const { data: project } = await useAsyncData(route.path, () =>
   queryCollection('project').path(route.path).first()
 )
 
@@ -17,10 +18,25 @@ if (!project.value) {
   throw createError({ statusCode: 404, statusMessage: 'Project not found' })
 }
 
-const { data: sorroundLinks } = await useAsyncData('projectSorround', () => {
-  return queryCollectionItemSurroundings('project', route.path)
-    .order('date', 'DESC')
-})
+const { data: sorroundLinks } = await useAsyncData(`${route.path}-surround`, () =>
+  queryCollectionItemSurroundings('project', route.path).order('date', 'DESC')
+)
+
+const links = computed(() => [{
+  icon: 'i-lucide-file-pen',
+  label: 'Edit this page',
+  to: `https://github.com/bretoreta/bretoreta/edit/main/content/${project?.value?.stem}.md`,
+  target: '_blank'
+}, {
+  icon: 'i-lucide-star',
+  label: 'Star on GitHub',
+  to: 'https://github.com/bretoreta/bretoreta',
+  target: '_blank'
+}, {
+  label: 'Contact Me',
+  icon: 'i-lucide-rocket',
+  to: '/contact'
+}])
 
 useSeoMeta({
   title: `${project.value.title} | Bret Oreta`,
@@ -29,65 +45,68 @@ useSeoMeta({
   ogDescription: project.value.description,
   ogImage: project.value.image,
   twitterCard: 'summary_large_image',
-  ogType: "post",
+  ogType: 'post',
 })
 
-// Smooth scroll function
 const scrollToSection = (id) => {
   const el = document.getElementById(id)
-  if (el) {
-    window.scrollTo({
-      top: el.getBoundingClientRect().top + window.scrollY - 80,
-      behavior: 'smooth',
-    })
-  }
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
 }
 
-// Setup Intersection Observer after content render
 onMounted(() => {
   nextTick(() => {
-    // Use all headings with IDs in toc
-    if (!project.value?.body?.toc?.links) return
-    const ids = project.value.body.toc.links.map(link => link.id)
-    const sectionElements = ids
-      .map(id => document.getElementById(id))
+    const links = project.value?.body?.toc?.links ?? []
+    if (!links.length) return
+
+    const sectionEls = links
+      .map((l) => document.getElementById(l.id))
       .filter(Boolean)
 
-    observer = new window.IntersectionObserver(
+    /** 
+     * Use multiple thresholds for stable visibility,
+     * and shrink bottom with rootMargin so “near bottom” headings don’t flicker.
+     */
+    observer = new IntersectionObserver(
       (entries) => {
-        // Sort by boundingClientRect.top so the section closest to top gets picked
-        const visibleSections = entries
-          .filter(entry => entry.isIntersecting)
-          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)
+        // batch updates in a single RAF to avoid layout thrash
+        requestAnimationFrame(() => {
+          const next = new Set(activeSections.value)
+          for (const entry of entries) {
+            const id = (entry.target).id
+            // consider it “active” if it actually intersects some portion
+            // and its top isn’t hidden behind the sticky header
+            const headerOffset = 80
+            const topVisible = entry.boundingClientRect.top >= headerOffset || entry.isIntersecting
 
-        if (visibleSections.length > 0) {
-          activeSection.value = visibleSections[0].target.id
-        } else {
-          // Optionally: Find the section just above the viewport
-          const aboveSections = entries
-            .filter(entry => entry.boundingClientRect.top < 80) // 80 = offset
-            .sort((a, b) => b.boundingClientRect.top - a.boundingClientRect.top)
-          if (aboveSections.length > 0) {
-            activeSection.value = aboveSections[0].target.id
+            if (entry.isIntersecting && topVisible && entry.intersectionRatio > 0) {
+              next.add(id)
+            } else {
+              next.delete(id)
+            }
           }
-        }
+          // only replace if changed (prevents needless reactivity churn)
+          const changed =
+            next.size !== activeSections.value.size ||
+            [...next].some((v) => !activeSections.value.has(v))
+          if (changed) activeSections.value = next
+        })
       },
       {
         root: null,
-        rootMargin: '0px 0px -70% 0px', // top margin for header offset
-        threshold: 0.1,
+        // top: keep 80px clear for sticky header; bottom: shrink to avoid early activation
+        rootMargin: '-80px 0px -35% 0px',
+        threshold: [0, 0.05, 0.1, 0.25, 0.5, 0.75, 1],
       }
     )
 
-    sectionElements.forEach(el => observer.observe(el))
+    sectionEls.forEach((el) => observer.observe(el))
   })
 })
 
 onUnmounted(() => {
-  if (observer) observer.disconnect()
+  observer?.disconnect()
 })
 </script>
-
 
 <template>
   <div class="px-5">
@@ -105,7 +124,7 @@ onUnmounted(() => {
               <p class="mt-2 line-clamp-1 text-sm/6 text-muted">{{ project.description }}</p>
             </div>
             <div v-motion-slide-visible-once-bottom :delay="200" class="relative my-8 flex items-center gap-x-4">
-              <NuxtImg :src="project.client_logo" alt="Author Profile Picture" class="size-10 object-contain rounded-full bg-gray-50" />
+              <NuxtImg :src="project.client_logo" alt="Author Profile Picture" class="size-10 object-contain rounded-full" />
               <div class="text-sm/6">
                 <p class="font-semibold">
                   {{ project.client_name }}
@@ -126,7 +145,7 @@ onUnmounted(() => {
           </article>
 
           <div class="mt-32 mb-4">
-            <BlogPagination :prev="sorroundLinks[0]" :next="sorroundLinks[1]" />
+            <UContentSurround :surround="sorroundLinks" />
           </div>
         </div>
 
@@ -142,34 +161,23 @@ onUnmounted(() => {
                 <template v-for="(link, index) in project.body.toc.links" :key="link.id">
                   <li v-motion-pop-visible :delay="index * 50">
                     <div class="relative">
-                      <!-- Animated highlight using v-motion -->
                       <div
                         v-motion
-                        v-if="activeSection === link.id"
-                        :initial="{
-                          opacity: 0,
-                          scaleX: 0.5
-                        }"
-                        :enter="{
-                          opacity: 1,
-                          scaleX: 1,
-                          transition: {
-                            type: 'spring',
-                            stiffness: 300,
-                            damping: 25,
-                          }
-                        }"
+                        v-if="activeSections.has(link.id)"
+                        :initial="{ opacity: 0, scaleX: 0.5 }"
+                        :enter="{ opacity: 1, scaleX: 1, transition: { type: 'spring', stiffness: 300, damping: 25 } }"
                         class="absolute left-0 top-1/2 -translate-y-1/2 h-7 w-full rounded bg-primary/20 z-0"
                         style="pointer-events:none"
                       />
-                      <!-- TOC Link -->
+
+                      <!-- link classes -->
                       <a
                         :id="`toc-${link.id}`"
                         :href="`#${link.id}`"
                         @click.prevent="scrollToSection(link.id)"
                         :class="cn(
                           'block relative pl-3 border-l-2 -ml-px transition-all duration-200 ease-in-out text-xs z-10 line-clamp-1',
-                          activeSection === link.id
+                          activeSections.has(link.id)
                             ? 'border-primary text-primary font-bold'
                             : 'text-muted border-transparent hover:border-muted hover:text-primary'
                         )"
@@ -181,6 +189,10 @@ onUnmounted(() => {
                 </template>
               </ul>
             </nav>
+          </div>
+
+          <div class="mt-6 border-t pt-6 pl-6 border-accented">
+            <UPageLinks v-motion-slide-visible-once-bottom :delay="400" title="Community" :links="links" />
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 <script setup>
-const { data: projects } = await useAsyncData('projects', () => {
+const route = useRoute()
+const { data: projects } = await useAsyncData(route.path, () => {
   return queryCollection('project').where('featured', "=", true).order('date', 'DESC').all()
 })
 </script>

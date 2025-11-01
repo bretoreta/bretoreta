@@ -4,7 +4,7 @@ link: ""
 description: "A Laravel-powered backend for managing multiple WooCommerce stores with AI-driven vector search, automated stock and image sync, and lightning-fast inventory management."
 category: "SaaS / Internal Tool"
 image: "/images/project/wooms.png"
-date: "2025-08-02T10:00:00Z"
+date: "2025-08-02"
 status: "published"
 published: true
 featured: true

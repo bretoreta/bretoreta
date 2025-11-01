@@ -1,36 +1,24 @@
 <script setup>
-import { ref, onMounted, onUnmounted, nextTick, watch } from 'vue'
+import { ref, onMounted, onUnmounted, nextTick } from 'vue'
 import { useRoute } from 'vue-router'
 import { cn } from '@sglara/cn'
 import { AlignLeft } from 'lucide-vue-next'
 
-// Active section state
-const activeSection = ref(null)
-let observer = null
+/** Track ALL visible sections */
+const activeSections = ref(new Set())
+let observer;
 const route = useRoute()
-const tocLinks = ref([])
 
 // Nuxt Content fetch (your code)
-const { data: post } = await useAsyncData('blog', () =>
+const { data: post } = await useAsyncData(route.path, () =>
   queryCollection('blog').path(route.path).first()
 )
 if (!post.value) {
   throw createError({ statusCode: 404, statusMessage: 'Post not found' })
 }
-const { data: sorroundLinks } = await useAsyncData('blogSorround', () =>
+const { data: sorroundLinks } = await useAsyncData(`${route.path}-surround`, () =>
   queryCollectionItemSurroundings('blog', route.path).order('date', 'DESC')
 )
-
-// Smooth scroll function
-const scrollToSection = (id) => {
-  const el = document.getElementById(id)
-  if (el) {
-    window.scrollTo({
-      top: el.getBoundingClientRect().top + window.scrollY - 80,
-      behavior: 'smooth',
-    })
-  }
-}
 
 useSeoMeta({
   title: `${post.value.title} | Bret Oreta`,
@@ -42,75 +30,80 @@ useSeoMeta({
   ogType: "post",
 })
 
-// Setup Intersection Observer after content render
+
+const links = computed(() => [{
+  icon: 'i-lucide-file-pen',
+  label: 'Edit this page',
+  to: `https://github.com/bretoreta/bretoreta/edit/main/content/${post?.value?.stem}.md`,
+  target: '_blank'
+}, {
+  icon: 'i-lucide-star',
+  label: 'Star on GitHub',
+  to: 'https://github.com/bretoreta/bretoreta',
+  target: '_blank'
+}, {
+  label: 'Contact Me',
+  icon: 'i-lucide-rocket',
+  to: '/contact'
+}])
+
+const scrollToSection = (id) => {
+  const el = document.getElementById(id)
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+}
+
 onMounted(() => {
   nextTick(() => {
-    // Use all headings with IDs in toc
-    if (!post.value?.body?.toc?.links) return
-    
-    // Store TOC links for easier access
-    tocLinks.value = post.value.body.toc.links
-    
-    const ids = tocLinks.value.map(link => link.id)
-    const sectionElements = ids
-      .map(id => document.getElementById(id))
+    const links = post.value?.body?.toc?.links ?? []
+    if (!links.length) return
+
+    const sectionEls = links
+      .map((l) => document.getElementById(l.id))
       .filter(Boolean)
-    
-    // Create a more precise intersection observer
-    observer = new window.IntersectionObserver(
+
+    /** 
+     * Use multiple thresholds for stable visibility,
+     * and shrink bottom with rootMargin so “near bottom” headings don’t flicker.
+     */
+    observer = new IntersectionObserver(
       (entries) => {
-        // Find the section that's most visible in the viewport
-        let bestEntry = null
-        let maxVisibility = 0
-        
-        entries.forEach(entry => {
-          // Calculate visibility percentage
-          const visibility = entry.intersectionRatio
-          
-          // Prioritize sections that are closer to the top of the viewport
-          const topScore = 1 - Math.min(1, Math.abs(entry.boundingClientRect.top) / window.innerHeight)
-          
-          // Combined score
-          const score = visibility * 0.7 + topScore * 0.3
-          
-          if (score > maxVisibility) {
-            maxVisibility = score
-            bestEntry = entry
+        // batch updates in a single RAF to avoid layout thrash
+        requestAnimationFrame(() => {
+          const next = new Set(activeSections.value)
+          for (const entry of entries) {
+            const id = (entry.target).id
+            // consider it “active” if it actually intersects some portion
+            // and its top isn’t hidden behind the sticky header
+            const headerOffset = 80
+            const topVisible = entry.boundingClientRect.top >= headerOffset || entry.isIntersecting
+
+            if (entry.isIntersecting && topVisible && entry.intersectionRatio > 0) {
+              next.add(id)
+            } else {
+              next.delete(id)
+            }
           }
+          // only replace if changed (prevents needless reactivity churn)
+          const changed =
+            next.size !== activeSections.value.size ||
+            [...next].some((v) => !activeSections.value.has(v))
+          if (changed) activeSections.value = next
         })
-        
-        if (bestEntry) {
-          activeSection.value = bestEntry.target.id
-        }
       },
       {
         root: null,
-        rootMargin: '-100px 0px -60% 0px', // Adjusted for better section detection
-        threshold: [0, 0.1, 0.5, 0.8, 1], // Multiple thresholds for better tracking
+        // top: keep 80px clear for sticky header; bottom: shrink to avoid early activation
+        rootMargin: '-80px 0px -35% 0px',
+        threshold: [0, 0.05, 0.1, 0.25, 0.5, 0.75, 1],
       }
     )
-    
-    sectionElements.forEach(el => observer.observe(el))
-    
-    // Set initial active section if none is detected
-    if (sectionElements.length > 0 && !activeSection.value) {
-      activeSection.value = sectionElements[0].id
-    }
+
+    sectionEls.forEach((el) => observer.observe(el))
   })
 })
 
 onUnmounted(() => {
-  if (observer) observer.disconnect()
-})
-
-// Watch for active section changes to update highlight animation
-watch(activeSection, (newSection) => {
-  if (!newSection) return
-  
-  // Add a small delay to ensure DOM is updated
-  nextTick(() => {
-    const activeElement = document.getElementById(`toc-${newSection}`)
-  })
+  observer?.disconnect()
 })
 </script>
 
@@ -138,38 +131,41 @@ watch(activeSection, (newSection) => {
             <ContentRenderer v-if="post" :value="post" :prose="true" class="content" />
           </article>
           <div class="mt-32 mb-4">
-            <BlogPagination :prev="sorroundLinks[0]" :next="sorroundLinks[1]" />
+            <UContentSurround :surround="sorroundLinks" />
+            <!-- <BlogPagination :prev="sorroundLinks[0]" :next="sorroundLinks[1]" /> -->
           </div>
         </div>
         
         <!-- TOC SIDEBAR -->
         <div class="sticky top-20 hidden h-fit lg:block">
-          <div v-motion-slide-visible-once-bottom :delay="400">
-            <span class="flex items-center gap-2 text-sm font-medium">
+          <div>
+            <span v-motion-pop-visible class="flex items-center gap-2 text-sm font-medium">
               <AlignLeft class="h-4 w-4" />
               Table of Contents
             </span>
             <nav class="mt-4">
               <ul class="space-y-4 pl-4">
-                <template v-for="(link, index) in tocLinks" :key="link.id">
-                  <li>
+                <template v-for="(link, index) in post.body.toc.links" :key="link.id">
+                  <li v-motion-pop-visible :delay="index * 50">
                     <div class="relative">
-                      <!-- Animated highlight using custom animation -->
                       <div
-                        v-if="activeSection === link.id"
-                        class="absolute left-0 top-1/2 -translate-y-1/2 h-7 w-full rounded-md bg-primary/20 z-0 transition-all duration-500 ease-out"
+                        v-motion
+                        v-if="activeSections.has(link.id)"
+                        :initial="{ opacity: 0, scaleX: 0.5 }"
+                        :enter="{ opacity: 1, scaleX: 1, transition: { type: 'spring', stiffness: 300, damping: 25 } }"
+                        class="absolute left-0 top-1/2 -translate-y-1/2 h-7 w-full rounded bg-primary/20 z-0"
                         style="pointer-events:none"
                       />
-                      
-                      <!-- TOC Link with enhanced animation -->
+
+                      <!-- link classes -->
                       <a
                         :id="`toc-${link.id}`"
                         :href="`#${link.id}`"
                         @click.prevent="scrollToSection(link.id)"
                         :class="cn(
-                          'block relative pl-3 border-l-2 -ml-px transition-all duration-300 ease-in-out text-xs z-10',
-                          activeSection === link.id
-                            ? 'border-primary text-primary font-bold scale-[1.02]'
+                          'block relative pl-3 border-l-2 -ml-px transition-all duration-200 ease-in-out text-xs z-10 line-clamp-1',
+                          activeSections.has(link.id)
+                            ? 'border-primary text-primary font-bold'
                             : 'text-muted border-transparent hover:border-muted hover:text-primary'
                         )"
                       >
@@ -180,6 +176,10 @@ watch(activeSection, (newSection) => {
                 </template>
               </ul>
             </nav>
+          </div>
+
+          <div class="mt-6 border-t pt-6 pl-6 border-accented">
+            <UPageLinks v-motion-slide-visible-once-bottom :delay="400" title="Community" :links="links" />
           </div>
         </div>
       </div>

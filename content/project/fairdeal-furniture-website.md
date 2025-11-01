@@ -4,7 +4,7 @@ link: "https://fairdealfurniture.co.ke"
 description: "The website is built on WordPress with WooCommerce for seamless online sales and Pesapal payment integration to facilitate secure mobile money and card payments for customers in Kenya and beyond."
 category: "Website"
 image: "/images/project/fairdealfurniture.png"
-date: "2024-12-01T10:00:00Z"
+date: "2024-12-01"
 status: "published"
 published: true
 featured: true

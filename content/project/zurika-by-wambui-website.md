@@ -4,7 +4,7 @@ link: "https://zurikabywambui.com"
 description: "A modern WooCommerce platform for Zurika by Wambui, blending hand-made Kenyan fashion, art, and women's empowerment with seamless payment and POS integration."
 category: "E-Commerce Website"
 image: "/images/project/zurikabywambui.png"
-date: "2024-05-01T10:00:00Z"
+date: "2025-05-01"
 status: "published"
 published: true
 featured: true

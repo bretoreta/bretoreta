@@ -1,7 +1,7 @@
 {
-  "name": "nuxt-app",
-  "private": true,
+  "name": "bretoreta-portfolio",
   "type": "module",
+  "private": true,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -11,29 +11,21 @@
     "start": "node .output/server/index.mjs"
   },
   "dependencies": {
-    "@nuxt/content": "3.5.1",
-    "@nuxt/fonts": "0.11.3",
-    "@nuxt/icon": "1.12.0",
-    "@nuxt/image": "1.10.0",
-    "@nuxt/ui": "^3.1.1",
-    "@nuxtjs/seo": "3.0.3",
+    "@nuxt/content": "3.8.0",
+    "@nuxt/fonts": "0.11.4",
+    "@nuxt/icon": "2.1.0",
+    "@nuxt/image": "1.11.0",
+    "@nuxt/ui": "4.1.0",
+    "@nuxtjs/seo": "3.2.2",
     "@sglara/cn": "^1.0.0",
-    "@splinetool/runtime": "^1.9.92",
-    "@tailwindcss/vite": "^4.1.6",
-    "@vueuse/core": "^13.5.0",
+    "@tailwindcss/vite": "^4.1.16",
     "@vueuse/motion": "^3.0.3",
-    "class-variance-authority": "^0.7.1",
-    "embla-carousel-autoplay": "^8.6.0",
-    "embla-carousel-vue": "^8.6.0",
-    "lucide-vue-next": "^0.525.0",
-    "motion-v": "^1.4.0",
-    "nuxt": "^3.17.2",
-    "tailwindcss": "^4.1.6",
-    "vue": "^3.5.13",
-    "vue-router": "^4.5.1"
-  },
-  "packageManager": "pnpm@10.10.0+sha512.d615db246fe70f25dcfea6d8d73dee782ce23e2245e3c4f6f888249fb568149318637dca73c2c5c8ef2a4ca0d5657fb9567188bfab47f566d1ee6ce987815c39",
-  "devDependencies": {
-    "@iconify-json/lucide": "^1.2.41"
+    "better-sqlite3": "^12.4.1",
+    "lucide-vue-next": "^0.552.0",
+    "nuxt": "^4.2.0",
+    "tailwindcss": "^4.1.16",
+    "typescript": "^5.6.3",
+    "vue": "^3.5.22",
+    "vue-router": "^4.6.3"
   }
 }

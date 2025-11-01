@@ -39,7 +39,7 @@
 </template>
 
 <script setup>
-const { data } = await useAsyncData('/', () => {
+const { data } = await useAsyncData('blog', () => {
   return queryCollection('blog').order('date', 'DESC').limit(3).all()
 })
 

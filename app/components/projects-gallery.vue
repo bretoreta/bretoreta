@@ -33,7 +33,7 @@
 		<div>
 			<UCarousel :items="items" v-slot="{ item }" :ui="{ item: 'basis-1/1 lg:basis-1/3' }" dots :autoplay="{ stopOnInteraction:true }">
 				<NuxtLink :to="item.path" class="group rounded-lg overflow-hidden">
-					<div class="group relative h-full min-h-[27rem] max-w-full overflow-hidden rounded-xl md:aspect-[5/4] lg:aspect-[16/9]">
+					<div class="group relative h-full min-h-108 max-w-full overflow-hidden rounded-xl md:aspect-5/4 lg:aspect-video">
 						<NuxtImg
 							format="webp,avif"
 							quality="80"

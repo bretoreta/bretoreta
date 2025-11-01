@@ -4,7 +4,7 @@ link: "https://ximivogue.co.ke"
 description: "A vibrant, mobile-first WooCommerce website for XimiVogue Kenya—built to capture the energy and playfulness of the Korean lifestyle brand and drive online sales."
 category: "Website"
 image: "/images/project/ximivogue.png"
-date: "2024-04-15T10:00:00Z"
+date: "2024-04-15"
 status: "published"
 published: true
 featured: true

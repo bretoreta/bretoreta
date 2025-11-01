@@ -3,7 +3,7 @@
     <!-- Animated Background -->
     <canvas ref="particleCanvas" class="absolute top-0 left-0 z-0"></canvas>
 
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center z-10">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center z-10 h-full">
       <!-- Text Section -->
       <div class="md:col-span-7">
         <Availability v-motion-slide-bottom />
