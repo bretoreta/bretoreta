@@ -1,28 +1,31 @@
 <template>
-    <div class="grid gap-12 py-12">
-        <div class="max-w-xl mb-10 md:mx-auto flex flex-col items-center sm:text-center lg:max-w-2xl md:mb-12">
-          <h2 v-motion-slide-visible-once-bottom class="max-w-lg mb-6 text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none">
-              Join companies that innovate with
-              <span class="relative px-1">
-                  <div class="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-primary/20"></div>
-                  <span class="relative inline-block text-primary">confidence</span>
-              </span>
+  <section id="clients" aria-labelledby="clients-title" class="py-14 sm:py-20">
+    <div class="mx-auto w-full max-w-7xl px-2 sm:px-6 lg:px-10">
+      <div class="grid gap-10">
+        <div class="mx-auto max-w-2xl text-center">
+          <h2
+            id="clients-title"
+            v-motion-slide-visible-once-bottom
+            class="text-3xl font-extrabold tracking-tight sm:text-4xl"
+          >
+            Trusted by teams who want
+            <span class="relative px-1">
+              <span class="absolute inset-x-0 bottom-0 h-3 -skew-x-12 bg-primary/20"></span>
+              <span class="relative text-primary">results</span>
+            </span>
+            (not busywork).
           </h2>
-          <p v-motion-slide-visible-once-bottom :delay="100" class="text-base text-muted md:text-lg">
-              These industry leaders chose our solutions to power their growth—and we're ready to help you write your success story next.
+          <p v-motion-slide-visible-once-bottom :delay="100" class="mt-3 text-base text-muted md:text-lg">
+            A few of the brands I've helped ship faster, automate smarter, and convert better.
           </p>
         </div>
-        <div class="relative overflow-hidden" v-motion-fade-visible-once :delay="200">
-            <!-- Fade overlay on left side -->
-            <div class="absolute left-0 top-0 bottom-0 w-32 z-10 bg-gradient-to-r from-gray-50 dark:from-[#0d1117] to-transparent"></div>
-            
-            <!-- Fade overlay on right side -->
-            <div class="absolute right-0 top-0 bottom-0 w-32 z-10 bg-gradient-to-l from-gray-50 dark:from-[#0d1117] to-transparent"></div>
-        
-            <!-- Scrolling logos container -->
-            <div class="flex items-center px-2">
-                <!-- First set (visible) -->
-                <div class="flex shrink-0 items-center justify-around min-w-full animate-scroll">
+
+        <div class="group relative overflow-hidden" v-motion-fade-visible-once :delay="200">
+          <div class="pointer-events-none absolute left-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-r from-gray-50 dark:from-[#050807] to-transparent"></div>
+          <div class="pointer-events-none absolute right-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-l from-gray-50 dark:from-[#050807] to-transparent"></div>
+
+          <div class="flex items-center px-2">
+            <div class="flex shrink-0 items-center justify-around min-w-full animate-scroll">
                     <NuxtImg
                       class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
                       format="webp,avif"
@@ -65,56 +68,57 @@
                       alt="Emerge Global's Logo"
                       src="/images/logo/emergeglobal.jpg"
                     />
-                </div>
-            
-                <!-- Duplicate set (for seamless looping) -->
-                <div class="flex shrink-0 items-center justify-around min-w-full animate-scroll" aria-hidden="true">
-                    <NuxtImg
-                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                      format="webp,avif"
-                      alt="Fairdeal Furniture's Logo"
-                      src="/images/logo/fairdealfurniture.webp"
-                    />
-                    <NuxtImg
-                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                      format="webp,avif"
-                      alt="Inkpot Group's Logo"
-                      src="/images/logo/inkpotgroup.png"
-                    />
-                    <NuxtImg
-                      class="h-12 mx-8 grayscale invert-100 hover:grayscale-0 hover:invert-0 transition-opacity"
-                      format="webp,avif"
-                      alt="Zurika by Wambui's Logo"
-                      src="/images/logo/zurikabywambui.webp"
-                    />
-                    <NuxtImg
-                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                      format="webp,avif"
-                      alt="Ashley Furniture's Logo"
-                      src="/images/logo/ashleyfurniture.webp"
-                    />
-                    <NuxtImg
-                      class="h-12 mx-8 grayscale invert-100 hover:grayscale-0 transition-opacity"
-                      format="webp,avif"
-                      alt="Infinity Labs' Logo"
-                      src="/images/logo/infinitylabs.png"
-                    />
-                    <NuxtImg
-                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                      format="webp,avif"
-                      alt="XIMI Vogue's Logo"
-                      src="/images/logo/ximivogue.png"
-                    />
-                    <NuxtImg
-                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                      format="webp,avif"
-                      alt="Emerge Global's Logo"
-                      src="/images/logo/emergeglobal.jpg"
-                    />
-                </div>
             </div>
+
+            <div class="flex shrink-0 items-center justify-around min-w-full animate-scroll" aria-hidden="true">
+                    <NuxtImg
+                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                      format="webp,avif"
+                      alt="Fairdeal Furniture's Logo"
+                      src="/images/logo/fairdealfurniture.webp"
+                    />
+                    <NuxtImg
+                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                      format="webp,avif"
+                      alt="Inkpot Group's Logo"
+                      src="/images/logo/inkpotgroup.png"
+                    />
+                    <NuxtImg
+                      class="h-12 mx-8 grayscale invert-100 hover:grayscale-0 hover:invert-0 transition-opacity"
+                      format="webp,avif"
+                      alt="Zurika by Wambui's Logo"
+                      src="/images/logo/zurikabywambui.webp"
+                    />
+                    <NuxtImg
+                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                      format="webp,avif"
+                      alt="Ashley Furniture's Logo"
+                      src="/images/logo/ashleyfurniture.webp"
+                    />
+                    <NuxtImg
+                      class="h-12 mx-8 grayscale invert-100 hover:grayscale-0 transition-opacity"
+                      format="webp,avif"
+                      alt="Infinity Labs' Logo"
+                      src="/images/logo/infinitylabs.png"
+                    />
+                    <NuxtImg
+                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                      format="webp,avif"
+                      alt="XIMI Vogue's Logo"
+                      src="/images/logo/ximivogue.png"
+                    />
+                    <NuxtImg
+                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                      format="webp,avif"
+                      alt="Emerge Global's Logo"
+                      src="/images/logo/emergeglobal.jpg"
+                    />
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </section>
 </template>
   
   <style>
@@ -128,5 +132,16 @@
     }
     .animate-scroll {
       animation: scroll 60s linear infinite;
+    }
+
+    .group:hover .animate-scroll {
+      animation-play-state: paused;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .animate-scroll {
+        animation: none !important;
+        transform: translateX(0) !important;
+      }
     }
   </style>

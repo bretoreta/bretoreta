@@ -3,12 +3,12 @@
   <div class="mt-10 px-5 relative md:pt-20">
     <div class="page-grid-top"></div>
     <div class="mx-auto max-w-2xl lg:mx-0">
-      <h2 v-motion-slide-visible-once-bottom class="text-4xl font-bold tracking-tight text-pretty sm:text-5xl">Contact Me</h2>
+      <h1 v-motion-slide-visible-once-bottom class="text-4xl font-extrabold tracking-tight text-pretty sm:text-5xl">Contact Me</h1>
       <p v-motion-slide-visible-once-bottom :delay="100" class="mt-2 text-lg/8 text-muted">Let's build something together! I'm always open to discussing projects, partnerships, or just geeking out about tech. Reach out below—I respond to every thoughtful message.</p>
     </div>
     <div class="mx-auto mt-10 pb-10 border-t border-gray-200 dark:border-muted border-dashed pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none">
       <div>
-        <Availability v-motion-slide-visible-once-bottom :delay="150" />
+        <Availability :available="true" v-motion-slide-visible-once-bottom :delay="150" />
         <div class="mt-4">
           <h5 v-motion-slide-visible-once-bottom :delay="150" class="text-3xl font-bold">Reach Out</h5>
           <p v-motion-slide-visible-once-bottom :delay="200">Have a project in mind or need expert guidance? Let’s talk.</p>
@@ -30,8 +30,6 @@
         </div>
       </div>
     </div>
-    <div class="bg-black mt-20 border-accented border rounded-t-md">
-      <Footer />
-    </div>
+    <Footer />
   </div>
 </template>

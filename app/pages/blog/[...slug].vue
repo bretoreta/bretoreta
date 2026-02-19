@@ -108,13 +108,19 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="lg:px-5 pt-10 lg:pt-14">
-    <div v-if="post" class="grid justify-center w-full">
-      <div class="relative grid-cols-1 lg:grid-cols-3 gap-20 grid md:pt-20">
+  <div class="py-10 sm:py-14">
+    <div v-if="post" class="mx-auto w-full max-w-7xl px-2 sm:px-6 lg:px-10">
+      <div class="relative grid-cols-3 gap-10 lg:grid lg:gap-16">
         <div class="page-grid-top"></div>
         <!-- MAIN BLOG CONTENT -->
         <div class="lg:col-span-2">
           <div>
+            <div v-motion-slide-visible-once-bottom class="mb-5">
+              <NuxtLink to="/blog" class="inline-flex items-center gap-2 text-sm font-semibold text-muted hover:text-gray-900 dark:hover:text-white">
+                <Icon name="lucide:arrow-left" class="size-4" />
+                Back to blog
+              </NuxtLink>
+            </div>
             <div v-motion-slide-visible-once-bottom class="flex items-center gap-x-4 text-xs">
               <time class="text-gray-500 dark:text-muted">
                 {{ new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) }}

@@ -1,60 +1,82 @@
+<script setup lang="ts">
+const stats = [
+  {
+    value: '2.4M',
+    label: 'Money saved',
+    detail: 'Average annual cost reduction reported by ops-heavy teams after automation.'
+  },
+  {
+    value: '35%',
+    label: 'Conversion lift',
+    detail: 'Typical improvement after rebuilding the hero, offer clarity, and funnel friction.'
+  },
+  {
+    value: '98%',
+    label: 'Uptime mindset',
+    detail: 'Monitoring + guardrails so your business doesn\'t go dark when traffic spikes.'
+  },
+  {
+    value: '15h/wk',
+    label: 'Time returned',
+    detail: 'Automation that removes manual work without losing control or quality.'
+  }
+]
+</script>
+
 <template>
-    <div class="pb-8">
-        <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-            <div class="mb-4" v-motion-slide-visible-once-bottom>
-                <UBadge>We are growing</UBadge>
-            </div>
-            <h2 v-motion-slide-visible-once-bottom :delay="100" class="max-w-lg mb-6 text-3xl font-black leading-none tracking-tight bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text sm:text-4xl md:mx-auto">
-                <span class="relative inline-block text-green-900">
-                    <svg viewBox="0 0 52 24" fill="currentColor" class="absolute top-0 left-0 -z-10 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
-                        <defs>
-                            <pattern id="07690130-d013-42bc-83f4-90de7ac68f76" x="0" y="0" width=".135" height=".30">
-                                <circle cx="1" cy="1" r="0.9"></circle>
-                            </pattern>
-                        </defs>
-                        <rect fill="url(#07690130-d013-42bc-83f4-90de7ac68f76)" width="52" height="24"></rect>
-                    </svg>
-                    <span class="relative"></span>
-                </span>
-                Proven Results That Drive Business 
-                <span class="relative px-1">
-                    <div class="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-primary/20"></div>
-                    <span class="relative inline-block text-primary">Forward</span>
-                </span>
-            </h2>
-            <p v-motion-slide-visible-once-bottom :delay="150" class="text-base text-muted md:text-lg">
-                We don’t just promise outcomes—we deliver them. Here’s how our solutions translate into tangible success for businesses like yours
-            </p>
+  <section id="results" aria-labelledby="results-title" class="py-14 sm:py-20">
+    <div class="mx-auto w-full max-w-7xl px-2 sm:px-6 lg:px-10">
+      <div class="relative overflow-hidden border-t border-black/10 bg-white/40 p-2 md:p-6 backdrop-blur dark:border-white/10 dark:bg-black/20 sm:p-10">
+        <div aria-hidden="true" class="pointer-events-none absolute inset-0">
+          <div class="absolute inset-0 bg-[radial-gradient(900px_520px_at_50%_0%,rgba(16,185,129,0.16),transparent_60%)]" />
+          <div class="absolute inset-0 opacity-70 [mask-image:radial-gradient(ellipse_at_center,black_55%,transparent_80%)]">
+            <InteractiveGrid className="border-black/10 dark:border-white/10" squaresClassName="stroke-black/10 dark:stroke-white/10" :width="46" :height="46" :squares="[18, 10]" />
+          </div>
         </div>
-        <div v-motion-pop-visible-once :delay="100" class="relative w-full p-px mx-auto mb-4 overflow-hidden transition-shadow duration-300 border border-accented rounded lg:mb-8 lg:max-w-4xl group hover:shadow-xl">
-            <div class="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-primary group-hover:scale-x-100"></div>
-            <div class="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-primary group-hover:scale-y-100"></div>
-            <div class="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-primary group-hover:scale-x-100"></div>
-            <div class="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-primary group-hover:scale-y-100"></div>
-            <div class="relative flex flex-col items-center h-full py-10 duration-300 rounded-sm transition-color sm:items-stretch sm:flex-row">
-            <div class="px-12 py-8 text-center">
-                <h6 class="text-4xl font-bold text-deep-purple-accent-400 sm:text-5xl">
-                    2.4M
-                </h6>
-                <p class="font-bold text-center">Money Saved</p>
-                <p class="text-center md:text-base text-muted">
-                    Average annual cost reduction for enterprise clients
-                </p>
+
+        <div class="relative">
+          <div class="flex justify-center">
+            <div class="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/60 px-3 py-1.5 text-[11px] font-semibold tracking-[0.18em] uppercase text-gray-700 backdrop-blur dark:border-white/10 dark:bg-black/25 dark:text-white/70">
+              <span class="inline-flex size-2 rounded-full bg-primary" />
+              Proof, not promises
             </div>
-            <div class="w-56 h-1 transition duration-300 transform bg-muted rounded-full group-hover:bg-primary group-hover:scale-110 sm:h-auto sm:w-1"></div>
-            <div class="px-12 py-8 text-center">
-                <h6 class="text-4xl font-bold text-deep-purple-accent-400 sm:text-5xl">
-                    98%
-                </h6>
-                <p class="font-bold text-center">Uptime</p>
-                <p class="text-center md:text-base text-muted">
-                    Reliability you can count on for your operations.
-                </p>
-            </div>
-            </div>
+          </div>
+
+          <h2 id="bento-title" class="mt-6 text-center text-3xl font-extrabold tracking-tight sm:text-4xl" v-motion-slide-visible-once-bottom>
+            Outcomes that move the
+            <span class="relative px-1">
+              <span class="absolute inset-x-0 bottom-0 h-3 -skew-x-12 bg-primary/20"></span>
+              <span class="relative text-primary">numbers</span>
+            </span>
+            .
+          </h2>
+          <p class="mx-auto mt-3 max-w-2xl text-center text-base text-muted md:text-lg" v-motion-slide-visible-once-bottom :delay="80">
+            Clean design is the entry fee. The real win is measurable growth and time saved.
+          </p>
         </div>
-        <p class="mx-auto mb-4 text-muted sm:text-center lg:max-w-2xl lg:mb-6 md:px-16">
-            We're proud to collaborate with forward-thinking companies across industries. These partnerships drive our mission to deliver cutting-edge solutions.
+
+        <div class="mt-4 md:mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4" v-motion-slide-visible-once-bottom :delay="200">
+          <div
+            v-for="s in stats"
+            :key="s.label"
+            class="group relative overflow-hidden rounded-2xl border border-black/10 bg-white/50 p-6 shadow-sm backdrop-blur transition hover:-translate-y-0.5 hover:shadow-xl dark:border-white/10 dark:bg-black/20"
+          >
+            <div aria-hidden="true" class="pointer-events-none absolute -inset-24 opacity-0 transition duration-500 group-hover:opacity-100">
+              <div class="absolute inset-0 rounded-full bg-[radial-gradient(closest-side,rgba(16,185,129,0.18),transparent_70%)] blur-2xl" />
+            </div>
+
+            <div class="relative">
+              <div class="text-4xl font-extrabold tracking-tight text-gray-950 dark:text-white">{{ s.value }}</div>
+              <div class="mt-1 text-sm font-semibold text-gray-900 dark:text-white/85">{{ s.label }}</div>
+              <div class="mt-2 text-sm leading-relaxed text-muted">{{ s.detail }}</div>
+            </div>
+          </div>
+        </div>
+
+        <p class="mx-auto mt-8 max-w-2xl text-center text-xs text-muted">
+          * numbers vary by business and baseline.
         </p>
+      </div>
     </div>
-  </template>
+  </section>
+</template>

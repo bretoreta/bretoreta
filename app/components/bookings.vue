@@ -1,30 +1,34 @@
 <template>
-  <div class="relative grid items-center pt-10 lg:pt-20 px-0 lg:px-14">
-    <div class="max-w-xl mb-10 md:mx-auto flex flex-col items-center sm:text-center lg:max-w-2xl md:mb-12">
-      <h2 
-        v-motion-slide-visible-once-bottom 
-        class="max-w-lg mb-6 text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none"
-      >
-        Schedule Your Personal
-        <span class="relative px-1">
-          <div class="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-primary/20"></div>
-          <span class="relative inline-block text-primary">Consultation</span>
-        </span>
-      </h2>
-      <p 
-        v-motion-slide-visible-once-bottom 
-        :delay="100" 
-        class="text-base text-muted md:text-lg"
-      >
-        Book your personal strategy session to unlock solutions designed for your success. Your transformation starts here.
-      </p>
+  <section id="book" aria-labelledby="book-title" class="py-14 sm:py-20">
+    <div class="mx-auto w-full max-w-7xl px-2 sm:px-6 lg:px-10">
+      <div class="mx-auto mb-10 max-w-2xl text-center md:mb-12">
+        <h2
+          id="book-title"
+          v-motion-slide-visible-once-bottom
+          class="text-3xl font-extrabold tracking-tight sm:text-4xl"
+        >
+          Book a free
+          <span class="relative px-1">
+            <span class="absolute inset-x-0 bottom-0 h-3 -skew-x-12 bg-primary/20"></span>
+            <span class="relative inline-block text-primary">15-minute</span>
+          </span>
+          strategy call.
+        </h2>
+        <p v-motion-slide-visible-once-bottom :delay="100" class="mt-3 text-base text-muted md:text-lg">
+          You'll leave with a clear plan: what to fix first, what to automate, and what to build to increase conversions.
+        </p>
+      </div>
+
+      <div class="grid gap-8 lg:grid-cols-12 lg:items-start">
+        <div class="lg:col-span-12">
+          <TestimonialSlider :testimonials="testimonials" />
+          <div>
+            <div ref="calEmbed" style="width:100%;min-height:760px;overflow:hidden" class="rounded-[1.1rem]"></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="pb-10">
-      <TestimonialSlider :testimonials="testimonials" />
-    </div>
-    <!-- Container for the embed -->
-    <div ref="calEmbed" style="width:100%;height:100%;overflow:scroll"></div>
-  </div>
+  </section>
 </template>
 
 <script setup lang="ts">
