@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto w-full max-w-3xl text-center">
+  <div class="mx-auto w-full max-w-3xl text-center overflow-hidden">
     <!-- Testimonial image -->
     <div class="relative h-32">
       <div

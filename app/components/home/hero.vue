@@ -1,5 +1,5 @@
 <template>
-  <section class="relative isolate pt-10 sm:pt-14">
+  <section class="relative isolate pt-10 sm:pt-14 overflow-hidden">
     <div aria-hidden="true" class="pointer-events-none absolute inset-0">
       <div class="absolute inset-0 bg-[radial-gradient(900px_520px_at_50%_0%,rgba(16,185,129,0.14),transparent_62%)]" />
       <div class="absolute inset-0 opacity-70 mask-[radial-gradient(ellipse_at_center,black_55%,transparent_78%)]">

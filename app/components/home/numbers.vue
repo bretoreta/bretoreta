@@ -29,7 +29,7 @@ const stats = [
       <div class="relative overflow-hidden border-t border-black/10 bg-white/40 p-2 md:p-6 backdrop-blur dark:border-white/10 dark:bg-black/20 sm:p-10">
         <div aria-hidden="true" class="pointer-events-none absolute inset-0">
           <div class="absolute inset-0 bg-[radial-gradient(900px_520px_at_50%_0%,rgba(16,185,129,0.16),transparent_60%)]" />
-          <div class="absolute inset-0 opacity-70 [mask-image:radial-gradient(ellipse_at_center,black_55%,transparent_80%)]">
+          <div class="absolute inset-0 opacity-70 mask-[radial-gradient(ellipse_at_center,black_55%,transparent_80%)]">
             <InteractiveGrid className="border-black/10 dark:border-white/10" squaresClassName="stroke-black/10 dark:stroke-white/10" :width="46" :height="46" :squares="[18, 10]" />
           </div>
         </div>
