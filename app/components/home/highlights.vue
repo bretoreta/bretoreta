@@ -2,13 +2,22 @@
   <section id="process" aria-labelledby="process-title" class="py-14 sm:py-20">
     <div class="mx-auto w-full max-w-7xl px-2 sm:px-6 lg:px-10">
       <div class="relative grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-        <div class="mb-8 lg:mt-0" v-motion-slide-visible-once-bottom :delay="200">
-          <NuxtPicture
-            format="webp,avif"
-            class="cover rounded-2xl border border-black/10 bg-white/40 shadow-sm backdrop-blur dark:border-white/10 dark:bg-black/20"
-            src="/images/pro-juggler.webp"
-            alt="Juggling roles for efficiency illustration"
-          />
+        <div class="lg:col-span-1" v-motion-slide-visible-once-bottom :delay="200">
+            <div class="relative overflow-hidden rounded-2xl border border-black/10 bg-white/40 p-1 shadow-sm backdrop-blur dark:border-white/10 dark:bg-black/20">
+                <div class="relative rounded-[0.95rem] bg-[linear-gradient(135deg,rgba(16,185,129,0.10),rgba(255,255,255,0)_60%)] dark:bg-[linear-gradient(135deg,rgba(16,185,129,0.14),rgba(0,0,0,0)_60%)]">
+                <div aria-hidden="true" class="pointer-events-none absolute inset-0">
+                    <div class="absolute inset-0 bg-[radial-gradient(700px_380px_at_50%_20%,rgba(16,185,129,0.20),transparent_60%)]" />
+                </div>
+
+                <div class="relative p-6">
+                    <NuxtPicture
+                        format="webp,avif"
+                        src="/images/pro-juggler.webp"
+                        alt="Juggling roles for efficiency illustration"
+                    />
+                </div>
+                </div>
+            </div>
         </div>
         <div>
           <h2 id="process-title" class="text-3xl font-extrabold tracking-tight sm:text-4xl" v-motion-slide-visible-once-bottom>
@@ -23,60 +32,58 @@
             You get speed without chaos: clear milestones, tight feedback loops, and production-quality output.
           </p>
 
-          <div class="mt-8 grid gap-3 row-gap-3 lg:grid-cols-2" v-motion-slide-visible-once-bottom :delay="120">
-                <ul class="space-y-3">
-                    <li class="flex items-start">
-                        <span class="mr-1">
-                        <svg class="w-5 h-5 mt-px text-primary" stroke="currentColor" viewBox="0 0 52 52">
-                            <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-                        </svg>
-                        </span>
-                        Build modularly so upgrades are painless.
-                    </li>
-                    <li class="flex items-start">
-                        <span class="mr-1">
-                        <svg class="w-5 h-5 mt-px text-primary" stroke="currentColor" viewBox="0 0 52 52">
-                            <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-                        </svg>
-                        </span>
-                        Integrate with your existing tools without downtime.
-                    </li>
-                    <li class="flex items-start">
-                        <span class="mr-1">
-                        <svg class="w-5 h-5 mt-px text-primary" stroke="currentColor" viewBox="0 0 52 52">
-                            <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-                        </svg>
-                        </span>
-                        Prototype fast, then harden for production.
-                    </li>
-                </ul>
-                <ul class="space-y-3">
-                    <li class="flex items-start">
-                        <span class="mr-1">
-                        <svg class="w-5 h-5 mt-px text-primary" stroke="currentColor" viewBox="0 0 52 52">
-                            <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-                        </svg>
-                        </span>
-                        Practical today, scalable tomorrow.
-                    </li>
-                    <li class="flex items-start">
-                        <span class="mr-1">
-                        <svg class="w-5 h-5 mt-px text-primary" stroke="currentColor" viewBox="0 0 52 52">
-                            <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-                        </svg>
-                        </span>
-                        Simple documentation that your team actually uses.
-                    </li>
-                    <li class="flex items-start">
-                        <span class="mr-1">
-                        <svg class="w-5 h-5 mt-px text-primary" stroke="currentColor" viewBox="0 0 52 52">
-                            <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-                        </svg>
-                        </span>
-                        Continuous improvement without breaking what works.
-                    </li>
-                </ul>
-            </div>
+          <div class="mt-8" v-motion-slide-visible-once-bottom :delay="120">
+            <ul class="space-y-3">
+                <li class="flex items-start">
+                    <span class="mr-1">
+                    <svg class="w-5 h-5 mt-px text-primary" stroke="currentColor" viewBox="0 0 52 52">
+                        <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                    </svg>
+                    </span>
+                    Build modularly so upgrades are painless.
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-1">
+                    <svg class="w-5 h-5 mt-px text-primary" stroke="currentColor" viewBox="0 0 52 52">
+                        <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                    </svg>
+                    </span>
+                    Integrate with your existing tools without downtime.
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-1">
+                    <svg class="w-5 h-5 mt-px text-primary" stroke="currentColor" viewBox="0 0 52 52">
+                        <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                    </svg>
+                    </span>
+                    Prototype fast, then harden for production.
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-1">
+                    <svg class="w-5 h-5 mt-px text-primary" stroke="currentColor" viewBox="0 0 52 52">
+                        <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                    </svg>
+                    </span>
+                    Practical today, scalable tomorrow.
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-1">
+                    <svg class="w-5 h-5 mt-px text-primary" stroke="currentColor" viewBox="0 0 52 52">
+                        <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                    </svg>
+                    </span>
+                    Simple documentation that your team actually uses.
+                </li>
+                <li class="flex items-start">
+                    <span class="mr-1">
+                    <svg class="w-5 h-5 mt-px text-primary" stroke="currentColor" viewBox="0 0 52 52">
+                        <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                    </svg>
+                    </span>
+                    Continuous improvement without breaking what works.
+                </li>
+            </ul>
+					</div>
         </div>
       </div>
     </div>

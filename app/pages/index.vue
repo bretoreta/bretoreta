@@ -1,15 +1,14 @@
 <template>
   <div class="w-full">
     <HomeHero />
-    <CompanyLogos />
-    <Bento />
-    <HomeCompanies />
     <HomeProjects />
+    <CompanyLogos />
+    <!-- <Bento /> -->
+    <HomeCompanies />
     <HomeHighlights />
     <HomeNumbers />
     <Bookings />
     <HomeCta />
     <BlogHighlights />
-    <Footer />
   </div>
 </template>

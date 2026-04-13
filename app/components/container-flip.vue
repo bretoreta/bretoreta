@@ -11,11 +11,11 @@
         
         // Light mode: soft green gradient background
         '[background:linear-gradient(to_bottom,#e6f4ea,#ccf0d6)]',
-        'shadow-[inset_0_-1px_#a7e7b7,inset_0_0_0_1px_#34d399,_0_4px_8px_rgba(52,211,153,0.2)]',
+        'shadow-[inset_0_-1px_#a7e7b7,inset_0_0_0_1px_#34d399,0_4px_8px_rgba(52,211,153,0.2)]',
 
         // Dark mode: deeper green tones
         'dark:[background:linear-gradient(to_bottom,#064e3b,#052e2b)]',
-        'dark:shadow-[inset_0_-1px_#022c22,inset_0_0_0_1px_#16a34a,_0_4px_8px_rgba(22,163,74,0.25)]',
+        'dark:shadow-[inset_0_-1px_#022c22,inset_0_0_0_1px_#16a34a,0_4px_8px_rgba(22,163,74,0.25)]',
 
         props.class
         )

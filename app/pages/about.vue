@@ -16,11 +16,6 @@ const principles = [
     icon: 'target'
   },
   {
-    title: 'Motion with intent',
-    copy: 'Animation is a tool for hierarchy and story. If it does not guide the eye, it is noise.',
-    icon: 'sparkles'
-  },
-  {
     title: 'Ship like it is production',
     copy: 'Performance, accessibility, and SEO fundamentals are the baseline. Reliability is the multiplier.',
     icon: 'shield-check'
@@ -71,7 +66,7 @@ const stack = [
         </div>
       </div>
 
-      <div class="mx-auto w-full px-2 sm:px-6 lg:px-10">
+      <div class="mx-auto w-full max-w-7xl px-2 sm:px-6 lg:px-10">
         <div class="grid items-center gap-10 lg:grid-cols-12 lg:gap-12 py-6">
           <div class="relative z-10 lg:col-span-7">
             <Availability :available="true" v-motion-slide-bottom />
@@ -101,7 +96,7 @@ const stack = [
               </NuxtLink>
             </div>
 
-            <div v-motion-slide-visible-once-bottom :delay="180" class="mt-8 grid gap-5 sm:grid-cols-3">
+            <div v-motion-slide-visible-once-bottom :delay="180" class="mt-8 grid gap-5 sm:grid-cols-2">
               <div
                 v-for="p in principles"
                 :key="p.title"
@@ -281,7 +276,6 @@ const stack = [
         </div>
       </section>
     </main>
-
-    <Footer />
+    
   </div>
 </template>

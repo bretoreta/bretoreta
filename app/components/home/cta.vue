@@ -51,69 +51,7 @@
                 </div>
 
                 <div class="relative p-6">
-                  <div class="flex items-center justify-between">
-                    <div class="text-[11px] font-semibold tracking-[0.2em] uppercase text-gray-700 dark:text-white/70">What you get</div>
-                    <div class="flex items-center gap-2 text-xs text-gray-700 dark:text-white/70">
-                      <span class="inline-flex size-2 rounded-full bg-primary" />
-                      Conversion-ready
-                    </div>
-                  </div>
-
-                  <div class="mt-4 grid grid-cols-2 gap-4">
-                    <div class="group relative overflow-hidden rounded-xl border border-black/10 bg-white/50 p-2 dark:border-white/10 dark:bg-black/20">
-                      <NuxtImg
-                        src="/images/project/fairdealfurniture.png"
-                        format="webp,avif"
-                        alt="Project preview: Fairdeal Furniture"
-                        class="aspect-[4/3] w-full rounded-lg object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-                      />
-                      <div class="mt-2 flex items-center justify-between">
-                        <div class="text-xs font-semibold">Case study</div>
-                        <div class="text-[11px] text-muted">E-commerce</div>
-                      </div>
-                    </div>
-
-                    <div class="group relative overflow-hidden rounded-xl border border-black/10 bg-white/50 p-2 dark:border-white/10 dark:bg-black/20">
-                      <NuxtImg
-                        src="/images/project/ximivogue.png"
-                        format="webp,avif"
-                        alt="Project preview: XIMI Vogue"
-                        class="aspect-4/3 w-full rounded-lg object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-                      />
-                      <div class="mt-2 flex items-center justify-between">
-                        <div class="text-xs font-semibold">Case study</div>
-                        <div class="text-[11px] text-muted">Ops + UX</div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="mt-5 rounded-xl border border-black/10 bg-white/50 p-4 dark:border-white/10 dark:bg-black/20">
-                    <div class="flex items-center gap-2 text-sm font-semibold text-gray-900 dark:text-white/90">
-                      <Icon name="lucide:calendar-check" class="size-4 text-primary" />
-                      Bookings pipeline
-                    </div>
-                    <div class="mt-2 grid gap-2 text-xs text-muted">
-                      <div class="flex items-center justify-between rounded-lg bg-black/5 px-3 py-2 dark:bg-white/5">
-                        <span class="font-semibold text-gray-900 dark:text-white/85">Lead captured</span>
-                        <span>instant</span>
-                      </div>
-                      <div class="flex items-center justify-between rounded-lg bg-black/5 px-3 py-2 dark:bg-white/5">
-                        <span class="font-semibold text-gray-900 dark:text-white/85">Follow-up</span>
-                        <span>&lt; 60s</span>
-                      </div>
-                      <div class="flex items-center justify-between rounded-lg bg-black/5 px-3 py-2 dark:bg-white/5">
-                        <span class="font-semibold text-gray-900 dark:text-white/85">Booked call</span>
-                        <span>scheduled</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="mt-6 flex items-center justify-between">
-                    <div class="text-xs font-semibold tracking-[0.18em] uppercase text-primary">Premium craft</div>
-                    <NuxtLink to="/project" class="text-sm font-semibold text-gray-900 underline-offset-4 hover:underline dark:text-white">
-                      View case studies
-                    </NuxtLink>
-                  </div>
+                  <NuxtImg src="/images/looney-analytics-and-statistics-guy.svg" />
                 </div>
               </div>
             </div>

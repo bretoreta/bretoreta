@@ -22,7 +22,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="relative min-h-screen bg-gray-50 text-gray-950 dark:bg-[#050807] dark:text-white">
+  <div class="relative bg-gray-50 text-gray-950 dark:bg-[#050807] dark:text-white">
     <div aria-hidden="true" class="pointer-events-none absolute inset-0 overflow-hidden">
       <div class="absolute -top-40 left-1/2 h-168 w-2xl -translate-x-1/2 rounded-full bg-green-500/15 blur-3xl" />
       <div class="absolute top-[55%] -left-40 h-152 w-152 rounded-full bg-emerald-400/10 blur-3xl" />
@@ -41,7 +41,7 @@ useSeoMeta({
         </div>
       </div>
       <div class="hidden lg:flex items-center lg:gap-x-3 shrink-0">
-        <ColorModeToggle />
+        <UColorModeButton />
         <SideMenuOptions />
       </div>
       <div class="block md:hidden">
@@ -60,13 +60,15 @@ useSeoMeta({
     </header>
 
     <div class="relative px-4 sm:px-10 md:px-20 xl:px-32">
-      <main class="flex min-h-screen flex-col">
+      <main class="flex flex-col">
         <div class="grid grid-cols-1 lg:grid-cols-[16px_1fr_16px]">
-          <div class="h-full hidden lg:block text-muted/20 border-l border-dashed border-current bg-[repeating-linear-gradient(315deg,currentColor_0,currentColor_1px,transparent_0,transparent_50%)] bg-[length:10px_10px] bg-fixed" />
+          <div class="h-full hidden lg:block text-muted/20 border-l border-dashed border-current bg-[repeating-linear-gradient(315deg,currentColor_0,currentColor_1px,transparent_0,transparent_50%)] bg-size-[10px_10px] bg-fixed" />
           <slot />
-          <div class="h-full hidden lg:block text-muted/20 border-r border-dashed border-current bg-[repeating-linear-gradient(315deg,currentColor_0,currentColor_1px,transparent_0,transparent_50%)] bg-[length:10px_10px] bg-fixed" />
+          <div class="h-full hidden lg:block text-muted/20 border-r border-dashed border-current bg-[repeating-linear-gradient(315deg,currentColor_0,currentColor_1px,transparent_0,transparent_50%)] bg-size-[10px_10px] bg-fixed" />
         </div>
       </main>
     </div>
+
+    <Footer />
   </div>
 </template>

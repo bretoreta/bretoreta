@@ -13,7 +13,6 @@
               <span class="absolute inset-x-0 bottom-0 h-3 -skew-x-12 bg-primary/20"></span>
               <span class="relative text-primary">results</span>
             </span>
-            (not busywork).
           </h2>
           <p v-motion-slide-visible-once-bottom :delay="100" class="mt-3 text-base text-muted md:text-lg">
             A few of the brands I've helped ship faster, automate smarter, and convert better.
@@ -21,8 +20,8 @@
         </div>
 
         <div class="group relative overflow-hidden" v-motion-fade-visible-once :delay="200">
-          <div class="pointer-events-none absolute left-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-r from-gray-50 dark:from-[#050807] to-transparent"></div>
-          <div class="pointer-events-none absolute right-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-l from-gray-50 dark:from-[#050807] to-transparent"></div>
+          <div class="pointer-events-none absolute left-0 top-0 bottom-0 w-24 z-10 bg-linear-to-r from-gray-50 dark:from-[#050807] to-transparent"></div>
+          <div class="pointer-events-none absolute right-0 top-0 bottom-0 w-24 z-10 bg-linear-to-l from-gray-50 dark:from-[#050807] to-transparent"></div>
 
           <div class="flex items-center px-2">
             <div class="flex shrink-0 items-center justify-around min-w-full animate-scroll">

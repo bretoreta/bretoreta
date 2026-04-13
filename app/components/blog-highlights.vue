@@ -1,15 +1,21 @@
 <template>
-  <div class="pb-20">
+  <div class="pb-10 md:pb-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-10">
       <div class="mx-auto max-w-2xl lg:mx-0">
-        <h2 v-motion-slide-visible-once-bottom class="text-4xl font-semibold tracking-tight text-pretty sm:text-5xl">From the blog</h2>
-        <p v-motion-slide-visible-once-bottom :delay="100" class="mt-2 text-lg/8 text-muted">Learn how to grow your business with our expert advice.</p>
+        <h2 v-motion-slide-visible-once-bottom class="text-3xl font-extrabold tracking-tight sm:text-4xl">From the blog</h2>
+        <p v-motion-slide-visible-once-bottom :delay="100" class="mt-2 text-muted">Learn how to grow your business with our expert advice.</p>
       </div>
-      <div class="mx-auto mt-6 md:mt-14 grid max-w-2xl grid-cols-1 gap-x-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-        <article v-for="(post, index) in data" :key="post.id" class="flex max-w-xl flex-col items-start justify-between" v-motion-slide-visible-once-bottom :delay="100 * index">
-          <div class="flex items-center gap-x-4 text-xs">
-            <time class="text-gray-500 dark:text-muted">{{ formatDate(post.date) }}</time>
-            <span class="relative z-10 rounded-full bg-gray-50 dark:bg-primary/20 px-3 py-1.5 font-medium text-primary">{{ post.category }}</span>
+      <div class="mx-auto mt-6 md:mt-14 grid max-w-2xl grid-cols-1 gap-6 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <article 
+          v-for="(post, index) in data" 
+          :key="post.id" 
+          class="flex max-w-xl flex-col items-start justify-between pb-6 lg:pb-0 lg:pr-6 last:lg:pr-0 border-b last:border-b-0 border-muted lg:border-b-0 lg:border-r last:lg:border-r-0"
+          v-motion-slide-visible-once-bottom 
+          :delay="100 * index"
+        >
+          <div class="flex items-center gap-x-2 text-xs">
+            <time class="text-gray-500 dark:text-white bg-accented px-2 py-1.5 rounded-md">{{ formatDate(post.date) }}</time>
+            <span class="relative z-10 rounded-md bg-gray-50 dark:bg-primary/20 px-3 py-1.5 font-medium text-primary">{{ post.category }}</span>
           </div>
           <div class="group relative">
             <h3 class="mt-3 text-lg/6 font-semibold group-hover:text-muted">

@@ -189,11 +189,6 @@ onUnmounted(() => {
           </div>
         </div>
       </div>
-      
-      <!-- Footer -->
-      <div class="mt-20 rounded-t-md border border-accented bg-black">
-        <Footer />
-      </div>
     </div>
   </div>
 </template>

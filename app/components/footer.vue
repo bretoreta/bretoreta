@@ -1,5 +1,7 @@
 <template>
-    <footer class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+  <div class="grid grid-cols-1 lg:grid-cols-[16px_1fr_16px] relative px-4 sm:px-10 md:px-20 xl:px-32">
+    <div class="h-full hidden lg:block text-muted/20 border-l border-dashed border-current bg-[repeating-linear-gradient(315deg,currentColor_0,currentColor_1px,transparent_0,transparent_50%)] bg-size-[10px_10px] bg-fixed" />
+    <footer class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-7xl md:px-24 lg:px-8 border-t border-muted border-dashed">
       <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
         <div class="sm:col-span-2">
           <Logo />
@@ -63,7 +65,7 @@
           </p>
         </div>
       </div>
-      <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t border-accented lg:flex-row">
+      <div class="flex flex-col-reverse justify-between pt-5 pb-6 border-t border-accented lg:flex-row">
         <p class="text-sm text-muted">
           © Copyright 2025 Bret Oreta. All rights reserved.
         </p>
@@ -80,4 +82,6 @@
         </ul>
       </div>
     </footer>
-  </template>
+    <div class="h-full hidden lg:block text-muted/20 border-r border-dashed border-current bg-[repeating-linear-gradient(315deg,currentColor_0,currentColor_1px,transparent_0,transparent_50%)] bg-size-[10px_10px] bg-fixed" />
+  </div>
+</template>
