@@ -25,24 +25,24 @@ stack:
   - nginx
 ---
 
-# 📸 Case Study: TahaSabit Photography – A Portfolio Built for Business Impact
+# Case Study: TahaSabit Photography – A Portfolio Built for Business Impact
 
-## 🏢 Client: TahaSabit Photography
+## Client: TahaSabit Photography
 
 **TahaSabit Photography** is a dynamic creative business specializing in corporate, event, commercial, fashion, and graphic design photography. To elevate their brand and attract high-value clients, TahaSabit required a modern online portfolio that showcased their work in the best possible light and supported long-term growth.
 
-## 📌 Project Summary
+## Project Summary
 
 > **Objective:**  
 > Build a visually impressive, SEO-optimized portfolio and blog—making it easy for potential clients to view work, read about the creative process, and make contact.
 
-## 🎯 Target Audience
+## Target Audience
 
 - Corporate clients seeking professional photography
 - Event organizers, commercial brands, and fashion industry
 - Agencies and businesses interested in graphic design and creative work
 
-## 🛠️ My Role & Responsibilities
+## My Role & Responsibilities
 
 As the **sole developer**, I delivered end-to-end solutions including:
 
@@ -54,30 +54,30 @@ As the **sole developer**, I delivered end-to-end solutions including:
 - ✅ Creating a seamless blog for sharing photography stories, tips, and recent projects
 - ✅ Providing ongoing maintenance and updates
 
-## 🎨 Design & User Experience
+## Design & User Experience
 
 - Masonry-style image grid for visual variety and elegance
 - Lightbox galleries for high-impact image viewing without leaving the page
 - Clean navigation and fast-loading pages for professional impression
 - Fully responsive—optimized for all devices and screen sizes
 
-## 🔍 Challenges
+## Challenges
 
 - Optimizing large images for web speed without sacrificing quality
 - Ensuring SEO best practices for both portfolio and blog content
 - Creating a layout that balances creativity and business appeal
 
-## 🚀 Results
+## Results
 
-- 📈 Improved client inquiries from corporate, event, and fashion sectors
-- 🌟 Enhanced online visibility through SEO-driven blog and portfolio
-- 🚀 Faster website performance and a modern, professional brand image
+- Improved client inquiries from corporate, event, and fashion sectors
+- Enhanced online visibility through SEO-driven blog and portfolio
+- Faster website performance and a modern, professional brand image
 
-## 🤝 Ongoing Engagement
+## Ongoing Engagement
 
 I continue to maintain and update the site, supporting TahaSabit Photography with new features, blog posts, and technical optimizations as the business grows.
 
-## 🏆 What I’m Most Proud Of
+## What I’m Most Proud Of
 
 Delivering a site that **combines stunning visual presentation with business effectiveness**—making it easy for clients to discover, explore, and engage with TahaSabit’s creative services.
 

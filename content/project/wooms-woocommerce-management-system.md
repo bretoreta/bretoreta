@@ -10,7 +10,7 @@ published: true
 featured: true
 client_name: "Fairdeal Furniture"
 client_logo: "/images/logo/fairdealfurniture.webp"
-tags: 
+tags:
   - wooms
   - woocommerce
   - laravel
@@ -19,7 +19,7 @@ tags:
   - vector-search
   - stock-management
   - automation
-stack: 
+stack:
   - laravel
   - vuejs
   - mariadb
@@ -27,18 +27,18 @@ stack:
   - docker
 ---
 
-# 🚀 Case Study: WooMS – Centralized WooCommerce Management with Vector Search & Smart Automation
+# Case Study: WooMS – Centralized WooCommerce Management with Vector Search & Smart Automation
 
-## 🏢 Client: Fairdeal Furniture (and future multi-store owners & agencies)
+## Client: Fairdeal Furniture (and future multi-store owners & agencies)
 
 WooMS (Woo Multi Store) is a robust, Laravel-powered backend solution built for managing multiple WooCommerce stores from a single dashboard. Designed primarily for shop owners and agencies, WooMS is currently powering Fairdeal Furniture's complex e-commerce operations, and is being expanded for broader multi-agency use.
 
-## 📌 Project Summary
+## Project Summary
 
 > **Objective:**  
 > Provide a seamless way to manage products, stock, images, and inventory reporting across multiple WooCommerce stores—while leveraging the latest in AI-powered search and automation for real-world efficiency.
 
-## 🔍 Challenges
+## Challenges
 
 - Disconnected product and inventory management across stores
 - Manual image uploads and frequent stock mismatches
@@ -47,7 +47,7 @@ WooMS (Woo Multi Store) is a robust, Laravel-powered backend solution built for 
 - No centralized low-stock or inventory alerts
 - Scalability and security concerns with rapid sales growth
 
-## 🛠️ My Role & Responsibilities
+## My Role & Responsibilities
 
 As the **sole developer, product owner, and DevOps engineer**, I was responsible for:
 
@@ -64,17 +64,17 @@ As the **sole developer, product owner, and DevOps engineer**, I was responsible
 
 ## 🧠 Technical Stack
 
-| Feature          | Technology                 |
-|------------------|---------------------------|
-| Backend          | Laravel                   |
-| Frontend         | Vue.js                    |
-| Database         | MariaDB                   |
-| Caching          | Redis                     |
-| Vector Search    | Typesense                 |
-| Image Storage    | Minio (S3-compatible)     |
-| Deployment       | Docker (Servercore/Contabo)|
-| Logging/Monitoring| Sentry                   |
-| Integration      | WooCommerce REST API      |
+| Feature            | Technology                  |
+| ------------------ | --------------------------- |
+| Backend            | Laravel                     |
+| Frontend           | Vue.js                      |
+| Database           | MariaDB                     |
+| Caching            | Redis                       |
+| Vector Search      | Typesense                   |
+| Image Storage      | Minio (S3-compatible)       |
+| Deployment         | Docker (Servercore/Contabo) |
+| Logging/Monitoring | Sentry                      |
+| Integration        | WooCommerce REST API        |
 
 ## ⚡ Highlight: AI-Powered Vector Search
 

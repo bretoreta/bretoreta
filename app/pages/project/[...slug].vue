@@ -10,7 +10,7 @@ let observer;
 
 const route = useRoute()
 
-const { data: project } = await useAsyncData(route.path, () =>
+const { data: project } = await useAsyncData(`page-${route.path}`, () =>
   queryCollection('project').path(route.path).first()
 )
 
@@ -38,15 +38,15 @@ const links = computed(() => [{
   to: '/contact'
 }])
 
+useHead(project.value.head || {})
 useSeoMeta({
-  title: `${project.value.title} | Bret Oreta`,
-  ogTitle: `${project.value.title} | Bret Oreta`,
+  title: project.value.title,
   description: project.value.description,
-  ogDescription: project.value.description,
-  ogImage: project.value.image,
-  twitterCard: 'summary_large_image',
-  ogType: 'post',
 })
+defineOgImage('NuxtSeo.takumi', {
+  title: project.value.title,
+  description: project.value.description
+});
 
 const scrollToSection = (id) => {
   const el = document.getElementById(id)
@@ -143,7 +143,7 @@ onUnmounted(() => {
               </div>
             </div>
 
-            <NuxtImg height="42rem" v-motion-slide-visible-once-bottom :delay="400" :src="project.image" class="rounded-lg object-cover" alt="Cover image for this blog project" />
+            <NuxtImg height="42rem" v-motion-slide-visible-once-bottom format="avif,webp" quality="80" :delay="400" :src="project.image" class="rounded-lg object-cover" alt="Cover image for this blog project" />
           </div>
 
           <article class="mt-12">

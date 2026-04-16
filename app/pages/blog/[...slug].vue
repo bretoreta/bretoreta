@@ -10,7 +10,7 @@ let observer;
 const route = useRoute()
 
 // Nuxt Content fetch (your code)
-const { data: post } = await useAsyncData(route.path, () =>
+const { data: post } = await useAsyncData(`page-${route.path}`, () =>
   queryCollection('blog').path(route.path).first()
 )
 if (!post.value) {
@@ -20,15 +20,15 @@ const { data: sorroundLinks } = await useAsyncData(`${route.path}-surround`, () 
   queryCollectionItemSurroundings('blog', route.path).order('date', 'DESC')
 )
 
+useHead(post.value.head || {})
 useSeoMeta({
-  title: `${post.value.title} | Bret Oreta`,
-  ogTitle: `${post.value.title} | Bret Oreta`,
+  title: post.value.title,
   description: post.value.description,
-  ogDescription: post.value.description,
-  ogImage: post.value.image,
-  twitterCard: 'summary_large_image',
-  ogType: "post",
 })
+defineOgImage('NuxtSeo.takumi', {
+  title: post.value.title,
+  description: post.value.description
+});
 
 
 const links = computed(() => [{

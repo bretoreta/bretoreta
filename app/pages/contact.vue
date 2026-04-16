@@ -1,3 +1,19 @@
+<script setup lang="ts">
+
+useSeoMeta({
+  title: 'Contact Me | A web developer and AI automation expert',
+  ogTitle: 'Contact Me | A web developer and AI automation expert',
+  description: 'Design-led engineering for conversion-first websites, AI agents, and automation systems.',
+  ogDescription: 'Design-led engineering for conversion-first websites, AI agents, and automation systems.',
+})
+
+defineOgImage('NuxtSeo.takumi', {
+  title: 'Contact Me | A web developer and AI automation expert',
+  description: "Hire Bret Oreta — a web developer and AI automation expert helping startups and solo founders launch stunning websites and automate repetitive tasks with AI."
+});
+
+</script>
+
 <template>
   <div class="mt-10 px-5 relative py-14 md:py-20">
     <div class="page-grid-top"></div>

@@ -10,10 +10,12 @@ useSeoMeta({
   ogTitle: 'Blog | Bret Oreta',
   description: 'Practical notes on conversion, automation, SEO, and building production-ready systems.',
   ogDescription: 'Practical notes on conversion, automation, SEO, and building production-ready systems.',
-  ogImage: '/images/og-image.webp',
-  twitterCard: 'summary_large_image',
-  ogType: 'website'
 })
+
+defineOgImage('NuxtSeo.takumi', {
+  title: 'Blog | A web developer and AI automation expert',
+  description: "Practical notes on conversion, automation, SEO, and building production-ready systems."
+});
 
 const activeCategory = ref<string>('All')
 

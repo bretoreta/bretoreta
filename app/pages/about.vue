@@ -1,13 +1,15 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'About | Bret Oreta',
-  ogTitle: 'About | Bret Oreta',
+  title: 'About Me | A web developer and AI automation expert',
+  ogTitle: 'About Me | A web developer and AI automation expert',
   description: 'Design-led engineering for conversion-first websites, AI agents, and automation systems.',
   ogDescription: 'Design-led engineering for conversion-first websites, AI agents, and automation systems.',
-  ogImage: '/images/og-image.webp',
-  twitterCard: 'summary_large_image',
-  ogType: 'website'
 })
+
+defineOgImage('NuxtSeo.takumi', {
+  title: 'About Me | A web developer and AI automation expert',
+  description: "Design-led engineering for conversion-first websites, AI agents, and automation systems."
+});
 
 const principles = [
   {

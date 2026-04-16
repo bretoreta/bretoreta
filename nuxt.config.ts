@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindcss from "@tailwindcss/vite";
+import { definePerson } from 'nuxt-schema-org/schema'
 
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
@@ -16,6 +17,7 @@ export default defineNuxtConfig({
     "@vueuse/motion/nuxt",
     "@nuxt/fonts",
     "@nuxt/icon",
+    'nuxt-skew-protection',
   ],
   fonts: {
     families: [
@@ -31,15 +33,7 @@ export default defineNuxtConfig({
       title: "Bret Oreta",
       htmlAttrs: {
         lang: "en",
-      },
-      script: [
-        {
-          src: "https://analytics.bretoreta.me/api/script.js",
-          async: true,
-          defer: true,
-          "data-site-id": "1",
-        },
-      ],
+      }
     },
   },
   image: {
@@ -59,6 +53,11 @@ export default defineNuxtConfig({
   site: {
     url: "https://bretoreta.me",
     name: "Bret Oreta",
+  },
+  seo: {
+    meta: {
+      description: 'A web developer and AI automation expert helping businesses launch stunning websites and automate repetitive tasks with AI',
+    },
   },
   content: {
     build: {
@@ -91,5 +90,46 @@ export default defineNuxtConfig({
         },
       },
     }
+  },
+  schemaOrg: {
+    identity: definePerson({
+      name: 'Bret Oreta',
+      image: '/bret_oreta.png',
+      description: 'Just another full stack web developer, I love Laravel, Hono JS, Vue JS and React JS',
+      url: 'bretoreta.me',
+      sameAs: [
+        'https://github.com/bretoreta',
+        'https://x.com/bret_oreta',
+        'https://instagram.com/bret_oreta',
+        'https://linkedin.com/in/bretoreta'
+      ],
+    })
+  },
+  routeRules: {
+    '/': { prerender: true },
+    '/about': { prerender: true },
+    '/contact': { prerender: true },
+    // Blog posts page generated on demand, revalidates in background, cached on CDN for 1 hour (3600 seconds)
+    '/blog': { isr: 3600 },
+    // Blog post page generated on demand once until next deployment, cached on CDN
+    '/blog/**': { isr: true },
+    // Projects page generated on demand, revalidates in background, cached on CDN for 1 hour (3600 seconds)
+    '/project': { isr: 3600 },
+    // Project post page generated on demand once until next deployment, cached on CDN
+    '/project/**': { isr: true },
+  },
+  ogImage: {
+    zeroRuntime: true
+  },
+
+  // Remove after issue is fixed
+  hooks: {
+    'nitro:config'(nitroConfig) {
+      const imports = (nitroConfig as { imports?: { imports?: Array<{ name?: string }> } }).imports;
+      if (!imports?.imports) {
+        return;
+      }
+      imports.imports = imports.imports.filter((i) => i?.name !== 'useAppConfig');
+    },
   },
 });

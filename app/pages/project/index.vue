@@ -10,10 +10,12 @@ useSeoMeta({
   ogTitle: 'Projects | Bret Oreta',
   description: 'Selected work: conversion-first websites, AI agents, and automation systems shipped to production.',
   ogDescription: 'Selected work: conversion-first websites, AI agents, and automation systems shipped to production.',
-  ogImage: '/images/og-image.webp',
-  twitterCard: 'summary_large_image',
-  ogType: 'website'
 })
+
+defineOgImage('NuxtSeo.takumi', {
+  title: 'Projects | A web developer and AI automation expert',
+  description: "Selected work: conversion-first websites, AI agents, and automation systems shipped to production."
+});
 
 const activeCategory = ref<string>('All')
 
@@ -117,7 +119,7 @@ function formatDate(dateStr: string) {
               <article
                 v-for="(project, index) in filtered"
                 :key="project.id"
-                class="group relative overflow-hidden rounded-2xl bg-white/40 backdrop-blur transition duration-300 hover:-translate-y-1 hover:shadow-2xl dark:bg-black/20"
+                class="group relative overflow-hidden rounded-2xl bg-white/40 backdrop-blur transition duration-300 hover:shadow-2xl dark:bg-black/20"
               >
                 <!-- INNER BORDER -->
                 <div class="absolute inset-0 rounded-2xl border border-black/10 dark:border-white/10 pointer-events-none" />
@@ -132,6 +134,8 @@ function formatDate(dateStr: string) {
                     <NuxtImg
                       v-if="project.image"
                       :src="project.image"
+                      format="avif,webp"
+                      quality="80"
                       class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
 
