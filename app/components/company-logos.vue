@@ -25,93 +25,141 @@
 
           <div class="flex items-center px-2">
             <div class="flex shrink-0 items-center justify-around min-w-full animate-scroll">
-                    <NuxtImg
-                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                      format="webp,avif"
-                      alt="Fairdeal Furniture's Logo"
-                      src="/images/logo/fairdealfurniture.webp"
-                    />
-                    <NuxtImg
-                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                      format="webp,avif"
-                      alt="Inkpot Group's Logo"
-                      src="/images/logo/inkpotgroup.png"
-                    />
-                    <NuxtImg
-                      class="h-12 mx-8 grayscale invert-100 hover:grayscale-0 hover:invert-0 transition-opacity"
-                      format="webp,avif"
-                      alt="Zurika by Wambui's Logo"
-                      src="/images/logo/zurikabywambui.webp"
-                    />
-                    <NuxtImg
-                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                      format="webp,avif"
-                      alt="Ashley Furniture's Logo"
-                      src="/images/logo/ashleyfurniture.webp"
-                    />
-                    <NuxtImg
-                      class="h-12 mx-8 grayscale invert-100 hover:grayscale-0 transition-opacity"
-                      format="webp,avif"
-                      alt="Infinity Labs' Logo"
-                      src="/images/logo/infinitylabs.png"
-                    />
-                    <NuxtImg
-                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                      format="webp,avif"
-                      alt="XIMI Vogue's Logo"
-                      src="/images/logo/ximivogue.png"
-                    />
-                    <NuxtImg
-                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                      format="webp,avif"
-                      alt="Emerge Global's Logo"
-                      src="/images/logo/emergeglobal.jpg"
-                    />
+              <NuxtImg
+                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                format="webp,avif"
+                alt="Fairdeal Furniture's Logo"
+                src="/images/logo/fairdealfurniture.webp"
+              />
+              <NuxtImg
+                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                format="webp,avif"
+                alt="Craftex's Logo"
+                src="/images/logo/craftex.png"
+              />
+              <NuxtImg
+                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                format="webp,avif"
+                alt="Inkpot Group's Logo"
+                src="/images/logo/inkpotgroup.png"
+              />
+              <NuxtImg
+                class="h-12 mx-8 grayscale invert-100 hover:grayscale-0 hover:invert-0 transition-opacity"
+                format="webp,avif"
+                alt="Zurika by Wambui's Logo"
+                src="/images/logo/zurikabywambui.webp"
+              />
+              <NuxtImg
+                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                format="webp,avif"
+                alt="Craft Catalyst's Logo"
+                src="/images/logo/thecraftcatalyst.png"
+              />
+              <NuxtImg
+                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                format="webp,avif"
+                alt="Ashley Furniture's Logo"
+                src="/images/logo/ashleyfurniture.webp"
+              />
+              <NuxtImg
+                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                format="webp,avif"
+                alt="Koggs Adventures' Logo"
+                src="/images/logo/koggsadventures.png"
+              />
+              <NuxtImg
+                class="h-12 mx-8 grayscale invert-100 hover:grayscale-0 transition-opacity"
+                format="webp,avif"
+                alt="Infinity Labs' Logo"
+                src="/images/logo/infinitylabs.png"
+              />
+              <NuxtImg
+                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                format="webp,avif"
+                alt="XIMI Vogue's Logo"
+                src="/images/logo/ximivogue.png"
+              />
+              <NuxtImg
+                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                format="webp,avif"
+                alt="Emerge Global's Logo"
+                src="/images/logo/emergeglobal.jpg"
+              />
+              <NuxtImg
+                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                format="webp,avif"
+                alt="Crafted's Logo"
+                src="/images/logo/crafted.png"
+              />
             </div>
 
             <div class="flex shrink-0 items-center justify-around min-w-full animate-scroll" aria-hidden="true">
-                    <NuxtImg
-                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                      format="webp,avif"
-                      alt="Fairdeal Furniture's Logo"
-                      src="/images/logo/fairdealfurniture.webp"
-                    />
-                    <NuxtImg
-                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                      format="webp,avif"
-                      alt="Inkpot Group's Logo"
-                      src="/images/logo/inkpotgroup.png"
-                    />
-                    <NuxtImg
-                      class="h-12 mx-8 grayscale invert-100 hover:grayscale-0 hover:invert-0 transition-opacity"
-                      format="webp,avif"
-                      alt="Zurika by Wambui's Logo"
-                      src="/images/logo/zurikabywambui.webp"
-                    />
-                    <NuxtImg
-                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                      format="webp,avif"
-                      alt="Ashley Furniture's Logo"
-                      src="/images/logo/ashleyfurniture.webp"
-                    />
-                    <NuxtImg
-                      class="h-12 mx-8 grayscale invert-100 hover:grayscale-0 transition-opacity"
-                      format="webp,avif"
-                      alt="Infinity Labs' Logo"
-                      src="/images/logo/infinitylabs.png"
-                    />
-                    <NuxtImg
-                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                      format="webp,avif"
-                      alt="XIMI Vogue's Logo"
-                      src="/images/logo/ximivogue.png"
-                    />
-                    <NuxtImg
-                      class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                      format="webp,avif"
-                      alt="Emerge Global's Logo"
-                      src="/images/logo/emergeglobal.jpg"
-                    />
+              <NuxtImg
+                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                format="webp,avif"
+                alt="Fairdeal Furniture's Logo"
+                src="/images/logo/fairdealfurniture.webp"
+              />
+              <NuxtImg
+                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                format="webp,avif"
+                alt="Craftex's Logo"
+                src="/images/logo/craftex.png"
+              />
+              <NuxtImg
+                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                format="webp,avif"
+                alt="Inkpot Group's Logo"
+                src="/images/logo/inkpotgroup.png"
+              />
+              <NuxtImg
+                class="h-12 mx-8 grayscale invert-100 hover:grayscale-0 hover:invert-0 transition-opacity"
+                format="webp,avif"
+                alt="Zurika by Wambui's Logo"
+                src="/images/logo/zurikabywambui.webp"
+              />
+              <NuxtImg
+                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                format="webp,avif"
+                alt="Craft Catalyst's Logo"
+                src="/images/logo/thecraftcatalyst.png"
+              />
+              <NuxtImg
+                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                format="webp,avif"
+                alt="Ashley Furniture's Logo"
+                src="/images/logo/ashleyfurniture.webp"
+              />
+              <NuxtImg
+                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                format="webp,avif"
+                alt="Koggs Adventures' Logo"
+                src="/images/logo/koggsadventures.png"
+              />
+              <NuxtImg
+                class="h-12 mx-8 grayscale invert-100 hover:grayscale-0 transition-opacity"
+                format="webp,avif"
+                alt="Infinity Labs' Logo"
+                src="/images/logo/infinitylabs.png"
+              />
+              <NuxtImg
+                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                format="webp,avif"
+                alt="XIMI Vogue's Logo"
+                src="/images/logo/ximivogue.png"
+              />
+              <NuxtImg
+                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                format="webp,avif"
+                alt="Emerge Global's Logo"
+                src="/images/logo/emergeglobal.jpg"
+              />
+              <NuxtImg
+                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                format="webp,avif"
+                alt="Crafted's Logo"
+                src="/images/logo/crafted.png"
+              />
             </div>
           </div>
         </div>
