@@ -65,7 +65,7 @@
                 class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
                 format="webp,avif"
                 alt="Koggs Adventures' Logo"
-                src="/images/logo/koggsadventures.png"
+                src="/images/logo/koggsadventures.webp"
               />
               <NuxtImg
                 class="h-12 mx-8 grayscale invert-100 hover:grayscale-0 transition-opacity"
@@ -134,7 +134,7 @@
                 class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
                 format="webp,avif"
                 alt="Koggs Adventures' Logo"
-                src="/images/logo/koggsadventures.png"
+                src="/images/logo/koggsadventures.webp"
               />
               <NuxtImg
                 class="h-12 mx-8 grayscale invert-100 hover:grayscale-0 transition-opacity"

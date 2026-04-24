@@ -22,7 +22,7 @@ stack:
   - wordpress
   - php
   - elementor
-  - mysql
+  - mariadb
 ---
 
 # Case Study: CraftEd – University Placement Website for Global Education Pathways to Malaysia

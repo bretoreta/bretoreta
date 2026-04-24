@@ -24,6 +24,7 @@ stack:
   - woocommerce
   - elementor
   - php
+  - mariadb
 ---
 
 # Case Study: Koggs Adventures – Building a Digital Gateway to East Africa's Most Iconic Safaris

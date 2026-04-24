@@ -21,7 +21,7 @@ stack:
   - wordpress
   - php
   - elementor
-  - mysql
+  - mariadb
 ---
 
 # Case Study: The Craft Catalyst – Corporate Website for a Future-of-Work EdTech Organization

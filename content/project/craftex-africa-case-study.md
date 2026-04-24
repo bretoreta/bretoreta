@@ -22,7 +22,7 @@ stack:
   - wordpress
   - php
   - elementor
-  - mysql
+  - mariadb
 ---
 
 # Case Study: CraftEx Africa – Marketing Website for Kenya's First AI-Powered Virtual Work Experience Platform

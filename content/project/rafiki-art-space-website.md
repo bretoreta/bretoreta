@@ -24,6 +24,7 @@ stack:
   - givewp
   - elementor
   - php
+  - mariadb
 ---
 
 # Case Study: Rafiki Art Space – Empowering Youth Through a Digital Platform for Art & Community
