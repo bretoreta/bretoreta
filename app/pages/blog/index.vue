@@ -6,14 +6,14 @@ const { data: posts } = await useAsyncData('blog-posts', () => {
 })
 
 useSeoMeta({
-  title: 'Blog | Bret Oreta',
-  ogTitle: 'Blog | Bret Oreta',
+  title: 'Read Articles from My Digital Garden',
+  ogTitle: 'Read Articles from My Digital Garden',
   description: 'Practical notes on conversion, automation, SEO, and building production-ready systems.',
   ogDescription: 'Practical notes on conversion, automation, SEO, and building production-ready systems.',
 })
 
 defineOgImage('NuxtSeo.takumi', {
-  title: 'Blog | A web developer and AI automation expert',
+  title: 'Read Articles from My Digital Garden',
   description: "Practical notes on conversion, automation, SEO, and building production-ready systems."
 });
 

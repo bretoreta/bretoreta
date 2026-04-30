@@ -6,18 +6,13 @@ const showSidebar = ref(false);
 useHead({
   title: 'Websites & AI Agents That Drive Growth',
   meta: [
-    { name: 'description', content: 'Hire Bret Oreta — a web developer and AI automation expert helping startups and solo founders launch stunning websites and automate repetitive tasks with AI.' }
+    { name: 'description', content: 'A web developer and AI automation expert helping businesses launch stunning websites and automate repetitive tasks with AI' }
   ]
 })
 
 useSeoMeta({
   title: 'Websites & AI Agents That Drive Growth',
-  ogTitle: 'Websites & AI Agents That Drive Growth',
-  description: 'Hire Bret Oreta — a web developer and AI automation expert helping startups and solo founders launch stunning websites and automate repetitive tasks with AI.',
-  ogDescription: 'Hire Bret Oreta — a web developer and AI automation expert helping startups and solo founders launch stunning websites and automate repetitive tasks with AI.',
-  ogImage: "/images/og-image.webp",
-  twitterCard: 'summary_large_image',
-  ogType: "website",
+  description: 'A web developer and AI automation expert helping businesses launch stunning websites and automate repetitive tasks with AI',
 })
 </script>
 

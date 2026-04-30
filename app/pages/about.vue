@@ -116,7 +116,7 @@ const stack = [
           </div>
 
           <div class="relative z-10 lg:col-span-5">
-            <div class="relative mx-auto max-w-[460px]">
+            <div class="relative mx-auto max-w-115">
               <div
                 aria-hidden="true"
                 class="absolute -inset-10 -z-10 rounded-[2.5rem] bg-[radial-gradient(closest-side,rgba(16,185,129,0.22),transparent_70%)] blur-2xl"

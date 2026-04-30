@@ -18,6 +18,7 @@ export default defineNuxtConfig({
     "@nuxt/fonts",
     "@nuxt/icon",
     'nuxt-skew-protection',
+    'nuxt-ai-ready'
   ],
   fonts: {
     families: [
@@ -33,7 +34,12 @@ export default defineNuxtConfig({
       title: "Bret Oreta",
       htmlAttrs: {
         lang: "en",
-      }
+      },
+      meta: [
+        { name: 'theme-color', content: '#00dc82' },
+        { name: 'theme-color', content: '#18181b',
+          media: '(prefers-color-scheme: dark)' }
+      ]
     },
   },
   image: {
@@ -94,6 +100,8 @@ export default defineNuxtConfig({
   schemaOrg: {
     identity: definePerson({
       name: 'Bret Oreta',
+      jobTitle: "Team Lead - Web Development",
+      worksFor: "Fairdeal Furniture",
       image: '/bret_oreta.png',
       description: 'Just another full stack web developer, I love Laravel, Hono JS, Vue JS and React JS',
       url: 'bretoreta.me',
