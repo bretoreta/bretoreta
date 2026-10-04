@@ -30,6 +30,11 @@ export default defineNuxtConfig({
         provider: "google",
         weights: [400, 600, 800],
       },
+      { 
+        name: 'Segoe UI',
+        provider: "google",
+        weights: [400, 600, 800],
+      }
     ],
   },
   app: {
