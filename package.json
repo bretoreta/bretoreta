@@ -37,9 +37,5 @@
     "@iconify-json/logos": "^1.2.11",
     "@iconify-json/lucide": "^1.2.102",
     "@tailwindcss/typography": "^0.5.19"
-  },
-  "overrides": {
-    "baseline-browser-mapping": "latest",
-    "caniuse-lite": "1.0.30001814"
   }
 }
