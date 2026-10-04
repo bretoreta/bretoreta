@@ -129,7 +129,9 @@ export default defineNuxtConfig({
   ogImage: {
     zeroRuntime: true
   },
-
+  sitemap: {
+    zeroRuntime: true
+  },
   // Remove after issue is fixed
   hooks: {
     'nitro:config'(nitroConfig) {
