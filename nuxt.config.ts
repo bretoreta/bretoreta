@@ -8,9 +8,6 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  nitro: {
-    preset: 'cloudflare'
-  },
   css: ["~/assets/css/main.css"],
   modules: [
     "@nuxtjs/seo",
@@ -34,6 +31,7 @@ export default defineNuxtConfig({
         name: 'Segoe UI',
         provider: "google",
         weights: [400, 600, 800],
+        global: true,
       }
     ],
   },
