@@ -11,7 +11,7 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'cloudflare'
   },
-  css: ["./app/assets/css/main.css"],
+  css: ["~/assets/css/main.css"],
   modules: [
     "@nuxtjs/seo",
     "@nuxt/content",
