@@ -116,19 +116,6 @@ export default defineNuxtConfig({
       ],
     })
   },
-  routeRules: {
-    '/': { prerender: true },
-    '/about': { prerender: true },
-    '/contact': { prerender: true },
-    // Blog posts page generated on demand, revalidates in background, cached on CDN for 1 hour (3600 seconds)
-    '/blog': { isr: 3600 },
-    // Blog post page generated on demand once until next deployment, cached on CDN
-    '/blog/**': { isr: true },
-    // Projects page generated on demand, revalidates in background, cached on CDN for 1 hour (3600 seconds)
-    '/project': { isr: 3600 },
-    // Project post page generated on demand once until next deployment, cached on CDN
-    '/project/**': { isr: true },
-  },
   ogImage: {
     zeroRuntime: true
   },
