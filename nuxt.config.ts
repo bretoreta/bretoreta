@@ -26,12 +26,6 @@ export default defineNuxtConfig({
         name: "Plus Jakarta Sans",
         provider: "google",
         weights: [400, 600, 800],
-      },
-      { 
-        name: 'Segoe UI',
-        provider: "google",
-        weights: [400, 600, 800],
-        global: true,
       }
     ],
   },
