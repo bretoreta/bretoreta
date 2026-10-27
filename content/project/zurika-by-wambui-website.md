@@ -2,6 +2,8 @@
 title: "Zurika by Wambui – Empowering E-Commerce for Kenyan Fashion"
 link: "https://zurikabywambui.com"
 description: "A modern WooCommerce platform for Zurika by Wambui, blending hand-made Kenyan fashion, art, and women's empowerment with seamless payment and POS integration."
+seoTitle: "Zurika by Wambui: Kenyan Fashion eCommerce"
+seoDescription: "A WooCommerce store for Zurika by Wambui, combining handmade Kenyan fashion with payments and POS integration."
 category: "E-Commerce Website"
 image: "/images/project/zurikabywambui.png"
 date: "2025-05-01"
@@ -29,7 +31,7 @@ stack:
   - nginx
 ---
 
-# 👜 Case Study: Zurika by Wambui – Empowering Kenyan Fashion Online
+## 👜 Case Study: Zurika by Wambui – Empowering Kenyan Fashion Online
 
 ## 🏢 Client: Zurika by Wambui
 

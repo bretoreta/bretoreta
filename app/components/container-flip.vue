@@ -1,96 +1,46 @@
-<template>
-  <Motion
-    :key="words[currentWordIndex]"
-    as="p"
-    :layout-id="`words-here-${id}`"
-    :animate="{ width }"
-    :transition="{ duration: props.animationDuration / 2000 }"
-    :class="
-      cn(
-        'relative inline-block rounded-lg pt-2 pb-3 px-4 text-center text-4xl font-bold text-black md:text-6xl dark:text-green-400',
-        
-        // Light mode: soft green gradient background
-        '[background:linear-gradient(to_bottom,#e6f4ea,#ccf0d6)]',
-        'shadow-[inset_0_-1px_#a7e7b7,inset_0_0_0_1px_#34d399,0_4px_8px_rgba(52,211,153,0.2)]',
-
-        // Dark mode: deeper green tones
-        'dark:[background:linear-gradient(to_bottom,#064e3b,#052e2b)]',
-        'dark:shadow-[inset_0_-1px_#022c22,inset_0_0_0_1px_#16a34a,0_4px_8px_rgba(22,163,74,0.25)]',
-
-        props.class
-        )
-    "
-  >
-    <Motion
-      ref="textRef"
-      as="div"
-      :transition="{
-        duration: animationDuration / 1000,
-        ease: 'easeInOut',
-      }"
-      :class="cn('inline-block', props.textClass)"
-      :layout-id="`word-div-${words[currentWordIndex]}-${id}`"
-    >
-      <Motion
-        as="div"
-        class="inline-block"
-      >
-        <Motion
-          v-for="(letter, index) in words[currentWordIndex]"
-          :key="index"
-          as="span"
-          :initial="{
-            opacity: 0,
-            filter: 'blur(10px)',
-          }"
-          :animate="{
-            opacity: 1,
-            filter: 'blur(0px)',
-          }"
-          :transition="{
-            delay: index * 0.02,
-          }"
-        >
-          {{ letter }}
-        </Motion>
-      </Motion>
-    </Motion>
-  </Motion>
-</template>
-
-<script lang="ts" setup>
-import { cn } from "@sglara/cn";
-import { Motion } from "motion-v";
-import { templateRef, useIntervalFn } from "@vueuse/core";
+<script setup lang="ts">
+import { computed, onMounted, onUnmounted, ref } from "vue";
 
 const props = withDefaults(
   defineProps<{
     words?: string[];
     interval?: number;
-    animationDuration?: number;
-    class?: string;
-    textClass?: string;
   }>(),
   {
-    words: () => ["better", "modern", "beautiful", "awesome"],
-    interval: 3000,
-    animationDuration: 700,
+    words: () => ["AI Automations", "Websites that Sell", "SaaS Products", "AI Agents"],
+    interval: 2800,
   },
 );
 
-const id = useId();
+const index = ref(0);
+let timer: ReturnType<typeof setInterval> | undefined;
 
-const currentWordIndex = ref(0);
-const textRef = templateRef<HTMLDivElement>("textRef", null);
-
-const width = computed(() => {
-  if (textRef.value) {
-    return textRef.value.scrollWidth + 30;
-  }
-  return 100;
+onMounted(() => {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  timer = setInterval(() => {
+    index.value = (index.value + 1) % props.words.length;
+  }, props.interval);
 });
 
-useIntervalFn(() => {
-  currentWordIndex.value = (currentWordIndex.value + 1) % props.words.length;
-}, props.interval);
+onUnmounted(() => {
+  if (timer) clearInterval(timer);
+});
 </script>
+
+<template>
+  <span
+    class="relative inline-grid overflow-hidden rounded-lg px-4 pt-2 pb-3 text-center align-bottom text-4xl font-bold text-black sm:text-5xl xl:text-6xl dark:text-green-400 [background:linear-gradient(to_bottom,#e6f4ea,#ccf0d6)] shadow-[inset_0_-1px_#a7e7b7,inset_0_0_0_1px_#34d399,0_4px_8px_rgba(52,211,153,0.2)] dark:[background:linear-gradient(to_bottom,#064e3b,#052e2b)] dark:shadow-[inset_0_-1px_#022c22,inset_0_0_0_1px_#16a34a,0_4px_8px_rgba(22,163,74,0.25)]"
+  >
+    <span
+      v-for="(word, i) in words"
+      :key="word"
+      :aria-hidden="i === index ? undefined : 'true'"
+      class="col-start-1 row-start-1 whitespace-nowrap transition-all duration-300 ease-out motion-reduce:transition-none"
+      :class="i === index
+        ? 'translate-y-0 opacity-100'
+        : 'pointer-events-none translate-y-2 opacity-0'"
+    >
+      {{ word }}
+    </span>
+  </span>
+</template>

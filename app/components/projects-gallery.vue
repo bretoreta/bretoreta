@@ -34,18 +34,16 @@
 			<UCarousel :items="items" v-slot="{ item }" :ui="{ item: 'basis-1/1 lg:basis-1/3' }" dots :autoplay="{ stopOnInteraction:true }">
 				<NuxtLink :to="item.path" class="group rounded-lg overflow-hidden">
 					<div class="group relative h-full min-h-108 max-w-full overflow-hidden rounded-xl md:aspect-5/4 lg:aspect-video">
-						<NuxtImg
-							format="webp,avif"
-							quality="80"
-							width="600px"
+						<ResponsiveImage
 							:src="item.image"
 							:alt="item.title"
+							sizes="(min-width: 1024px) 33vw, 92vw"
 							class="absolute h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
 						/>
 						<div class="absolute inset-0 h-full bg-[linear-gradient(rgba(17,24,39,0)_10%,rgba(17,24,39,0.4)_20%,rgba(17,24,39,0.8)_60%)] mix-blend-multiply" />
 						<div class="absolute inset-x-0 bottom-0 flex flex-col items-start p-4 md:p-6">
 							<div>
-								<NuxtImg :src="item.client_logo" width="60" format="webp,avif" quality="80" />
+								<img :src="item.client_logo" :alt="`${item.client_name} logo`" width="60" height="24" class="h-6 w-auto object-contain" loading="lazy" />
 							</div>
 							<div class="mb-2 pt-4 text-xl font-semibold md:mb-3 md:pt-4 lg:pt-4">
 								{{ item.title }}
@@ -54,16 +52,14 @@
 								{{ item.description }}
 							</div>
 							<div class="flex justify-between items-center w-full">
-								<UButton>
+								<div class="inline-flex items-center gap-2 rounded-md bg-primary px-2.5 py-1.5 text-inverted">
 									<span class="text-sm font-bold">Stack:</span>
 									<ul class="flex items-center gap-1.5">
-										<template v-for="stackItem in item.stack">
-											<li>
-												<NuxtImg :src="`/svg/${stackItem}.svg`" width="24px" :alt="`${stackItem}'s logo'`" />
-											</li>
-										</template>
+										<li v-for="stackItem in item.stack" :key="stackItem">
+											<img :src="`/svg/${stackItem}.svg`" width="24" height="24" :alt="`${stackItem} logo`" loading="lazy" />
+										</li>
 									</ul>
-								</UButton>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -74,8 +70,6 @@
 </template>
 
 <script setup>
-import { LucideArrowLeft, LucideArrowRight } from 'lucide-vue-next'
-
 const props = defineProps({
   title: { type: String, default: 'Case Studies' },
   description: { type: String, default: 'Discover how leading companies...' },

@@ -2,6 +2,8 @@
 title: "XimiVogue Kenya – eCommerce for a Korean Lifestyle Brand"
 link: "https://ximivogue.co.ke"
 description: "A vibrant, mobile-first WooCommerce website for XimiVogue Kenya—built to capture the energy and playfulness of the Korean lifestyle brand and drive online sales."
+seoTitle: "XimiVogue Kenya: Korean Lifestyle eCommerce"
+seoDescription: "A mobile-first WooCommerce store for XimiVogue Kenya, built to reflect the Korean lifestyle brand and drive online sales."
 category: "Website"
 image: "/images/project/ximivogue.png"
 date: "2024-04-15"
@@ -28,7 +30,7 @@ stack:
   - mailchimp
 ---
 
-# ✨ Case Study: XimiVogue Kenya – Playful Online Store for a Youthful Market
+## ✨ Case Study: XimiVogue Kenya – Playful Online Store for a Youthful Market
 
 ## 🏢 Client: XimiVogue Kenya
 

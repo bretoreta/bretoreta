@@ -51,7 +51,7 @@
                 </div>
 
                 <div class="relative p-6">
-                  <NuxtImg src="/images/looney-analytics-and-statistics-guy.svg" />
+                  <NuxtImg src="/images/looney-analytics-and-statistics-guy.svg" alt="" />
                 </div>
               </div>
             </div>

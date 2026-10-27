@@ -19,7 +19,7 @@
           </div>
           <div class="group relative">
             <h3 class="mt-3 text-lg/6 font-semibold group-hover:text-muted">
-              <NuxtLink :href="post.path">
+              <NuxtLink :to="post.path">
                 <span class="absolute inset-0" />
                 {{ post.title }}
               </NuxtLink>
@@ -27,13 +27,12 @@
             <p class="mt-5 line-clamp-3 text-sm/6 text-muted">{{ post.description }}</p>
           </div>
           <div class="relative mt-8 flex items-center gap-x-4">
-            <NuxtImg :src="post.author.imageUrl" alt="Author Profile Picture" class="size-10 rounded-full object-cover bg-gray-50" />
+            <img :src="post.author.imageUrl" alt="" width="40" height="40" class="size-10 rounded-full object-cover bg-gray-50" loading="lazy" decoding="async" />
             <div class="text-sm/6">
               <p class="font-semibold">
-                <a :href="post.author.href">
-                  <span class="absolute inset-0" />
+                <NuxtLink to="/about">
                   {{ post.author.name }}
-                </a>
+                </NuxtLink>
               </p>
               <p class="text-muted">{{ post.author.role }}</p>
             </div>

@@ -2,6 +2,8 @@
 title: "The Craft Catalyst – Corporate Website for a Future-of-Work EdTech Organization"
 link: "https://thecraftcatalyst.com"
 description: "A corporate website built on WordPress for The Craft Catalyst — a Kenyan EdTech organization catalyzing talent for the future of work. The site showcases their two flagship platforms (CraftEd and CraftEx), communicates their partnership model to corporate organizations, and features a contact and inquiry system for potential partners and collaborators."
+seoTitle: "The Craft Catalyst: EdTech Website"
+seoDescription: "A corporate WordPress site for a Kenyan EdTech organisation, positioning its platforms and partnership model."
 category: "Website"
 image: "/images/project/thecraftcatalyst.png"
 date: "2026-04-24"
@@ -24,7 +26,7 @@ stack:
   - mariadb
 ---
 
-# Case Study: The Craft Catalyst – Corporate Website for a Future-of-Work EdTech Organization
+## Case Study: The Craft Catalyst – Corporate Website for a Future-of-Work EdTech Organization
 
 ## Client: The Craft Catalyst (Nairobi, Kenya)
 
@@ -125,5 +127,5 @@ Building a corporate website for an organization with as much vision as The Craf
 Got a project or an idea? Want to build something that makes an impact?
 
 Send me an email: [bretoreta@gmail.com](mailto:bretoreta@gmail.com)
-Start Your Free Trial: [bretoreta.me/contact](https://bretoreta.me/contact) — No upfront payment, 30 days free
+Start Your Free Trial: [bretoreta.me/contact](/contact) — No upfront payment, 30 days free
 Visit The Craft Catalyst: [thecraftcatalyst.com](https://thecraftcatalyst.com)

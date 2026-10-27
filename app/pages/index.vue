@@ -1,7 +1,11 @@
 <script setup lang="ts">
+useSeoMeta({
+  title: 'Websites & AI Agents That Drive Growth',
+  description: 'A web developer and AI automation expert helping businesses launch stunning websites and automate repetitive tasks with AI',
+})
 
 defineOgImage('NuxtSeo.takumi', {
-  title: 'A web developer and AI automation expert',
+  title: 'Websites & AI Agents That Drive Growth',
   description: "A web developer and AI automation expert helping businesses launch stunning websites and automate repetitive tasks with AI"
 });
 
@@ -18,6 +22,7 @@ defineOgImage('NuxtSeo.takumi', {
     <HomeNumbers />
     <Bookings />
     <HomeCta />
+    <HomeOpenSource />
     <BlogHighlights />
   </div>
 </template>

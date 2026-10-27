@@ -1,7 +1,8 @@
 ---
-title: "WooMS – Woo Multi Store Management Platform"
-link: ""
+title: "WooMS - Woo Multi Store Management Platform"
 description: "A Laravel-powered backend for managing multiple WooCommerce stores with AI-driven vector search, automated stock and image sync, and lightning-fast inventory management."
+seoTitle: "WooMS: Multi-Store WooCommerce Management"
+seoDescription: "A Laravel platform for managing multiple WooCommerce stores with AI vector search and automated stock syncing."
 category: "SaaS / Internal Tool"
 image: "/images/project/wooms.png"
 date: "2025-08-02"
@@ -27,7 +28,7 @@ stack:
   - docker
 ---
 
-# Case Study: WooMS – Centralized WooCommerce Management with Vector Search & Smart Automation
+## Case Study: WooMS – Centralized WooCommerce Management with Vector Search & Smart Automation
 
 ## Client: Fairdeal Furniture (and future multi-store owners & agencies)
 

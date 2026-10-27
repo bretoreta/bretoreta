@@ -22,13 +22,36 @@ const { data: sorroundLinks } = await useAsyncData(`${route.path}-surround`, () 
 
 useHead(post.value.head || {})
 useSeoMeta({
-  title: post.value.title,
-  description: post.value.description,
+  title: post.value.seoTitle || post.value.title,
+  description: post.value.seoDescription || post.value.description,
+  ogTitle: post.value.seoTitle || post.value.title,
+  ogDescription: post.value.seoDescription || post.value.description,
+  ogType: 'article',
+  articlePublishedTime: new Date(post.value.date).toISOString(),
+  articleAuthor: [post.value.author?.name || 'Bret Oreta'],
 })
 defineOgImage('NuxtSeo.takumi', {
-  title: post.value.title,
-  description: post.value.description
+  title: post.value.seoTitle || post.value.title,
+  description: post.value.seoDescription || post.value.description
 });
+
+useSchemaOrg([
+  defineArticle({
+    '@type': 'BlogPosting',
+    headline: post.value.title,
+    description: post.value.seoDescription || post.value.description,
+    datePublished: new Date(post.value.date).toISOString(),
+    author: { name: post.value.author?.name || 'Bret Oreta' },
+    image: new URL(post.value.image, 'https://bretoreta.me').href,
+  }),
+  defineBreadcrumb({
+    itemListElement: [
+      { name: 'Home', item: '/' },
+      { name: 'Blog', item: '/blog' },
+      { name: post.value.title, item: route.path },
+    ],
+  }),
+])
 
 
 const links = computed(() => [{
@@ -131,7 +154,13 @@ onUnmounted(() => {
               <h1 class="text-2xl lg:text-4xl font-bold">{{ post.title }}</h1>
               <p class="mt-2 line-clamp-1 text-sm/6 text-muted">{{ post.description }}</p>
             </div>
-            <NuxtImg height="42rem" :src="post.image" class="rounded-lg w-full object-cover" alt="Cover image for this blog post" placeholder />
+            <ResponsiveImage
+              :src="post.image"
+              :alt="post.title"
+              sizes="(min-width: 1024px) 896px, 92vw"
+              priority
+              class="w-full rounded-lg object-cover"
+            />
           </div>
           <article class="mt-12 max-w-4xl">
             <ContentRenderer v-if="post" :value="post" :prose="true" class="prose dark:prose-invert" />

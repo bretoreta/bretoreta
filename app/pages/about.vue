@@ -1,13 +1,13 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'About Me | A web developer and AI automation expert',
-  ogTitle: 'About Me | A web developer and AI automation expert',
+  title: 'About | Web Developer & AI Automation Expert',
+  ogTitle: 'About | Web Developer & AI Automation Expert',
   description: 'Design-led engineering for conversion-first websites, AI agents, and automation systems.',
   ogDescription: 'Design-led engineering for conversion-first websites, AI agents, and automation systems.',
 })
 
 defineOgImage('NuxtSeo.takumi', {
-  title: 'About Me | A web developer and AI automation expert',
+  title: 'About | Web Developer & AI Automation Expert',
   description: "Design-led engineering for conversion-first websites, AI agents, and automation systems."
 });
 
@@ -78,8 +78,7 @@ const stack = [
               <span class="relative px-1">
                 <span class="absolute inset-x-0 bottom-0 h-3 -skew-x-12 bg-primary/20"></span>
                 <span class="relative text-primary">growth</span>
-              </span>
-              .
+              </span>.
             </h1>
 
             <p v-motion-slide-visible-once-bottom :delay="90" class="mt-4 max-w-2xl text-base text-muted md:text-lg">
@@ -138,11 +137,10 @@ const stack = [
 
                     <div class="mt-5 relative flex h-80 items-end justify-center overflow-hidden rounded-2xl">
                       <div class="absolute inset-0 bg-[radial-gradient(600px_380px_at_50%_75%,rgba(16,185,129,0.25),transparent_70%)]" />
-                      <NuxtImg
+                      <ResponsiveImage
                         src="/images/bret_oreta.png"
-                        format="webp,avif"
-                        alt="Bret Oreta"
-                        height="800px"
+                        alt="Portrait of Bret Oreta"
+                        sizes="(min-width: 1024px) 420px, 80vw"
                         class="relative z-10 h-full w-auto object-contain drop-shadow-[0_30px_60px_rgba(0,0,0,0.35)]"
                       />
 
@@ -224,8 +222,7 @@ const stack = [
                 <span class="relative px-1">
                   <span class="absolute inset-x-0 bottom-0 h-3 -skew-x-12 bg-primary/20"></span>
                   <span class="relative text-primary">battle-tested</span>
-                </span>
-                .
+                </span>.
               </h2>
               <p class="mt-3 text-base text-muted md:text-lg" v-motion-slide-visible-once-bottom :delay="90">
                 I’m fluent across front-end, back-end, automation, and deployment. The goal is not trendy tech — it’s reliable results.

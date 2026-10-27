@@ -1,0 +1,533 @@
+{
+  "/images/blog/1125/clopudflare-create-api-token-form.png": {
+    "base": "/images/opt/blog/1125/clopudflare-create-api-token-form",
+    "width": 3058,
+    "height": 2164,
+    "formats": {
+      "webp": [
+        720,
+        1200
+      ]
+    },
+    "bytes": 453
+  },
+  "/images/blog/1125/cloudflare-link-to-create-api-token.png": {
+    "base": "/images/opt/blog/1125/cloudflare-link-to-create-api-token",
+    "width": 1868,
+    "height": 930,
+    "formats": {
+      "webp": [
+        720,
+        1200
+      ]
+    },
+    "bytes": 108
+  },
+  "/images/blog/1125/cloudflare-link-to-manage-api-tokens.png": {
+    "base": "/images/opt/blog/1125/cloudflare-link-to-manage-api-tokens",
+    "width": 1465,
+    "height": 748,
+    "formats": {
+      "webp": [
+        720,
+        1200
+      ]
+    },
+    "bytes": 109
+  },
+  "/images/blog/1125/cloudflare-r2-create-bucket-form.png": {
+    "base": "/images/opt/blog/1125/cloudflare-r2-create-bucket-form",
+    "width": 2596,
+    "height": 1980,
+    "formats": {
+      "webp": [
+        720,
+        1200
+      ]
+    },
+    "bytes": 828
+  },
+  "/images/blog/1125/cloudflare-r2-homepage.png": {
+    "base": "/images/opt/blog/1125/cloudflare-r2-homepage",
+    "width": 3006,
+    "height": 1948,
+    "formats": {
+      "webp": [
+        720,
+        1200
+      ]
+    },
+    "bytes": 491
+  },
+  "/images/blog/1125/cloudflare-r2-s3-access-keys.png": {
+    "base": "/images/opt/blog/1125/cloudflare-r2-s3-access-keys",
+    "width": 3058,
+    "height": 2164,
+    "formats": {
+      "webp": [
+        720,
+        1200
+      ]
+    },
+    "bytes": 435
+  },
+  "/images/blog/1125/cloudflare-r2-subscription-form.png": {
+    "base": "/images/opt/blog/1125/cloudflare-r2-subscription-form",
+    "width": 3006,
+    "height": 1948,
+    "formats": {
+      "webp": [
+        720,
+        1200
+      ]
+    },
+    "bytes": 473
+  },
+  "/images/blog/1125/cloudflare-sign-up-page.png": {
+    "base": "/images/opt/blog/1125/cloudflare-sign-up-page",
+    "width": 2138,
+    "height": 1790,
+    "formats": {
+      "webp": [
+        720,
+        1200
+      ]
+    },
+    "bytes": 221
+  },
+  "/images/blog/ai-automation-in-kenyan-business.jpg": {
+    "base": "/images/opt/blog/ai-automation-in-kenyan-business",
+    "width": 1920,
+    "height": 1281,
+    "formats": {
+      "avif": [
+        480,
+        768,
+        1200,
+        1600
+      ],
+      "webp": [
+        480,
+        768,
+        1200,
+        1600
+      ]
+    },
+    "bytes": 138
+  },
+  "/images/blog/cloud-provider-backbone.jpg": {
+    "base": "/images/opt/blog/cloud-provider-backbone",
+    "width": 1920,
+    "height": 1280,
+    "formats": {
+      "avif": [
+        480,
+        768,
+        1200,
+        1600
+      ],
+      "webp": [
+        480,
+        768,
+        1200,
+        1600
+      ]
+    },
+    "bytes": 344
+  },
+  "/images/blog/how-to-use-cloudflare-r2-with-laravel-storage.png": {
+    "base": "/images/opt/blog/how-to-use-cloudflare-r2-with-laravel-storage",
+    "width": 1536,
+    "height": 1024,
+    "formats": {
+      "avif": [
+        480,
+        768,
+        1200
+      ],
+      "webp": [
+        480,
+        768,
+        1200
+      ]
+    },
+    "bytes": 1516
+  },
+  "/images/blog/the-importance-of-website-accessibility-in-kenya.jpg": {
+    "base": "/images/opt/blog/the-importance-of-website-accessibility-in-kenya",
+    "width": 1920,
+    "height": 1280,
+    "formats": {
+      "avif": [
+        480,
+        768,
+        1200,
+        1600
+      ],
+      "webp": [
+        480,
+        768,
+        1200,
+        1600
+      ]
+    },
+    "bytes": 281
+  },
+  "/images/blog/why-i-switched-my-blog-from-laravel-vue-stack-to-nuxt-js.jpg": {
+    "base": "/images/opt/blog/why-i-switched-my-blog-from-laravel-vue-stack-to-nuxt-js",
+    "width": 1920,
+    "height": 1280,
+    "formats": {
+      "avif": [
+        480,
+        768,
+        1200,
+        1600
+      ],
+      "webp": [
+        480,
+        768,
+        1200,
+        1600
+      ]
+    },
+    "bytes": 183
+  },
+  "/images/blog/why-wordpress-still-dominates-the-market.jpg": {
+    "base": "/images/opt/blog/why-wordpress-still-dominates-the-market",
+    "width": 1920,
+    "height": 1281,
+    "formats": {
+      "avif": [
+        480,
+        768,
+        1200,
+        1600
+      ],
+      "webp": [
+        480,
+        768,
+        1200,
+        1600
+      ]
+    },
+    "bytes": 303
+  },
+  "/images/bret_oreta.png": {
+    "base": "/images/opt/bret_oreta",
+    "width": 864,
+    "height": 1080,
+    "formats": {
+      "avif": [
+        480,
+        720
+      ],
+      "webp": [
+        480,
+        720
+      ]
+    },
+    "bytes": 718,
+    "avatar": "/images/opt/avatar-96.webp"
+  },
+  "/images/project/crafted.png": {
+    "base": "/images/opt/project/crafted",
+    "width": 1902,
+    "height": 907,
+    "formats": {
+      "avif": [
+        480,
+        768,
+        1200,
+        1600
+      ],
+      "webp": [
+        480,
+        768,
+        1200,
+        1600
+      ]
+    },
+    "bytes": 1425
+  },
+  "/images/project/craftex.png": {
+    "base": "/images/opt/project/craftex",
+    "width": 1903,
+    "height": 909,
+    "formats": {
+      "avif": [
+        480,
+        768,
+        1200,
+        1600
+      ],
+      "webp": [
+        480,
+        768,
+        1200,
+        1600
+      ]
+    },
+    "bytes": 2295
+  },
+  "/images/project/fairdealfurniture.png": {
+    "base": "/images/opt/project/fairdealfurniture",
+    "width": 1665,
+    "height": 833,
+    "formats": {
+      "avif": [
+        480,
+        768,
+        1200,
+        1600
+      ],
+      "webp": [
+        480,
+        768,
+        1200,
+        1600
+      ]
+    },
+    "bytes": 788
+  },
+  "/images/project/koggsadventures.png": {
+    "base": "/images/opt/project/koggsadventures",
+    "width": 1908,
+    "height": 910,
+    "formats": {
+      "avif": [
+        480,
+        768,
+        1200,
+        1600
+      ],
+      "webp": [
+        480,
+        768,
+        1200,
+        1600
+      ]
+    },
+    "bytes": 2451
+  },
+  "/images/project/rafikiartspace.png": {
+    "base": "/images/opt/project/rafikiartspace",
+    "width": 1905,
+    "height": 913,
+    "formats": {
+      "avif": [
+        480,
+        768,
+        1200,
+        1600
+      ],
+      "webp": [
+        480,
+        768,
+        1200,
+        1600
+      ]
+    },
+    "bytes": 1101
+  },
+  "/images/project/sirimali.png": {
+    "base": "/images/opt/project/sirimali",
+    "width": 1915,
+    "height": 909,
+    "formats": {
+      "avif": [
+        480,
+        768,
+        1200,
+        1600
+      ],
+      "webp": [
+        480,
+        768,
+        1200,
+        1600
+      ]
+    },
+    "bytes": 1002
+  },
+  "/images/project/tahasabit.png": {
+    "base": "/images/opt/project/tahasabit",
+    "width": 1667,
+    "height": 834,
+    "formats": {
+      "avif": [
+        480,
+        768,
+        1200,
+        1600
+      ],
+      "webp": [
+        480,
+        768,
+        1200,
+        1600
+      ]
+    },
+    "bytes": 1049
+  },
+  "/images/project/thecraftcatalyst.png": {
+    "base": "/images/opt/project/thecraftcatalyst",
+    "width": 1906,
+    "height": 909,
+    "formats": {
+      "avif": [
+        480,
+        768,
+        1200,
+        1600
+      ],
+      "webp": [
+        480,
+        768,
+        1200,
+        1600
+      ]
+    },
+    "bytes": 1034
+  },
+  "/images/project/wooms.png": {
+    "base": "/images/opt/project/wooms",
+    "width": 1919,
+    "height": 913,
+    "formats": {
+      "avif": [
+        480,
+        768,
+        1200,
+        1600
+      ],
+      "webp": [
+        480,
+        768,
+        1200,
+        1600
+      ]
+    },
+    "bytes": 398
+  },
+  "/images/project/ximivogue.png": {
+    "base": "/images/opt/project/ximivogue",
+    "width": 1665,
+    "height": 833,
+    "formats": {
+      "avif": [
+        480,
+        768,
+        1200,
+        1600
+      ],
+      "webp": [
+        480,
+        768,
+        1200,
+        1600
+      ]
+    },
+    "bytes": 1018
+  },
+  "/images/project/zurikabywambui.png": {
+    "base": "/images/opt/project/zurikabywambui",
+    "width": 1665,
+    "height": 833,
+    "formats": {
+      "avif": [
+        480,
+        768,
+        1200,
+        1600
+      ],
+      "webp": [
+        480,
+        768,
+        1200,
+        1600
+      ]
+    },
+    "bytes": 2091
+  },
+  "/images/testimonials/andrew-k.jpg": {
+    "base": "/images/opt/testimonials/andrew-k",
+    "width": 505,
+    "height": 505,
+    "formats": {
+      "avif": [
+        96,
+        192
+      ],
+      "webp": [
+        96,
+        192
+      ]
+    },
+    "bytes": 40
+  },
+  "/images/testimonials/nicholas-wetzel.jpg": {
+    "base": "/images/opt/testimonials/nicholas-wetzel",
+    "width": 640,
+    "height": 640,
+    "formats": {
+      "avif": [
+        96,
+        192
+      ],
+      "webp": [
+        96,
+        192
+      ]
+    },
+    "bytes": 38
+  },
+  "/images/testimonials/priya-a.jpg": {
+    "base": "/images/opt/testimonials/priya-a",
+    "width": 588,
+    "height": 588,
+    "formats": {
+      "avif": [
+        96,
+        192
+      ],
+      "webp": [
+        96,
+        192
+      ]
+    },
+    "bytes": 33
+  },
+  "/images/testimonials/sarah-k.jpg": {
+    "base": "/images/opt/testimonials/sarah-k",
+    "width": 499,
+    "height": 499,
+    "formats": {
+      "avif": [
+        96,
+        192
+      ],
+      "webp": [
+        96,
+        192
+      ]
+    },
+    "bytes": 20
+  },
+  "/images/testimonials/zurika-wambui.jpeg": {
+    "base": "/images/opt/testimonials/zurika-wambui",
+    "width": 224,
+    "height": 225,
+    "formats": {
+      "avif": [
+        96,
+        192
+      ],
+      "webp": [
+        96,
+        192
+      ]
+    },
+    "bytes": 13
+  }
+}

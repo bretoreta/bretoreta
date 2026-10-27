@@ -32,7 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { ref, onMounted } from 'vue'
 
 interface Testimonial {
   img: string
@@ -78,61 +78,19 @@ const calEmbed = ref<HTMLElement | null>(null)
 
 onMounted(() => {
   if (!calEmbed.value) return
-  
-  // Generate a unique ID for the container
-  const embedId = 'cal-inline-' + Math.random().toString(36).substr(2, 9)
-  calEmbed.value.id = embedId
-  
-  // Create and inject the script
-  const script = document.createElement('script')
-  script.type = 'text/javascript'
-  script.innerHTML = `
-    (function (C, A, L) { 
-      let p = function (a, ar) { a.q.push(ar); }; 
-      let d = C.document; 
-      C.Cal = C.Cal || function () { 
-        let cal = C.Cal; 
-        let ar = arguments; 
-        if (!cal.loaded) { 
-          cal.ns = {}; 
-          cal.q = cal.q || []; 
-          d.head.appendChild(d.createElement("script")).src = A; 
-          cal.loaded = true; 
-        } 
-        if (ar[0] === L) { 
-          const api = function () { p(api, arguments); }; 
-          const namespace = ar[1]; 
-          api.q = api.q || []; 
-          if(typeof namespace === "string"){
-            cal.ns[namespace] = cal.ns[namespace] || api;
-            p(cal.ns[namespace], ar);
-            p(cal, ["initNamespace", namespace]);
-          } else p(cal, ar); 
-          return;
-        } 
-        p(cal, ar); 
-      }; 
-    })(window, "https://app.cal.com/embed/embed.js", "init");
-    
-    Cal("init", "15min", {origin:"https://app.cal.com"});
-    Cal.ns["15min"]("inline", {
-      elementOrSelector:"#${embedId}",
-      config: {"layout":"month_view"},
-      calLink: "bretoreta/15min",
-    });
-    Cal.ns["15min"]("ui", {
-      "cssVarsPerTheme":{"light":{"cal-brand":"#05DF72"}},
-      "hideEventTypeDetails":false,
-      "layout":"month_view"
-    });
-  `
-  
-  document.body.appendChild(script)
-})
 
-onBeforeUnmount(() => {
-  // Clean up to prevent memory leaks
-  const calScripts = document.querySelectorAll('script[src*="cal.com"]')
-  calScripts.forEach(script => script.remove())
+  // The Cal.com embed itself is loaded once by plugins/cal.client.ts.
+  // Here we only mount the inline calendar in its container.
+  const embedId = 'cal-inline-' + Math.random().toString(36).slice(2, 11)
+  calEmbed.value.id = embedId
+
+  const Cal = (window as unknown as { Cal?: any }).Cal
+  if (!Cal?.ns?.['15min']) return
+
+  Cal.ns['15min']('inline', {
+    elementOrSelector: `#${embedId}`,
+    config: { layout: 'month_view' },
+    calLink: 'bretoreta/15min',
+  })
 })
 </script>

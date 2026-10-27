@@ -2,6 +2,8 @@
 title: "Rafiki Art Space – Non-Profit Website for a Community Art Center in Kibera"
 link: "https://rafikiartspace.org"
 description: "A fully featured non-profit website built on WordPress with WooCommerce, GiveWP donation integration, an online shop for artwork sales, and Elementor-powered page design — all serving to amplify Rafiki Art Space's mission of empowering youth through art in Kibera, Nairobi."
+seoTitle: "Rafiki Art Space: Non-Profit Website"
+seoDescription: "A WordPress and WooCommerce site for a Kibera art centre, with GiveWP donations, an art shop, and community storytelling."
 category: "Website"
 image: "/images/project/rafikiartspace.png"
 date: "2026-04-16"
@@ -27,7 +29,7 @@ stack:
   - mariadb
 ---
 
-# Case Study: Rafiki Art Space – Empowering Youth Through a Digital Platform for Art & Community
+## Case Study: Rafiki Art Space – Empowering Youth Through a Digital Platform for Art & Community
 
 ## Client: Rafiki Art Space (Kibera, Nairobi, Kenya)
 
@@ -142,6 +144,6 @@ Got a project or an idea? Want to amplify your mission and elevate your online p
 
 Send me an email: [bretoreta@gmail.com](mailto:bretoreta@gmail.com)
 
-Start Your Free Consultation: [bretoreta.me/contact](https://bretoreta.me/contact) — No upfront payment
+Start Your Free Consultation: [bretoreta.me/contact](/contact) — No upfront payment
 
 Visit Rafiki Art Space: [rafikiartspace.org](https://rafikiartspace.org)

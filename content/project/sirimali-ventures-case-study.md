@@ -2,6 +2,8 @@
 title: "Sirimali Ventures – Venture Building & Angel Investment Platform for East African Entrepreneurs"
 link: "https://sirimali.com"
 description: "A WordPress-based website for Sirimali Ventures, a purpose-driven entrepreneurship and angel investment firm bridging the gap between ideas and early-stage capital in East Africa. Features the Train-Build-Invest model, Sirimali Academy enrollment, venture support service details, focus sector highlights, and an East African geographic footprint."
+seoTitle: "Sirimali Ventures: Venture Building Platform"
+seoDescription: "A WordPress site for an East African venture builder, covering its Train-Build-Invest model, academy, and portfolio."
 category: "Website"
 image: "/images/project/sirimali.png"
 date: "2026-05-24"
@@ -28,7 +30,7 @@ stack:
   - yoast-seo
 ---
 
-# Case Study: Sirimali Ventures – Venture Building & Angel Investment Platform for East African Entrepreneurs
+## Case Study: Sirimali Ventures – Venture Building & Angel Investment Platform for East African Entrepreneurs
 
 ## Client: Sirimali Ventures (East Africa)
 

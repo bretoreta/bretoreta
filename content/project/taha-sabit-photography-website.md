@@ -2,6 +2,8 @@
 title: "TahaSabit Photography – Business Portfolio Website"
 link: "https://tahasabit.com"
 description: "A visually striking, SEO-optimized portfolio and blog for TahaSabit Photography, built to attract corporate, commercial, event, and fashion clients."
+seoTitle: "TahaSabit Photography: Portfolio Website"
+seoDescription: "An SEO-focused portfolio and blog for a Kenyan photographer, built to win corporate, event, and fashion clients."
 category: "Website"
 image: "/images/project/tahasabit.png"
 date: "2025-08-01"
@@ -25,7 +27,7 @@ stack:
   - nginx
 ---
 
-# Case Study: TahaSabit Photography – A Portfolio Built for Business Impact
+## Case Study: TahaSabit Photography – A Portfolio Built for Business Impact
 
 ## Client: TahaSabit Photography
 

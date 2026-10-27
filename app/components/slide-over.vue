@@ -1,5 +1,5 @@
 <script setup>
-import { computed, onMounted, onUnmounted, watch } from 'vue';
+import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue';
 
 const props = defineProps({
     show: {
@@ -18,11 +18,20 @@ const props = defineProps({
 
 const emit = defineEmits(['close']);
 
-watch(() => props.show, () => {
-    if (props.show) {
+const panel = ref(null);
+let lastFocused = null;
+
+watch(() => props.show, async (open) => {
+    if (import.meta.server) return;
+    if (open) {
+        lastFocused = document.activeElement;
         document.body.style.overflow = 'hidden';
+        await nextTick();
+        panel.value?.focus();
     } else {
-        document.body.style.overflow = null;
+        document.body.style.overflow = '';
+        lastFocused?.focus?.();
+        lastFocused = null;
     }
 });
 
@@ -68,8 +77,8 @@ const maxWidthClass = computed(() => {
                     leave-from-class="opacity-100"
                     leave-to-class="opacity-0"
                 >
-                    <div v-show="show" class="fixed inset-0 transform transition-all backdrop-blur-[2px]" @click="close">
-                        <div class="absolute inset-0 bg-gray-500 dark:bg-muted opacity-75" />
+                    <div v-show="show" class="fixed inset-0 transform transition-all backdrop-blur-sm" @click="close">
+                        <div class="absolute inset-0 bg-gray-950/40 dark:bg-black/60" />
                     </div>
                 </transition>
 
@@ -81,12 +90,20 @@ const maxWidthClass = computed(() => {
                     leave-from-class="translate-x-0"
                     leave-to-class="translate-x-full"
                 >
-                    <div v-show="show" class="bg-default fixed top-0 right-0 h-screen shadow-xl transform transition-all w-[300px] sm:w-[400px] sm:mx-auto">
+                    <div
+                        v-show="show"
+                        ref="panel"
+                        role="dialog"
+                        aria-modal="true"
+                        aria-label="Menu"
+                        tabindex="-1"
+                        class="bg-default fixed top-0 right-0 h-dvh w-full max-w-[420px] border-l border-black/10 shadow-2xl transform transition-all focus:outline-none dark:border-white/10"
+                    >
                         <div class="flex flex-col h-full">
-                            <div class="p-4 border-b border-accented flex items-center justify-between">
+                            <div class="flex items-center justify-between border-b border-accented px-5 py-4">
                                 <slot v-if="show" name="header" />
-                                <button @click="close" class="p-2 rounded-md duration-200 hover:bg-gray-50 dark:hover:bg-stone-700 text-gray-500">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <button type="button" aria-label="Close menu" @click="close" class="flex size-9 items-center justify-center rounded-full border border-black/10 bg-white/50 text-gray-600 transition hover:bg-white/70 hover:text-gray-900 dark:border-white/10 dark:bg-white/5 dark:text-white/60 dark:hover:bg-white/10 dark:hover:text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5" aria-hidden="true">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                                     </svg>
                                 </button>

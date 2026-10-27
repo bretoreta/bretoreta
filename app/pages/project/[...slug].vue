@@ -40,13 +40,35 @@ const links = computed(() => [{
 
 useHead(project.value.head || {})
 useSeoMeta({
-  title: project.value.title,
-  description: project.value.description,
+  title: project.value.seoTitle || project.value.title,
+  description: project.value.seoDescription || project.value.description,
+  ogTitle: project.value.seoTitle || project.value.title,
+  ogDescription: project.value.seoDescription || project.value.description,
+  ogType: 'article',
+  articlePublishedTime: new Date(project.value.date).toISOString(),
 })
 defineOgImage('NuxtSeo.takumi', {
-  title: project.value.title,
-  description: project.value.description
+  title: project.value.seoTitle || project.value.title,
+  description: project.value.seoDescription || project.value.description
 });
+
+useSchemaOrg([
+  defineArticle({
+    '@type': 'Article',
+    headline: project.value.title,
+    description: project.value.seoDescription || project.value.description,
+    datePublished: new Date(project.value.date).toISOString(),
+    author: { name: 'Bret Oreta' },
+    image: new URL(project.value.image, 'https://bretoreta.me').href,
+  }),
+  defineBreadcrumb({
+    itemListElement: [
+      { name: 'Home', item: '/' },
+      { name: 'Projects', item: '/project' },
+      { name: project.value.title, item: route.path },
+    ],
+  }),
+])
 
 const scrollToSection = (id) => {
   const el = document.getElementById(id)
@@ -130,20 +152,27 @@ onUnmounted(() => {
               <p class="mt-2 line-clamp-1 text-sm/6 text-muted">{{ project.description }}</p>
             </div>
             <div v-motion-slide-visible-once-bottom :delay="200" class="relative my-8 flex items-center gap-x-4">
-              <NuxtImg height="42rem" :src="project.client_logo" alt="Author Profile Picture" class="size-10 object-contain rounded-full" placeholder />
+              <img :src="project.client_logo" :alt="`${project.client_name} logo`" width="40" height="40" class="size-10 rounded-full object-contain" loading="lazy" decoding="async" />
               <div class="text-sm/6">
                 <p class="font-semibold">
                   {{ project.client_name }}
                 </p>
               </div>
-              <div class="ml-auto">
-                <UButton icon="i-lucide-arrow-up-right" variant="ghost" :to="project.link" target="_blank">
-                  Visit Project
+              <div v-if="project.link" class="ml-auto">
+                <UButton icon="i-lucide-arrow-up-right" variant="ghost" :to="project.link" target="_blank" rel="noopener noreferrer">
+                  Visit project
+                  <span class="sr-only"> (opens in a new tab)</span>
                 </UButton>
               </div>
             </div>
 
-            <NuxtImg height="42rem" v-motion-slide-visible-once-bottom format="avif,webp" quality="80" :delay="400" :src="project.image" class="rounded-lg object-cover" alt="Cover image for this blog project" />
+            <ResponsiveImage
+              :src="project.image"
+              :alt="project.title"
+              sizes="(min-width: 1024px) 896px, 92vw"
+              priority
+              class="w-full rounded-lg object-cover"
+            />
           </div>
 
           <article class="mt-12">
@@ -205,16 +234,3 @@ onUnmounted(() => {
     </div>
   </div>
 </template>
-<style>
-.page-grid-top {
-  position: absolute;
-  left: 0;
-  top:0;
-  background-image: url('/svg/grid-top.svg');
-  background-repeat: repeat-x;
-  height: 24.625rem;
-  width: 100%;
-  z-index: 0;
-  margin-top: -60px;
-}
-</style>

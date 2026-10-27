@@ -25,8 +25,7 @@
             <span class="relative px-1">
               <span class="absolute inset-x-0 bottom-0 h-3 -skew-x-12 bg-primary/20"></span>
               <span class="relative inline-block text-primary">your pace</span>
-            </span>
-            .
+            </span>.
           </h2>
           <p class="mt-3 text-base text-muted md:text-lg" v-motion-slide-visible-once-bottom :delay="80">
             You get speed without chaos: clear milestones, tight feedback loops, and production-quality output.
@@ -36,7 +35,7 @@
             <ul class="space-y-3">
                 <li class="flex items-start">
                     <span class="mr-1">
-                    <svg class="w-5 h-5 mt-px text-primary" stroke="currentColor" viewBox="0 0 52 52">
+                    <svg class="w-5 h-5 mt-px text-primary" stroke="currentColor" viewBox="0 0 52 52" aria-hidden="true">
                         <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
                     </svg>
                     </span>
@@ -44,7 +43,7 @@
                 </li>
                 <li class="flex items-start">
                     <span class="mr-1">
-                    <svg class="w-5 h-5 mt-px text-primary" stroke="currentColor" viewBox="0 0 52 52">
+                    <svg class="w-5 h-5 mt-px text-primary" stroke="currentColor" viewBox="0 0 52 52" aria-hidden="true">
                         <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
                     </svg>
                     </span>
@@ -52,7 +51,7 @@
                 </li>
                 <li class="flex items-start">
                     <span class="mr-1">
-                    <svg class="w-5 h-5 mt-px text-primary" stroke="currentColor" viewBox="0 0 52 52">
+                    <svg class="w-5 h-5 mt-px text-primary" stroke="currentColor" viewBox="0 0 52 52" aria-hidden="true">
                         <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
                     </svg>
                     </span>
@@ -60,7 +59,7 @@
                 </li>
                 <li class="flex items-start">
                     <span class="mr-1">
-                    <svg class="w-5 h-5 mt-px text-primary" stroke="currentColor" viewBox="0 0 52 52">
+                    <svg class="w-5 h-5 mt-px text-primary" stroke="currentColor" viewBox="0 0 52 52" aria-hidden="true">
                         <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
                     </svg>
                     </span>
@@ -68,7 +67,7 @@
                 </li>
                 <li class="flex items-start">
                     <span class="mr-1">
-                    <svg class="w-5 h-5 mt-px text-primary" stroke="currentColor" viewBox="0 0 52 52">
+                    <svg class="w-5 h-5 mt-px text-primary" stroke="currentColor" viewBox="0 0 52 52" aria-hidden="true">
                         <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
                     </svg>
                     </span>
@@ -76,7 +75,7 @@
                 </li>
                 <li class="flex items-start">
                     <span class="mr-1">
-                    <svg class="w-5 h-5 mt-px text-primary" stroke="currentColor" viewBox="0 0 52 52">
+                    <svg class="w-5 h-5 mt-px text-primary" stroke="currentColor" viewBox="0 0 52 52" aria-hidden="true">
                         <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
                     </svg>
                     </span>

@@ -2,6 +2,8 @@
 title: "Koggs Adventures – Tours & Travel Booking Website for East African Safaris"
 link: "https://koggsadventures.com"
 description: "A feature-rich travel booking website built on WordPress with the Togo Travel Booking theme, featuring a complete tour management system, multi-currency support, interactive destination guides, online booking with cart functionality, and testimonial-driven design — connecting global travelers with curated safari experiences across Tanzania and Kenya."
+seoTitle: "Koggs Adventures: Safari Booking Website"
+seoDescription: "A WordPress travel booking site for East African safaris, with multi-currency pricing, tour management, and online checkout."
 category: "Website"
 image: "/images/project/koggsadventures.png"
 date: "2026-03-16"
@@ -27,7 +29,7 @@ stack:
   - mariadb
 ---
 
-# Case Study: Koggs Adventures – Building a Digital Gateway to East Africa's Most Iconic Safaris
+## Case Study: Koggs Adventures – Building a Digital Gateway to East Africa's Most Iconic Safaris
 
 ## Client: Koggs Adventures LTD (Tanzania)
 
@@ -164,6 +166,6 @@ Got a project or an idea? Want to amplify your mission and elevate your online p
 
 Send me an email: [bretoreta@gmail.com](mailto:bretoreta@gmail.com)
 
-Start Your Free Consultation: [bretoreta.me/contact](https://bretoreta.me/contact) — No upfront payment
+Start Your Free Consultation: [bretoreta.me/contact](/contact) — No upfront payment
 
 Visit Koggs Adventures: [koggsadventures.com](https://koggsadventures.com)

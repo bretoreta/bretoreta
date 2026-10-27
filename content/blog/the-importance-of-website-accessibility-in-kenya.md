@@ -1,6 +1,8 @@
 ---
 title: "The Importance of Website Accessibility in Kenya: Building an Inclusive Digital Future"
 description: "In Kenya's rapidly evolving digital landscape, where internet penetration growing website accessibility has emerged as a critical priority"
+seoTitle: "Why Website Accessibility Matters in Kenya"
+seoDescription: "Kenya's digital services are growing fast. Here is why accessible websites matter, and the basics every business should ship."
 category: "Accessibility"
 image: "/images/blog/the-importance-of-website-accessibility-in-kenya.jpg"
 date: "2025-05-27"
@@ -8,8 +10,8 @@ published: true
 author:
   name: "Bret Oreta"
   role: "Admin"
-  imageUrl: "https://bretoreta.me/images/og-image.webp"
-  href: "https://bretoreta.me/authors/bret-oreta"
+  imageUrl: "https://bretoreta.me/images/opt/avatar-96.webp"
+  href: "https://bretoreta.me/about"
 tags: 
   - artificial-intelligence
   - kenya
@@ -18,7 +20,7 @@ tags:
   - africa
 ---
 
-# The Importance of Website Accessibility in Kenya: Building an Inclusive Digital Future
+## The Importance of Website Accessibility in Kenya: Building an Inclusive Digital Future
 
 In Kenya's rapidly evolving digital landscape, where internet penetration stands at 43% and mobile subscriptions exceed 65 million (Communications Authority of Kenya, 2023), **website accessibility** has emerged as a critical priority. Yet, over 90% of Kenyan websites remain inaccessible to people with disabilities, excluding approximately 7.5 million Kenyans (KNBS, 2019) from full participation in the digital economy. This comprehensive guide explores why web accessibility isn't just a legal obligation in Kenya, but a strategic imperative for businesses, government agencies, and content creators.
 

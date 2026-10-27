@@ -6,14 +6,14 @@ const { data: projects } = await useAsyncData('projects', () => {
 })
 
 useSeoMeta({
-  title: 'Projects | Bret Oreta',
-  ogTitle: 'Projects | Bret Oreta',
+  title: 'Projects',
+  ogTitle: 'Projects',
   description: 'Selected work: conversion-first websites, AI agents, and automation systems shipped to production.',
   ogDescription: 'Selected work: conversion-first websites, AI agents, and automation systems shipped to production.',
 })
 
 defineOgImage('NuxtSeo.takumi', {
-  title: 'Projects | A web developer and AI automation expert',
+  title: 'Projects: Websites, AI Agents & Automation',
   description: "Selected work: conversion-first websites, AI agents, and automation systems shipped to production."
 });
 
@@ -73,6 +73,8 @@ function formatDate(dateStr: string) {
               <button
                 v-for="c in categories"
                 :key="c"
+                type="button"
+                :aria-pressed="activeCategory === c"
                 @click="activeCategory = c"
                 class="rounded-full border px-3 py-1.5 text-xs font-semibold transition"
                 :class="activeCategory === c
@@ -131,11 +133,11 @@ function formatDate(dateStr: string) {
 
                   <!-- IMAGE -->
                   <div class="relative aspect-16/10 overflow-hidden">
-                    <NuxtImg
+                    <ResponsiveImage
                       v-if="project.image"
                       :src="project.image"
-                      format="avif,webp"
-                      quality="80"
+                      :alt="project.title"
+                      sizes="(min-width: 1280px) 30vw, (min-width: 640px) 45vw, 92vw"
                       class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
 
@@ -180,9 +182,11 @@ function formatDate(dateStr: string) {
                   v-if="project.link"
                   :to="project.link"
                   target="_blank"
+                  rel="noopener noreferrer"
+                  :aria-label="`Visit ${project.client_name} (opens in a new tab)`"
                   class="absolute right-4 top-4 z-20 flex size-9 items-center justify-center rounded-full bg-black/30 text-white backdrop-blur hover:bg-black/40"
                 >
-                  <Icon name="lucide:arrow-up-right" class="size-4" />
+                  <Icon name="lucide:arrow-up-right" class="size-4" aria-hidden="true" />
                 </NuxtLink>
 
               </article>

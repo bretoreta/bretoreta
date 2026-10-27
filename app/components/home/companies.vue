@@ -43,8 +43,8 @@ const services = [
             </div>
           </div>
 
-          <h2 id="bento-title" class="mt-6 text-center text-3xl font-extrabold tracking-tight sm:text-4xl" v-motion-slide-visible-once-bottom>
-            Design-forward execution. //
+          <h2 id="services-title" class="mt-6 text-center text-3xl font-extrabold tracking-tight sm:text-4xl" v-motion-slide-visible-once-bottom>
+            Design-forward execution.
             <span class="relative px-1">
               <span class="absolute inset-x-0 bottom-0 h-3 -skew-x-12 bg-primary/20"></span>
               <span class="relative text-primary">Business-first</span>

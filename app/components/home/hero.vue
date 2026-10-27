@@ -17,13 +17,13 @@
 
     <div class="mx-auto w-full px-2 sm:px-6 lg:px-10">
       <div class="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-12 items-center">
-        <div class="relative z-10 lg:col-span-6">
+        <div class="relative z-10 lg:col-span-7">
           <div class="flex flex-wrap items-center gap-3">
             <Availability :available="true" v-motion-slide-bottom />
           </div>
 
           <h1
-            class="mt-6 text-[2.7rem] font-extrabold leading-[0.95] tracking-tight text-gray-950 sm:text-6xl dark:text-white"
+            class="mt-6 text-[2.7rem] font-extrabold leading-[0.95] tracking-tight text-gray-950 sm:text-5xl xl:text-6xl dark:text-white"
             v-motion-slide-bottom
             :delay="110"
           >
@@ -51,7 +51,7 @@
           </div>
         </div>
 
-        <div class="relative z-10 lg:col-span-6 place-items-center">
+        <div class="relative z-10 lg:col-span-5 place-items-center">
           <div class="relative overflow-hidden rounded-3xl border border-black/10 bg-white/40 p-1 shadow-[0_30px_80px_-35px_rgba(0,0,0,0.45)] backdrop-blur dark:border-white/10 dark:bg-black/20" v-motion-slide-bottom :delay="220">
             <div class="relative rounded-[1.35rem] bg-[linear-gradient(135deg,rgba(16,185,129,0.10),rgba(255,255,255,0)_55%)] dark:bg-[linear-gradient(135deg,rgba(16,185,129,0.14),rgba(0,0,0,0)_55%)]">
               <div aria-hidden="true" class="pointer-events-none absolute inset-0">
@@ -59,7 +59,7 @@
               </div>
 
               <div class="relative p-6 sm:p-7">
-                <NuxtImg src="images/looney_blowing_whistle.svg" class="w-150" />
+                <NuxtImg src="/images/looney_blowing_whistle.svg" alt="" class="h-auto w-full max-w-[600px]" />
               </div>
             </div>
           </div>

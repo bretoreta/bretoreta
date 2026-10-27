@@ -6,6 +6,9 @@
 .cache
 dist
 
+# Generated responsive image variants (rebuilt by scripts/optimize-images.mjs)
+public/images/opt
+
 # Node dependencies
 node_modules
 

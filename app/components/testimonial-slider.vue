@@ -15,12 +15,11 @@
               :key="`image-${index}`"
               class="absolute inset-0 -z-10 flex h-full flex-col"
             >
-              <NuxtImg
+              <ResponsiveImage
                 class="relative left-1/2 top-11 -translate-x-1/2 rounded-full"
                 :src="testimonial.img"
-                width="60"
-                height="60"
                 :alt="testimonial.name"
+                sizes="96px"
               />
             </div>
           </transition-group>
@@ -29,10 +28,7 @@
     </div>
     <!-- Text -->
     <div class="mb-8 transition-all delay-300 duration-150 ease-in-out">
-      <div
-        ref="testimonialsRef"
-        class="relative flex flex-col"
-      >
+      <div ref="testimonialsRef" aria-live="polite" aria-atomic="true" class="relative flex flex-col">
         <transition-group name="testimonial-text">
           <div
             v-for="(testimonial, index) in testimonials"
@@ -51,11 +47,14 @@
     </div>
     <div class="mt-4 flex w-full items-center justify-between gap-4 pt-12 md:pt-0">
       <button
-        class="group/button flex size-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800"
+        type="button"
+        aria-label="Previous testimonial"
+        class="group/button flex size-9 items-center justify-center rounded-full bg-gray-100 transition-colors hover:bg-gray-200 dark:bg-neutral-800 dark:hover:bg-neutral-700"
         @click="handlePrev"
       >
         <Icon
           name="lucide:arrow-left"
+          aria-hidden="true"
           class="size-5 text-black transition-transform duration-300 group-hover/button:rotate-12 dark:text-neutral-400"
         />
       </button>
@@ -67,11 +66,14 @@
       </div>
 
       <button
-        class="group/button flex size-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800"
+        type="button"
+        aria-label="Next testimonial"
+        class="group/button flex size-9 items-center justify-center rounded-full bg-gray-100 transition-colors hover:bg-gray-200 dark:bg-neutral-800 dark:hover:bg-neutral-700"
         @click="handleNext"
       >
         <Icon
           name="lucide:arrow-right"
+          aria-hidden="true"
           class="size-5 text-black transition-transform duration-300 group-hover/button:-rotate-12 dark:text-neutral-400"
         />
       </button>

@@ -42,13 +42,12 @@ const stats = [
             </div>
           </div>
 
-          <h2 id="bento-title" class="mt-6 text-center text-3xl font-extrabold tracking-tight sm:text-4xl" v-motion-slide-visible-once-bottom>
+          <h2 id="results-title" class="mt-6 text-center text-3xl font-extrabold tracking-tight sm:text-4xl" v-motion-slide-visible-once-bottom>
             Outcomes that move the
             <span class="relative px-1">
               <span class="absolute inset-x-0 bottom-0 h-3 -skew-x-12 bg-primary/20"></span>
               <span class="relative text-primary">numbers</span>
-            </span>
-            .
+            </span>.
           </h2>
           <p class="mx-auto mt-3 max-w-2xl text-center text-base text-muted md:text-lg" v-motion-slide-visible-once-bottom :delay="80">
             Clean design is the entry fee. The real win is measurable growth and time saved.

@@ -16,6 +16,10 @@ export default defineContentConfig({
       schema: z.object({
         title: z.string(),
         description: z.string(),
+        /** Shorter title for <title>/OG (falls back to `title`). */
+        seoTitle: z.string().optional(),
+        /** ≤155 char meta description (falls back to `description`). */
+        seoDescription: z.string().optional(),
         image: z.string(),
         category: z.string(),
         date: z.date(),
@@ -41,8 +45,12 @@ export default defineContentConfig({
       },
       schema: z.object({
         title: z.string(),
-        link: z.string().url(),
+        link: z.string().url().optional(),
         description: z.string(),
+        /** Shorter title for <title>/OG (falls back to `title`). */
+        seoTitle: z.string().optional(),
+        /** ≤155 char meta description (falls back to `description`). */
+        seoDescription: z.string().optional(),
         category: z.string(),
         image: z.string(),
         date: z.date(),

@@ -6,14 +6,14 @@ const { data: posts } = await useAsyncData('blog-posts', () => {
 })
 
 useSeoMeta({
-  title: 'Read Articles from My Digital Garden',
-  ogTitle: 'Read Articles from My Digital Garden',
+  title: 'Blog: Web Design, SEO & Automation Notes',
+  ogTitle: 'Blog: Web Design, SEO & Automation Notes',
   description: 'Practical notes on conversion, automation, SEO, and building production-ready systems.',
   ogDescription: 'Practical notes on conversion, automation, SEO, and building production-ready systems.',
 })
 
 defineOgImage('NuxtSeo.takumi', {
-  title: 'Read Articles from My Digital Garden',
+  title: 'Blog: Web Design, SEO & Automation Notes',
   description: "Practical notes on conversion, automation, SEO, and building production-ready systems."
 });
 
@@ -75,6 +75,8 @@ function formatDate(dateStr: string) {
               <button
                 v-for="c in categories"
                 :key="c"
+                type="button"
+                :aria-pressed="activeCategory === c"
                 @click="activeCategory = c"
                 class="rounded-full border px-3 py-1.5 text-xs font-semibold transition"
                 :class="activeCategory === c
@@ -111,20 +113,25 @@ function formatDate(dateStr: string) {
         <!-- FEATURED -->
         <div v-if="featured" class="grid gap-6 lg:grid-cols-12">
           <article class="group relative overflow-hidden rounded-3xl border border-black/10 bg-white/40 backdrop-blur transition hover:shadow-xl dark:border-white/10 dark:bg-black/20 lg:col-span-12">
-            <NuxtLink :href="featured.path" class="grid lg:grid-cols-12">
-              
+            <NuxtLink :to="featured.path" class="grid lg:grid-cols-12">
               <div class="relative aspect-16/10 overflow-hidden lg:col-span-7">
-                <NuxtImg
+                <ResponsiveImage
                   v-if="featured.image"
                   :src="featured.image"
+                  :alt="featured.title"
+                  sizes="(min-width: 1024px) 58vw, 92vw"
+                  priority
                   class="absolute inset-0 h-full w-full object-cover transition group-hover:scale-105"
                 />
                 <div class="absolute inset-0 bg-linear-to-b from-transparent to-black/70" />
               </div>
 
               <div class="p-6 lg:col-span-5">
-                <div class="text-xs uppercase text-muted">
-                  {{ formatDate(featured.date) }}
+                <div class="flex items-center gap-x-3 text-xs">
+                  <time class="uppercase text-muted">{{ formatDate(featured.date) }}</time>
+                  <span class="rounded-full bg-primary/15 px-2 py-1 font-semibold text-primary">
+                    {{ featured.category }}
+                  </span>
                 </div>
                 <h2 class="mt-3 text-2xl font-extrabold">
                   {{ featured.title }}
@@ -154,11 +161,13 @@ function formatDate(dateStr: string) {
                 :key="post.id"
                 class="group relative overflow-hidden rounded-2xl bg-white/40 backdrop-blur transition duration-300 hover:-translate-y-1 hover:shadow-2xl dark:bg-black/20"
               >
-                <NuxtLink :href="post.path" class="block p-5 z-10">
+                <NuxtLink :to="post.path" class="block p-5 z-10">
                   <div class="relative aspect-16/10 overflow-hidden">
-                    <NuxtImg
+                    <ResponsiveImage
                       v-if="post.image"
                       :src="post.image"
+                      :alt="post.title"
+                      sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 92vw"
                       class="absolute inset-0 h-full w-full object-cover transition group-hover:scale-105"
                     />
                     <div class="absolute inset-0 bg-linear-to-b from-transparent to-black/70" />

@@ -2,6 +2,8 @@
 title: "CraftEd – University Placement Website for Global Education Pathways to Malaysia"
 link: "https://crafted.thecraftcatalyst.com"
 description: "A WordPress-based website for CraftEd, The Craft Catalyst's CUE-approved university placement service connecting East African students to top Malaysian universities. Features a news and insights blog, webinar registration system, consultation booking, eligibility checking, and dual-office contact details for Kenya and Malaysia."
+seoTitle: "CraftEd: University Placement Website"
+seoDescription: "A WordPress site for CraftEd's university placement service, with webinar registration, eligibility checks, and consultation booking."
 category: "Website"
 image: "/images/project/crafted.png"
 date: "2026-04-20"
@@ -25,7 +27,7 @@ stack:
   - mariadb
 ---
 
-# Case Study: CraftEd – University Placement Website for Global Education Pathways to Malaysia
+## Case Study: CraftEd – University Placement Website for Global Education Pathways to Malaysia
 
 ## Client: CraftEd — The Craft Catalyst (Nairobi, Kenya & Shah Alam, Malaysia)
 
@@ -128,5 +130,5 @@ What makes this project special is the human impact behind it. Every consultatio
 Got a project or an idea? Want to build something that makes an impact?
 
 Send me an email: [bretoreta@gmail.com](mailto:bretoreta@gmail.com)
-Start Your Free Trial: [bretoreta.me/contact](https://bretoreta.me/contact) — No upfront payment, 30 days free
+Start Your Free Trial: [bretoreta.me/contact](/contact) — No upfront payment, 30 days free
 Visit CraftEd: [crafted.thecraftcatalyst.com](https://crafted.thecraftcatalyst.com)

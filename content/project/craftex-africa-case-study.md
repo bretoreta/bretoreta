@@ -2,6 +2,8 @@
 title: "CraftEx Africa – Marketing Website for Kenya's First AI-Powered Virtual Work Experience Platform"
 link: "https://craftex.africa"
 description: "A sleek, conversion-focused marketing website built on WordPress for CraftEx — Kenya's first AI-powered virtual work simulation platform developed by The Craft Catalyst. The site communicates the platform's value to students, universities, and corporate partners, with a tabbed messaging architecture, embedded video testimonials, partner showcases, and FAQ sections."
+seoTitle: "CraftEx Africa: AI Work Experience Platform"
+seoDescription: "A conversion-focused WordPress marketing site for CraftEx, Kenya's AI-powered virtual work experience platform."
 category: "Website"
 image: "/images/project/craftex.png"
 date: "2026-04-22"
@@ -25,7 +27,7 @@ stack:
   - mariadb
 ---
 
-# Case Study: CraftEx Africa – Marketing Website for Kenya's First AI-Powered Virtual Work Experience Platform
+## Case Study: CraftEx Africa – Marketing Website for Kenya's First AI-Powered Virtual Work Experience Platform
 
 ## Client: The Craft Catalyst (Nairobi, Kenya)
 
@@ -123,5 +125,5 @@ Marketing websites for EdTech products are uniquely challenging because you're n
 Got a project or an idea? Want to build something that makes an impact?
 
 Send me an email: [bretoreta@gmail.com](mailto:bretoreta@gmail.com)
-Start Your Free Trial: [bretoreta.me/contact](https://bretoreta.me/contact) — No upfront payment, 30 days free
+Start Your Free Trial: [bretoreta.me/contact](/contact) — No upfront payment, 30 days free
 Visit CraftEx: [craftex.africa](https://craftex.africa)

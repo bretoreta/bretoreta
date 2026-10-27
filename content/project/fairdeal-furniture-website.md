@@ -2,6 +2,8 @@
 title: "Fairdeal Furniture – eCommerce for a leading furniture company"
 link: "https://fairdealfurniture.co.ke"
 description: "The website is built on WordPress with WooCommerce for seamless online sales and Pesapal payment integration to facilitate secure mobile money and card payments for customers in Kenya and beyond."
+seoTitle: "Fairdeal Furniture: eCommerce Website"
+seoDescription: "A WooCommerce store for Fairdeal Furniture with Pesapal payments, mobile money, and a catalogue built for Kenyan shoppers."
 category: "Website"
 image: "/images/project/fairdealfurniture.png"
 date: "2024-12-01"
@@ -23,7 +25,7 @@ stack:
   - redis
 ---
 
-# Case Study: Fairdeal Furniture – E-Commerce Overhaul with AI-Driven Automation
+## Case Study: Fairdeal Furniture – E-Commerce Overhaul with AI-Driven Automation
 
 ## Client: Fairdeal Furniture (Kenya)
 
@@ -115,6 +117,6 @@ Got a project or an idea? Want to amplify your mission and elevate your online p
 
 Send me an email: [bretoreta@gmail.com](mailto:bretoreta@gmail.com)
 
-Start Your Free Consultation: [bretoreta.me/contact](https://bretoreta.me/contact) — No upfront payment
+Start Your Free Consultation: [bretoreta.me/contact](/contact) — No upfront payment
 
 [Visit Fairdeal Furniture](https://fairdealfurniture.co.ke)
