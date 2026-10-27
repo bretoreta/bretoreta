@@ -8,8 +8,8 @@
         Projects that prove the
         <span class="relative px-1">
           <span class="absolute inset-x-0 bottom-0 h-3 -skew-x-12 bg-primary/20"></span>
-          <span class="relative text-primary">point</span>
-        </span>.
+          <span class="relative text-primary">point.</span>
+        </span>
       </template>
 
       <template #actions>

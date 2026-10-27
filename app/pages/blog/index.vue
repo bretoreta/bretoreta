@@ -8,8 +8,8 @@
         Notes from the
         <span class="relative px-1">
           <span class="absolute inset-x-0 bottom-0 h-3 -skew-x-12 bg-primary/20"></span>
-          <span class="relative text-primary">build</span>
-        </span>.
+          <span class="relative text-primary">build.</span>
+        </span>
       </template>
 
       <template #actions>
@@ -79,14 +79,14 @@
                 class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
               />
               <div aria-hidden="true" class="absolute inset-0 bg-linear-to-t from-black/65 via-black/5 to-transparent" />
-              <span class="absolute left-4 top-4 rounded-full border border-white/15 bg-black/35 px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.14em] text-white backdrop-blur-md">
-                {{ featured.category }}
-              </span>
             </div>
 
             <div class="flex flex-col p-6 sm:p-8 lg:col-span-5">
-              <div class="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-muted">
+              <div class="flex flex-wrap items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-muted">
                 <time :datetime="isoDate(featured.date)">{{ formatDate(featured.date) }}</time>
+                <span class="rounded-full bg-primary/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-[0.1em] text-primary">
+                  {{ featured.category }}
+                </span>
                 <span class="size-1 rounded-full bg-primary" aria-hidden="true" />
                 <span>Featured</span>
               </div>
@@ -112,43 +112,7 @@
         <div v-if="rest?.length" class="mt-14">
           <h2 class="text-xl font-extrabold tracking-tight sm:text-2xl">More notes</h2>
           <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <article
-              v-for="post in rest"
-              :key="post.id"
-              class="group flex h-full flex-col overflow-hidden rounded-2xl border border-black/10 bg-white/60 shadow-sm backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-[0_24px_60px_-30px_rgba(16,185,129,0.5)] dark:border-white/10 dark:bg-white/[0.04] dark:hover:border-primary/40"
-            >
-              <NuxtLink :to="post.path" class="flex h-full flex-col">
-                <div class="relative aspect-16/10 overflow-hidden bg-gray-100 dark:bg-white/5">
-                  <ResponsiveImage
-                    v-if="post.image"
-                    :src="post.image"
-                    :alt="post.title"
-                    sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 92vw"
-                    class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
-                  />
-                  <div aria-hidden="true" class="absolute inset-0 bg-linear-to-t from-black/55 via-black/5 to-transparent" />
-                  <span class="absolute left-4 top-4 rounded-full border border-white/15 bg-black/35 px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.14em] text-white backdrop-blur-md">
-                    {{ post.category }}
-                  </span>
-                </div>
-
-                <div class="flex flex-1 flex-col p-5">
-                  <time :datetime="isoDate(post.date)" class="text-[11px] font-semibold uppercase tracking-[0.14em] text-muted">
-                    {{ formatDate(post.date) }}
-                  </time>
-                  <h3 class="mt-2 line-clamp-2 text-lg font-extrabold leading-snug tracking-tight transition-colors group-hover:text-primary">
-                    {{ post.title }}
-                  </h3>
-                  <p class="mt-2 line-clamp-3 text-sm leading-relaxed text-muted">
-                    {{ post.description }}
-                  </p>
-                  <div class="mt-auto flex items-center justify-between gap-4 pt-5">
-                    <span class="text-xs font-bold text-primary">Read article</span>
-                    <Icon name="lucide:arrow-right" class="size-3.5 text-primary transition-transform duration-200 group-hover:translate-x-0.5" aria-hidden="true" />
-                  </div>
-                </div>
-              </NuxtLink>
-            </article>
+            <BlogCard v-for="post in rest" :key="post.id" :post="post" />
           </div>
         </div>
 

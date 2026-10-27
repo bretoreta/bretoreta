@@ -13,7 +13,10 @@ const install = "bun add pullcord-vue";
         <div class="relative grid items-center gap-8 p-6 sm:p-10 lg:grid-cols-12 lg:gap-12">
           <div class="lg:col-span-8">
             <div class="flex flex-wrap items-center gap-3">
-              <UBadge>Open source</UBadge>
+              <div class="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-primary">
+                <span class="size-1.5 rounded-full bg-primary" aria-hidden="true" />
+                Open source
+              </div>
               <span class="text-xs font-semibold text-muted">MIT · Vue 3 · zero dependencies</span>
             </div>
 

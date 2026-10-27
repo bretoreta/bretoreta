@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto max-w-7xl pb-24">
+  <section class="mx-auto max-w-7xl pb-24" aria-labelledby="featured-projects-title">
     <div class="mb-10 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between md:mb-14">
       <div class="max-w-2xl">
         <div
@@ -10,6 +10,7 @@
           Selected work
         </div>
         <h2
+          id="featured-projects-title"
           class="max-w-lg text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none"
           v-motion-slide-visible-once-bottom
           :delay="100"
@@ -49,7 +50,7 @@
     >
       <ProjectCard :project="item" />
     </UCarousel>
-  </div>
+  </section>
 </template>
 
 <script setup>

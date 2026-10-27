@@ -1,12 +1,15 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Websites & AI Agents That Drive Growth',
-  description: 'A web developer and AI automation expert helping businesses launch stunning websites and automate repetitive tasks with AI',
+  title: 'Web Developer & AI Automation Expert in Kenya',
+  description: 'Bret Oreta builds high-converting websites, AI agents, and automation systems for businesses in Kenya and beyond. Based in Mombasa.',
+  ogTitle: 'Web Developer & AI Automation Expert in Kenya',
+  ogDescription: 'Bret Oreta builds high-converting websites, AI agents, and automation systems for businesses in Kenya and beyond. Based in Mombasa.',
+  ogType: 'website',
 })
 
 defineOgImage('NuxtSeo.takumi', {
-  title: 'Websites & AI Agents That Drive Growth',
-  description: "A web developer and AI automation expert helping businesses launch stunning websites and automate repetitive tasks with AI"
+  title: 'Web Developer & AI Automation Expert in Kenya',
+  description: "High-converting websites, AI agents, and automation systems for businesses in Kenya and beyond."
 });
 
 </script>
@@ -14,7 +17,7 @@ defineOgImage('NuxtSeo.takumi', {
 <template>
   <div class="w-full">
     <HomeHero />
-    <div data-character-section="projects">
+    <div id="projects" data-character-section="projects">
       <HomeProjects />
     </div>
     <CompanyLogos />
@@ -23,8 +26,8 @@ defineOgImage('NuxtSeo.takumi', {
     <HomeHighlights />
     <HomeNumbers />
     <Bookings />
-    <HomeCta />
     <HomeOpenSource />
     <BlogHighlights />
+    <HomeCta />
   </div>
 </template>
