@@ -95,6 +95,24 @@
     },
     "bytes": 221
   },
+  "/images/blog/ai-agents-for-small-business-2026.png": {
+    "base": "/images/opt/blog/ai-agents-for-small-business-2026",
+    "width": 1600,
+    "height": 900,
+    "formats": {
+      "avif": [
+        480,
+        768,
+        1200
+      ],
+      "webp": [
+        480,
+        768,
+        1200
+      ]
+    },
+    "bytes": 143
+  },
   "/images/blog/ai-automation-in-kenyan-business.jpg": {
     "base": "/images/opt/blog/ai-automation-in-kenyan-business",
     "width": 1920,
@@ -114,6 +132,60 @@
       ]
     },
     "bytes": 138
+  },
+  "/images/blog/ai-browser-agents-security-2026.png": {
+    "base": "/images/opt/blog/ai-browser-agents-security-2026",
+    "width": 1600,
+    "height": 900,
+    "formats": {
+      "avif": [
+        480,
+        768,
+        1200
+      ],
+      "webp": [
+        480,
+        768,
+        1200
+      ]
+    },
+    "bytes": 138
+  },
+  "/images/blog/ai-coding-agents-claude-code-codex-cursor-2026.png": {
+    "base": "/images/opt/blog/ai-coding-agents-claude-code-codex-cursor-2026",
+    "width": 1600,
+    "height": 900,
+    "formats": {
+      "avif": [
+        480,
+        768,
+        1200
+      ],
+      "webp": [
+        480,
+        768,
+        1200
+      ]
+    },
+    "bytes": 147
+  },
+  "/images/blog/ai-voice-agents-lead-qualification-2026.png": {
+    "base": "/images/opt/blog/ai-voice-agents-lead-qualification-2026",
+    "width": 1600,
+    "height": 900,
+    "formats": {
+      "avif": [
+        480,
+        768,
+        1200
+      ],
+      "webp": [
+        480,
+        768,
+        1200
+      ]
+    },
+    "bytes": 146
   },
   "/images/blog/cloud-provider-backbone.jpg": {
     "base": "/images/opt/blog/cloud-provider-backbone",
@@ -135,6 +207,78 @@
     },
     "bytes": 344
   },
+  "/images/blog/cloudflare-workers-ai-edge-2026.png": {
+    "base": "/images/opt/blog/cloudflare-workers-ai-edge-2026",
+    "width": 1600,
+    "height": 900,
+    "formats": {
+      "avif": [
+        480,
+        768,
+        1200
+      ],
+      "webp": [
+        480,
+        768,
+        1200
+      ]
+    },
+    "bytes": 137
+  },
+  "/images/blog/core-web-vitals-2026-inp-ai-sites.png": {
+    "base": "/images/opt/blog/core-web-vitals-2026-inp-ai-sites",
+    "width": 1600,
+    "height": 900,
+    "formats": {
+      "avif": [
+        480,
+        768,
+        1200
+      ],
+      "webp": [
+        480,
+        768,
+        1200
+      ]
+    },
+    "bytes": 142
+  },
+  "/images/blog/generative-engine-optimization-2026.png": {
+    "base": "/images/opt/blog/generative-engine-optimization-2026",
+    "width": 1600,
+    "height": 900,
+    "formats": {
+      "avif": [
+        480,
+        768,
+        1200
+      ],
+      "webp": [
+        480,
+        768,
+        1200
+      ]
+    },
+    "bytes": 147
+  },
+  "/images/blog/how-to-secure-ai-agents-2026.png": {
+    "base": "/images/opt/blog/how-to-secure-ai-agents-2026",
+    "width": 1600,
+    "height": 900,
+    "formats": {
+      "avif": [
+        480,
+        768,
+        1200
+      ],
+      "webp": [
+        480,
+        768,
+        1200
+      ]
+    },
+    "bytes": 141
+  },
   "/images/blog/how-to-use-cloudflare-r2-with-laravel-storage.png": {
     "base": "/images/opt/blog/how-to-use-cloudflare-r2-with-laravel-storage",
     "width": 1536,
@@ -152,6 +296,42 @@
       ]
     },
     "bytes": 1516
+  },
+  "/images/blog/laravel-ai-agents-architecture-2026.png": {
+    "base": "/images/opt/blog/laravel-ai-agents-architecture-2026",
+    "width": 1600,
+    "height": 900,
+    "formats": {
+      "avif": [
+        480,
+        768,
+        1200
+      ],
+      "webp": [
+        480,
+        768,
+        1200
+      ]
+    },
+    "bytes": 134
+  },
+  "/images/blog/model-context-protocol-mcp-guide-2026.png": {
+    "base": "/images/opt/blog/model-context-protocol-mcp-guide-2026",
+    "width": 1600,
+    "height": 900,
+    "formats": {
+      "avif": [
+        480,
+        768,
+        1200
+      ],
+      "webp": [
+        480,
+        768,
+        1200
+      ]
+    },
+    "bytes": 141
   },
   "/images/blog/the-importance-of-website-accessibility-in-kenya.jpg": {
     "base": "/images/opt/blog/the-importance-of-website-accessibility-in-kenya",
