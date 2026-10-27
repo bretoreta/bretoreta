@@ -27,8 +27,8 @@
             v-motion-slide-bottom
             :delay="110"
           >
-            Your competitors are stealing your customers while you sleep. I build
-            <ContainerFlip :words="['AI Automations', 'Websites that Sell', 'SaaS Products', 'AI Agents']" class="mt-3" />
+            Your competitors are automating while you sleep. I build high-converting
+            <ContainerFlip :words="['AI Agents', 'Websites', 'AI Automation']" class="mt-3" />
           </h1>
 
           <p
