@@ -25,7 +25,7 @@ const services = [
 </script>
 
 <template>
-  <section id="services" aria-labelledby="services-title" class="py-14 sm:py-20">
+  <section id="services" aria-labelledby="services-title" class="py-14 sm:py-20" data-character-section="services">
     <div class="mx-auto w-full max-w-7xl px-2 sm:px-6 lg:px-10">
       <div class="relative overflow-hidden border-t border-black/10 bg-white/40 p-2 md:p-6 backdrop-blur dark:border-white/10 dark:bg-black/20 sm:p-10">
         <div aria-hidden="true" class="pointer-events-none absolute inset-0">

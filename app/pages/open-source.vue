@@ -58,7 +58,7 @@ const badges = ["v0.1.0", "MIT", "Vue 3.5+", "0 dependencies"];
 </script>
 
 <template>
-  <div class="py-10 sm:py-14">
+  <div class="py-10 sm:py-14" data-character-section="open-source">
     <!-- HERO -->
     <section class="relative overflow-hidden">
       <div aria-hidden="true" class="pointer-events-none absolute inset-0">

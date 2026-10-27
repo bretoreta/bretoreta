@@ -3,7 +3,7 @@ const install = "bun add pullcord-vue";
 </script>
 
 <template>
-  <section id="open-source" aria-labelledby="open-source-title" class="py-14 sm:py-20">
+  <section id="open-source" aria-labelledby="open-source-title" class="py-14 sm:py-20" data-character-section="open-source">
     <div class="mx-auto w-full max-w-7xl px-2 sm:px-6 lg:px-10">
       <div class="relative overflow-hidden rounded-3xl border border-black/10 bg-white/40 backdrop-blur dark:border-white/10 dark:bg-black/20">
         <div aria-hidden="true" class="pointer-events-none absolute inset-0">

@@ -1,5 +1,5 @@
 <template>
-  <section id="book" aria-labelledby="book-title" class="py-14 sm:py-20">
+  <section id="book" aria-labelledby="book-title" class="py-14 sm:py-20" data-character-section="book">
     <div class="mx-auto w-full max-w-7xl px-2 sm:px-6 lg:px-10">
       <div class="mx-auto mb-10 max-w-2xl text-center md:mb-12">
         <h2

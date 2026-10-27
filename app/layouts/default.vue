@@ -94,5 +94,7 @@ useSeoMeta({
     </div>
 
     <Footer />
+
+    <CharacterCompanion />
   </div>
 </template>

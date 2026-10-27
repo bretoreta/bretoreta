@@ -15,7 +15,7 @@ defineOgImage('NuxtSeo.takumi', {
 </script>
 
 <template>
-  <div class="relative mt-10 py-14 md:py-20">
+  <div class="relative mt-10 py-14 md:py-20" data-character-section="contact">
     <div class="page-grid-top"></div>
     <div class="mx-auto w-full max-w-7xl px-2 sm:px-6 lg:px-10">
       <div class="max-w-3xl">

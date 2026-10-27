@@ -1,5 +1,5 @@
 <template>
-  <section id="cta" aria-labelledby="cta-title" class="py-14 sm:py-20">
+  <section id="cta" aria-labelledby="cta-title" class="py-14 sm:py-20" data-character-section="cta">
     <div class="mx-auto w-full max-w-7xl px-2 sm:px-6 lg:px-10">
       <div class="relative overflow-hidden rounded-3xl border border-black/10 bg-white/50 p-6 backdrop-blur dark:border-white/10 dark:bg-black/20 sm:p-10">
         <div aria-hidden="true" class="pointer-events-none absolute -inset-24">

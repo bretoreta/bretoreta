@@ -171,7 +171,7 @@ const stack = [
     </header>
 
     <main class="mt-12 sm:mt-16">
-      <section id="what-i-do" aria-labelledby="what-i-do-title" class="py-14 sm:py-20">
+      <section id="what-i-do" aria-labelledby="what-i-do-title" class="py-14 sm:py-20" data-character-section="about">
         <div class="mx-auto w-full max-w-7xl px-2 sm:px-6 lg:px-10">
           <div class="mx-auto max-w-2xl text-center">
             <div class="mb-4" v-motion-slide-visible-once-bottom>
@@ -213,7 +213,7 @@ const stack = [
         </div>
       </section>
 
-      <section id="stack" aria-labelledby="stack-title" class="py-14 sm:py-20">
+      <section id="stack" aria-labelledby="stack-title" class="py-14 sm:py-20" data-character-section="skills">
         <div class="mx-auto w-full max-w-7xl px-2 sm:px-6 lg:px-10">
           <div class="grid items-center gap-8 lg:grid-cols-12">
             <div class="lg:col-span-5">

@@ -1,5 +1,5 @@
 <template>
-  <section id="clients" aria-labelledby="clients-title" class="py-14 sm:py-20">
+  <section id="clients" aria-labelledby="clients-title" class="py-14 sm:py-20" data-character-section="clients">
     <div class="mx-auto w-full max-w-7xl px-2 sm:px-6 lg:px-10">
       <div class="grid gap-10">
         <div class="mx-auto max-w-2xl text-center">

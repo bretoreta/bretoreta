@@ -43,7 +43,7 @@ function formatDate(dateStr: string) {
 </script>
 
 <template>
-  <div class="py-10 sm:py-14">
+  <div class="py-10 sm:py-14" data-character-section="blog">
     
     <!-- HERO -->
     <section class="relative overflow-hidden">

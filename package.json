@@ -3,11 +3,12 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "node scripts/optimize-images.mjs && nuxt generate",
-    "build:worker": "node scripts/optimize-images.mjs && nuxt build",
-    "dev": "node scripts/optimize-images.mjs && nuxt dev",
-    "generate": "node scripts/optimize-images.mjs && nuxt generate",
+    "build": "node scripts/optimize-images.mjs && node scripts/extract-character-sprites.mjs && nuxt generate",
+    "build:worker": "node scripts/optimize-images.mjs && node scripts/extract-character-sprites.mjs && nuxt build",
+    "dev": "node scripts/optimize-images.mjs && node scripts/extract-character-sprites.mjs && nuxt dev",
+    "generate": "node scripts/optimize-images.mjs && node scripts/extract-character-sprites.mjs && nuxt generate",
     "images": "node scripts/optimize-images.mjs",
+    "sprites": "node scripts/extract-character-sprites.mjs",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "start": "npx --yes serve .output/public"

@@ -1,5 +1,5 @@
 <template>
-  <section id="process" aria-labelledby="process-title" class="py-14 sm:py-20">
+  <section id="process" aria-labelledby="process-title" class="py-14 sm:py-20" data-character-section="process">
     <div class="mx-auto w-full max-w-7xl px-2 sm:px-6 lg:px-10">
       <div class="relative grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <div class="lg:col-span-1" v-motion-slide-visible-once-bottom :delay="200">

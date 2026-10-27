@@ -14,7 +14,9 @@ defineOgImage('NuxtSeo.takumi', {
 <template>
   <div class="w-full">
     <HomeHero />
-    <HomeProjects />
+    <div data-character-section="projects">
+      <HomeProjects />
+    </div>
     <CompanyLogos />
     <!-- <Bento /> -->
     <HomeCompanies />

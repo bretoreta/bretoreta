@@ -1,0 +1,1667 @@
+{
+  "source": "/images/Chibi Character Pixel Sprite Sheet.png",
+  "canvas": {
+    "width": 144,
+    "height": 176,
+    "baseline": 168
+  },
+  "portraitCanvas": {
+    "width": 112,
+    "height": 136,
+    "baseline": 132
+  },
+  "categories": {
+    "walking": {
+      "fps": 10,
+      "loop": true,
+      "canvas": {
+        "width": 144,
+        "height": 176,
+        "baseline": 168
+      },
+      "frames": [
+        "walk_1",
+        "walk_2",
+        "walk_3",
+        "walk_4",
+        "walk_5",
+        "walk_6",
+        "walk_7",
+        "walk_8"
+      ]
+    },
+    "talking": {
+      "fps": 6,
+      "loop": true,
+      "canvas": {
+        "width": 112,
+        "height": 136,
+        "baseline": 132
+      },
+      "frames": [
+        "talk_1",
+        "talk_2",
+        "talk_3",
+        "talk_4",
+        "talk_5",
+        "talk_6"
+      ]
+    },
+    "idle": {
+      "fps": 3,
+      "loop": true,
+      "canvas": {
+        "width": 144,
+        "height": 176,
+        "baseline": 168
+      },
+      "frames": [
+        "idle_1",
+        "idle_2",
+        "idle_3",
+        "idle_4"
+      ]
+    },
+    "blink": {
+      "fps": 8,
+      "loop": false,
+      "canvas": {
+        "width": 144,
+        "height": 176,
+        "baseline": 168
+      },
+      "frames": [
+        "blink_1",
+        "blink_2"
+      ]
+    },
+    "look": {
+      "fps": 2.5,
+      "loop": false,
+      "canvas": {
+        "width": 144,
+        "height": 176,
+        "baseline": 168
+      },
+      "frames": [
+        "look_left",
+        "look_center",
+        "look_right"
+      ]
+    },
+    "emotions": {
+      "fps": 2,
+      "loop": false,
+      "canvas": {
+        "width": 144,
+        "height": 176,
+        "baseline": 168
+      },
+      "frames": [
+        "happy",
+        "excited",
+        "thinking",
+        "confused",
+        "sad"
+      ]
+    },
+    "laptop": {
+      "fps": 8,
+      "loop": true,
+      "canvas": {
+        "width": 144,
+        "height": 176,
+        "baseline": 168
+      },
+      "frames": [
+        "sit_idle",
+        "type_1",
+        "type_2",
+        "type_3",
+        "type_4",
+        "look_up",
+        "hold_laptop",
+        "read",
+        "type_stand"
+      ]
+    },
+    "dragging": {
+      "fps": 9,
+      "loop": true,
+      "canvas": {
+        "width": 144,
+        "height": 176,
+        "baseline": 168
+      },
+      "frames": [
+        "drag_1",
+        "drag_2",
+        "drag_3"
+      ]
+    },
+    "jumping": {
+      "fps": 6,
+      "loop": false,
+      "canvas": {
+        "width": 144,
+        "height": 176,
+        "baseline": 168
+      },
+      "frames": [
+        "jump",
+        "air",
+        "land"
+      ]
+    },
+    "interactions": {
+      "fps": 2,
+      "loop": false,
+      "canvas": {
+        "width": 144,
+        "height": 176,
+        "baseline": 168
+      },
+      "frames": [
+        "wave",
+        "point",
+        "thumbs_up",
+        "shrug",
+        "facepalm",
+        "laugh",
+        "sleep",
+        "stretch",
+        "celebrate",
+        "scared",
+        "angry",
+        "cool"
+      ]
+    }
+  },
+  "sprites": {
+    "walk_1": {
+      "name": "walk_1",
+      "file": "/assets/character/walking/walk_1.png",
+      "category": "walking",
+      "index": 0,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 100,
+      "fps": 10,
+      "loop": true,
+      "source": {
+        "x": 25,
+        "y": 49,
+        "width": 88,
+        "height": 154
+      },
+      "bounds": {
+        "x": 26,
+        "y": 50,
+        "width": 86,
+        "height": 152
+      }
+    },
+    "walk_2": {
+      "name": "walk_2",
+      "file": "/assets/character/walking/walk_2.png",
+      "category": "walking",
+      "index": 1,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 100,
+      "fps": 10,
+      "loop": true,
+      "source": {
+        "x": 128,
+        "y": 50,
+        "width": 87,
+        "height": 153
+      },
+      "bounds": {
+        "x": 129,
+        "y": 51,
+        "width": 85,
+        "height": 151
+      }
+    },
+    "walk_3": {
+      "name": "walk_3",
+      "file": "/assets/character/walking/walk_3.png",
+      "category": "walking",
+      "index": 2,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 100,
+      "fps": 10,
+      "loop": true,
+      "source": {
+        "x": 233,
+        "y": 49,
+        "width": 86,
+        "height": 154
+      },
+      "bounds": {
+        "x": 234,
+        "y": 50,
+        "width": 84,
+        "height": 152
+      }
+    },
+    "walk_4": {
+      "name": "walk_4",
+      "file": "/assets/character/walking/walk_4.png",
+      "category": "walking",
+      "index": 3,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 100,
+      "fps": 10,
+      "loop": true,
+      "source": {
+        "x": 337,
+        "y": 49,
+        "width": 87,
+        "height": 154
+      },
+      "bounds": {
+        "x": 338,
+        "y": 50,
+        "width": 85,
+        "height": 152
+      }
+    },
+    "walk_5": {
+      "name": "walk_5",
+      "file": "/assets/character/walking/walk_5.png",
+      "category": "walking",
+      "index": 4,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 100,
+      "fps": 10,
+      "loop": true,
+      "source": {
+        "x": 447,
+        "y": 48,
+        "width": 81,
+        "height": 155
+      },
+      "bounds": {
+        "x": 448,
+        "y": 49,
+        "width": 79,
+        "height": 153
+      }
+    },
+    "walk_6": {
+      "name": "walk_6",
+      "file": "/assets/character/walking/walk_6.png",
+      "category": "walking",
+      "index": 5,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 100,
+      "fps": 10,
+      "loop": true,
+      "source": {
+        "x": 548,
+        "y": 49,
+        "width": 84,
+        "height": 154
+      },
+      "bounds": {
+        "x": 549,
+        "y": 50,
+        "width": 82,
+        "height": 152
+      }
+    },
+    "walk_7": {
+      "name": "walk_7",
+      "file": "/assets/character/walking/walk_7.png",
+      "category": "walking",
+      "index": 6,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 100,
+      "fps": 10,
+      "loop": true,
+      "source": {
+        "x": 650,
+        "y": 48,
+        "width": 86,
+        "height": 155
+      },
+      "bounds": {
+        "x": 651,
+        "y": 49,
+        "width": 84,
+        "height": 153
+      }
+    },
+    "walk_8": {
+      "name": "walk_8",
+      "file": "/assets/character/walking/walk_8.png",
+      "category": "walking",
+      "index": 7,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 100,
+      "fps": 10,
+      "loop": true,
+      "source": {
+        "x": 758,
+        "y": 48,
+        "width": 86,
+        "height": 155
+      },
+      "bounds": {
+        "x": 759,
+        "y": 49,
+        "width": 84,
+        "height": 153
+      }
+    },
+    "talk_1": {
+      "name": "talk_1",
+      "file": "/assets/character/talking/talk_1.png",
+      "category": "talking",
+      "index": 8,
+      "width": 112,
+      "height": 136,
+      "anchor": {
+        "x": 56,
+        "y": 132
+      },
+      "duration": 167,
+      "fps": 6,
+      "loop": true,
+      "source": {
+        "x": 892,
+        "y": 76,
+        "width": 97,
+        "height": 130
+      },
+      "bounds": {
+        "x": 893,
+        "y": 77,
+        "width": 95,
+        "height": 128
+      }
+    },
+    "talk_2": {
+      "name": "talk_2",
+      "file": "/assets/character/talking/talk_2.png",
+      "category": "talking",
+      "index": 9,
+      "width": 112,
+      "height": 136,
+      "anchor": {
+        "x": 56,
+        "y": 132
+      },
+      "duration": 167,
+      "fps": 6,
+      "loop": true,
+      "source": {
+        "x": 998,
+        "y": 76,
+        "width": 98,
+        "height": 129
+      },
+      "bounds": {
+        "x": 999,
+        "y": 77,
+        "width": 96,
+        "height": 127
+      }
+    },
+    "talk_3": {
+      "name": "talk_3",
+      "file": "/assets/character/talking/talk_3.png",
+      "category": "talking",
+      "index": 10,
+      "width": 112,
+      "height": 136,
+      "anchor": {
+        "x": 56,
+        "y": 132
+      },
+      "duration": 167,
+      "fps": 6,
+      "loop": true,
+      "source": {
+        "x": 1104,
+        "y": 76,
+        "width": 97,
+        "height": 130
+      },
+      "bounds": {
+        "x": 1105,
+        "y": 77,
+        "width": 95,
+        "height": 128
+      }
+    },
+    "talk_4": {
+      "name": "talk_4",
+      "file": "/assets/character/talking/talk_4.png",
+      "category": "talking",
+      "index": 11,
+      "width": 112,
+      "height": 136,
+      "anchor": {
+        "x": 56,
+        "y": 132
+      },
+      "duration": 167,
+      "fps": 6,
+      "loop": true,
+      "source": {
+        "x": 1210,
+        "y": 76,
+        "width": 103,
+        "height": 131
+      },
+      "bounds": {
+        "x": 1211,
+        "y": 77,
+        "width": 101,
+        "height": 129
+      }
+    },
+    "talk_5": {
+      "name": "talk_5",
+      "file": "/assets/character/talking/talk_5.png",
+      "category": "talking",
+      "index": 12,
+      "width": 112,
+      "height": 136,
+      "anchor": {
+        "x": 56,
+        "y": 132
+      },
+      "duration": 167,
+      "fps": 6,
+      "loop": true,
+      "source": {
+        "x": 1317,
+        "y": 76,
+        "width": 98,
+        "height": 131
+      },
+      "bounds": {
+        "x": 1318,
+        "y": 77,
+        "width": 96,
+        "height": 129
+      }
+    },
+    "talk_6": {
+      "name": "talk_6",
+      "file": "/assets/character/talking/talk_6.png",
+      "category": "talking",
+      "index": 13,
+      "width": 112,
+      "height": 136,
+      "anchor": {
+        "x": 56,
+        "y": 132
+      },
+      "duration": 167,
+      "fps": 6,
+      "loop": true,
+      "source": {
+        "x": 1423,
+        "y": 75,
+        "width": 96,
+        "height": 132
+      },
+      "bounds": {
+        "x": 1424,
+        "y": 76,
+        "width": 94,
+        "height": 130
+      }
+    },
+    "idle_1": {
+      "name": "idle_1",
+      "file": "/assets/character/idle/idle_1.png",
+      "category": "idle",
+      "index": 0,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 333,
+      "fps": 3,
+      "loop": true,
+      "source": {
+        "x": 21,
+        "y": 317,
+        "width": 74,
+        "height": 138
+      },
+      "bounds": {
+        "x": 22,
+        "y": 318,
+        "width": 72,
+        "height": 136
+      }
+    },
+    "idle_2": {
+      "name": "idle_2",
+      "file": "/assets/character/idle/idle_2.png",
+      "category": "idle",
+      "index": 1,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 333,
+      "fps": 3,
+      "loop": true,
+      "source": {
+        "x": 113,
+        "y": 316,
+        "width": 74,
+        "height": 139
+      },
+      "bounds": {
+        "x": 114,
+        "y": 317,
+        "width": 72,
+        "height": 137
+      }
+    },
+    "idle_3": {
+      "name": "idle_3",
+      "file": "/assets/character/idle/idle_3.png",
+      "category": "idle",
+      "index": 2,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 333,
+      "fps": 3,
+      "loop": true,
+      "source": {
+        "x": 204,
+        "y": 316,
+        "width": 73,
+        "height": 139
+      },
+      "bounds": {
+        "x": 205,
+        "y": 317,
+        "width": 71,
+        "height": 137
+      }
+    },
+    "idle_4": {
+      "name": "idle_4",
+      "file": "/assets/character/idle/idle_4.png",
+      "category": "idle",
+      "index": 3,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 333,
+      "fps": 3,
+      "loop": true,
+      "source": {
+        "x": 296,
+        "y": 316,
+        "width": 73,
+        "height": 139
+      },
+      "bounds": {
+        "x": 297,
+        "y": 317,
+        "width": 71,
+        "height": 137
+      }
+    },
+    "blink_1": {
+      "name": "blink_1",
+      "file": "/assets/character/blink/blink_1.png",
+      "category": "blink",
+      "index": 4,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 125,
+      "fps": 8,
+      "loop": false,
+      "source": {
+        "x": 401,
+        "y": 327,
+        "width": 75,
+        "height": 129
+      },
+      "bounds": {
+        "x": 402,
+        "y": 328,
+        "width": 73,
+        "height": 127
+      }
+    },
+    "blink_2": {
+      "name": "blink_2",
+      "file": "/assets/character/blink/blink_2.png",
+      "category": "blink",
+      "index": 5,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 125,
+      "fps": 8,
+      "loop": false,
+      "source": {
+        "x": 494,
+        "y": 327,
+        "width": 76,
+        "height": 129
+      },
+      "bounds": {
+        "x": 495,
+        "y": 328,
+        "width": 74,
+        "height": 127
+      }
+    },
+    "look_left": {
+      "name": "look_left",
+      "file": "/assets/character/look/look_left.png",
+      "category": "look",
+      "index": 6,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 400,
+      "fps": 2.5,
+      "loop": false,
+      "source": {
+        "x": 601,
+        "y": 326,
+        "width": 76,
+        "height": 130
+      },
+      "bounds": {
+        "x": 602,
+        "y": 327,
+        "width": 74,
+        "height": 128
+      }
+    },
+    "look_center": {
+      "name": "look_center",
+      "file": "/assets/character/look/look_center.png",
+      "category": "look",
+      "index": 7,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 400,
+      "fps": 2.5,
+      "loop": false,
+      "source": {
+        "x": 692,
+        "y": 326,
+        "width": 77,
+        "height": 129
+      },
+      "bounds": {
+        "x": 693,
+        "y": 327,
+        "width": 75,
+        "height": 127
+      }
+    },
+    "look_right": {
+      "name": "look_right",
+      "file": "/assets/character/look/look_right.png",
+      "category": "look",
+      "index": 8,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 400,
+      "fps": 2.5,
+      "loop": false,
+      "source": {
+        "x": 786,
+        "y": 326,
+        "width": 77,
+        "height": 129
+      },
+      "bounds": {
+        "x": 787,
+        "y": 327,
+        "width": 75,
+        "height": 127
+      }
+    },
+    "happy": {
+      "name": "happy",
+      "file": "/assets/character/emotions/happy.png",
+      "category": "emotions",
+      "index": 9,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 500,
+      "fps": 2,
+      "loop": false,
+      "source": {
+        "x": 887,
+        "y": 316,
+        "width": 108,
+        "height": 139
+      },
+      "bounds": {
+        "x": 888,
+        "y": 317,
+        "width": 106,
+        "height": 137
+      }
+    },
+    "excited": {
+      "name": "excited",
+      "file": "/assets/character/emotions/excited.png",
+      "category": "emotions",
+      "index": 10,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 500,
+      "fps": 2,
+      "loop": false,
+      "source": {
+        "x": 1022,
+        "y": 318,
+        "width": 112,
+        "height": 137
+      },
+      "bounds": {
+        "x": 1023,
+        "y": 319,
+        "width": 110,
+        "height": 135
+      }
+    },
+    "thinking": {
+      "name": "thinking",
+      "file": "/assets/character/emotions/thinking.png",
+      "category": "emotions",
+      "index": 11,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 500,
+      "fps": 2,
+      "loop": false,
+      "source": {
+        "x": 1171,
+        "y": 316,
+        "width": 87,
+        "height": 139
+      },
+      "bounds": {
+        "x": 1172,
+        "y": 317,
+        "width": 85,
+        "height": 137
+      }
+    },
+    "confused": {
+      "name": "confused",
+      "file": "/assets/character/emotions/confused.png",
+      "category": "emotions",
+      "index": 12,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 500,
+      "fps": 2,
+      "loop": false,
+      "source": {
+        "x": 1289,
+        "y": 324,
+        "width": 105,
+        "height": 131
+      },
+      "bounds": {
+        "x": 1290,
+        "y": 325,
+        "width": 103,
+        "height": 129
+      }
+    },
+    "sad": {
+      "name": "sad",
+      "file": "/assets/character/emotions/sad.png",
+      "category": "emotions",
+      "index": 13,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 500,
+      "fps": 2,
+      "loop": false,
+      "source": {
+        "x": 1433,
+        "y": 330,
+        "width": 86,
+        "height": 126
+      },
+      "bounds": {
+        "x": 1434,
+        "y": 331,
+        "width": 84,
+        "height": 124
+      }
+    },
+    "sit_idle": {
+      "name": "sit_idle",
+      "file": "/assets/character/laptop/sit_idle.png",
+      "category": "laptop",
+      "index": 0,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 125,
+      "fps": 8,
+      "loop": true,
+      "source": {
+        "x": 17,
+        "y": 592,
+        "width": 90,
+        "height": 120
+      },
+      "bounds": {
+        "x": 18,
+        "y": 593,
+        "width": 88,
+        "height": 118
+      }
+    },
+    "type_1": {
+      "name": "type_1",
+      "file": "/assets/character/laptop/type_1.png",
+      "category": "laptop",
+      "index": 1,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 125,
+      "fps": 8,
+      "loop": true,
+      "source": {
+        "x": 122,
+        "y": 589,
+        "width": 90,
+        "height": 124
+      },
+      "bounds": {
+        "x": 123,
+        "y": 590,
+        "width": 88,
+        "height": 122
+      }
+    },
+    "type_2": {
+      "name": "type_2",
+      "file": "/assets/character/laptop/type_2.png",
+      "category": "laptop",
+      "index": 2,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 125,
+      "fps": 8,
+      "loop": true,
+      "source": {
+        "x": 224,
+        "y": 592,
+        "width": 90,
+        "height": 121
+      },
+      "bounds": {
+        "x": 225,
+        "y": 593,
+        "width": 88,
+        "height": 119
+      }
+    },
+    "type_3": {
+      "name": "type_3",
+      "file": "/assets/character/laptop/type_3.png",
+      "category": "laptop",
+      "index": 3,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 125,
+      "fps": 8,
+      "loop": true,
+      "source": {
+        "x": 323,
+        "y": 592,
+        "width": 89,
+        "height": 121
+      },
+      "bounds": {
+        "x": 324,
+        "y": 593,
+        "width": 87,
+        "height": 119
+      }
+    },
+    "type_4": {
+      "name": "type_4",
+      "file": "/assets/character/laptop/type_4.png",
+      "category": "laptop",
+      "index": 4,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 125,
+      "fps": 8,
+      "loop": true,
+      "source": {
+        "x": 418,
+        "y": 592,
+        "width": 90,
+        "height": 121
+      },
+      "bounds": {
+        "x": 419,
+        "y": 593,
+        "width": 88,
+        "height": 119
+      }
+    },
+    "look_up": {
+      "name": "look_up",
+      "file": "/assets/character/laptop/look_up.png",
+      "category": "laptop",
+      "index": 5,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 125,
+      "fps": 8,
+      "loop": true,
+      "source": {
+        "x": 522,
+        "y": 582,
+        "width": 88,
+        "height": 132
+      },
+      "bounds": {
+        "x": 523,
+        "y": 583,
+        "width": 86,
+        "height": 130
+      }
+    },
+    "hold_laptop": {
+      "name": "hold_laptop",
+      "file": "/assets/character/laptop/hold_laptop.png",
+      "category": "laptop",
+      "index": 6,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 125,
+      "fps": 8,
+      "loop": true,
+      "source": {
+        "x": 643,
+        "y": 567,
+        "width": 82,
+        "height": 150
+      },
+      "bounds": {
+        "x": 644,
+        "y": 568,
+        "width": 80,
+        "height": 148
+      }
+    },
+    "read": {
+      "name": "read",
+      "file": "/assets/character/laptop/read.png",
+      "category": "laptop",
+      "index": 7,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 125,
+      "fps": 8,
+      "loop": true,
+      "source": {
+        "x": 738,
+        "y": 567,
+        "width": 83,
+        "height": 149
+      },
+      "bounds": {
+        "x": 739,
+        "y": 568,
+        "width": 81,
+        "height": 147
+      }
+    },
+    "type_stand": {
+      "name": "type_stand",
+      "file": "/assets/character/laptop/type_stand.png",
+      "category": "laptop",
+      "index": 8,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 125,
+      "fps": 8,
+      "loop": true,
+      "source": {
+        "x": 840,
+        "y": 567,
+        "width": 85,
+        "height": 149
+      },
+      "bounds": {
+        "x": 841,
+        "y": 568,
+        "width": 83,
+        "height": 147
+      }
+    },
+    "drag_1": {
+      "name": "drag_1",
+      "file": "/assets/character/dragging/drag_1.png",
+      "category": "dragging",
+      "index": 9,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 111,
+      "fps": 9,
+      "loop": true,
+      "source": {
+        "x": 957,
+        "y": 592,
+        "width": 75,
+        "height": 125
+      },
+      "bounds": {
+        "x": 958,
+        "y": 593,
+        "width": 73,
+        "height": 123
+      }
+    },
+    "drag_2": {
+      "name": "drag_2",
+      "file": "/assets/character/dragging/drag_2.png",
+      "category": "dragging",
+      "index": 10,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 111,
+      "fps": 9,
+      "loop": true,
+      "source": {
+        "x": 1043,
+        "y": 589,
+        "width": 83,
+        "height": 128
+      },
+      "bounds": {
+        "x": 1044,
+        "y": 590,
+        "width": 81,
+        "height": 126
+      }
+    },
+    "drag_3": {
+      "name": "drag_3",
+      "file": "/assets/character/dragging/drag_3.png",
+      "category": "dragging",
+      "index": 11,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 111,
+      "fps": 9,
+      "loop": true,
+      "source": {
+        "x": 1137,
+        "y": 597,
+        "width": 90,
+        "height": 121
+      },
+      "bounds": {
+        "x": 1138,
+        "y": 598,
+        "width": 88,
+        "height": 119
+      }
+    },
+    "jump": {
+      "name": "jump",
+      "file": "/assets/character/jumping/jump.png",
+      "category": "jumping",
+      "index": 12,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 167,
+      "fps": 6,
+      "loop": false,
+      "source": {
+        "x": 1258,
+        "y": 562,
+        "width": 72,
+        "height": 151
+      },
+      "bounds": {
+        "x": 1259,
+        "y": 563,
+        "width": 70,
+        "height": 149
+      }
+    },
+    "air": {
+      "name": "air",
+      "file": "/assets/character/jumping/air.png",
+      "category": "jumping",
+      "index": 13,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 167,
+      "fps": 6,
+      "loop": false,
+      "source": {
+        "x": 1343,
+        "y": 566,
+        "width": 84,
+        "height": 147
+      },
+      "bounds": {
+        "x": 1344,
+        "y": 567,
+        "width": 82,
+        "height": 145
+      }
+    },
+    "land": {
+      "name": "land",
+      "file": "/assets/character/jumping/land.png",
+      "category": "jumping",
+      "index": 14,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 167,
+      "fps": 6,
+      "loop": false,
+      "source": {
+        "x": 1440,
+        "y": 613,
+        "width": 77,
+        "height": 103
+      },
+      "bounds": {
+        "x": 1441,
+        "y": 614,
+        "width": 75,
+        "height": 101
+      }
+    },
+    "wave": {
+      "name": "wave",
+      "file": "/assets/character/interactions/wave.png",
+      "category": "interactions",
+      "index": 0,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 500,
+      "fps": 2,
+      "loop": false,
+      "source": {
+        "x": 23,
+        "y": 819,
+        "width": 95,
+        "height": 140
+      },
+      "bounds": {
+        "x": 24,
+        "y": 820,
+        "width": 93,
+        "height": 138
+      }
+    },
+    "point": {
+      "name": "point",
+      "file": "/assets/character/interactions/point.png",
+      "category": "interactions",
+      "index": 1,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 500,
+      "fps": 2,
+      "loop": false,
+      "source": {
+        "x": 151,
+        "y": 818,
+        "width": 94,
+        "height": 141
+      },
+      "bounds": {
+        "x": 152,
+        "y": 819,
+        "width": 92,
+        "height": 139
+      }
+    },
+    "thumbs_up": {
+      "name": "thumbs_up",
+      "file": "/assets/character/interactions/thumbs_up.png",
+      "category": "interactions",
+      "index": 2,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 500,
+      "fps": 2,
+      "loop": false,
+      "source": {
+        "x": 276,
+        "y": 819,
+        "width": 94,
+        "height": 140
+      },
+      "bounds": {
+        "x": 277,
+        "y": 820,
+        "width": 92,
+        "height": 138
+      }
+    },
+    "shrug": {
+      "name": "shrug",
+      "file": "/assets/character/interactions/shrug.png",
+      "category": "interactions",
+      "index": 3,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 500,
+      "fps": 2,
+      "loop": false,
+      "source": {
+        "x": 399,
+        "y": 819,
+        "width": 98,
+        "height": 140
+      },
+      "bounds": {
+        "x": 400,
+        "y": 820,
+        "width": 96,
+        "height": 138
+      }
+    },
+    "facepalm": {
+      "name": "facepalm",
+      "file": "/assets/character/interactions/facepalm.png",
+      "category": "interactions",
+      "index": 4,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 500,
+      "fps": 2,
+      "loop": false,
+      "source": {
+        "x": 542,
+        "y": 823,
+        "width": 75,
+        "height": 136
+      },
+      "bounds": {
+        "x": 543,
+        "y": 824,
+        "width": 73,
+        "height": 134
+      }
+    },
+    "laugh": {
+      "name": "laugh",
+      "file": "/assets/character/interactions/laugh.png",
+      "category": "interactions",
+      "index": 5,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 500,
+      "fps": 2,
+      "loop": false,
+      "source": {
+        "x": 641,
+        "y": 832,
+        "width": 118,
+        "height": 113
+      },
+      "bounds": {
+        "x": 642,
+        "y": 833,
+        "width": 116,
+        "height": 111
+      }
+    },
+    "sleep": {
+      "name": "sleep",
+      "file": "/assets/character/interactions/sleep.png",
+      "category": "interactions",
+      "index": 6,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 500,
+      "fps": 2,
+      "loop": false,
+      "source": {
+        "x": 776,
+        "y": 844,
+        "width": 114,
+        "height": 106
+      },
+      "bounds": {
+        "x": 777,
+        "y": 845,
+        "width": 112,
+        "height": 104
+      }
+    },
+    "stretch": {
+      "name": "stretch",
+      "file": "/assets/character/interactions/stretch.png",
+      "category": "interactions",
+      "index": 7,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 500,
+      "fps": 2,
+      "loop": false,
+      "source": {
+        "x": 937,
+        "y": 818,
+        "width": 79,
+        "height": 141
+      },
+      "bounds": {
+        "x": 938,
+        "y": 819,
+        "width": 77,
+        "height": 139
+      }
+    },
+    "celebrate": {
+      "name": "celebrate",
+      "file": "/assets/character/interactions/celebrate.png",
+      "category": "interactions",
+      "index": 8,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 500,
+      "fps": 2,
+      "loop": false,
+      "source": {
+        "x": 1052,
+        "y": 818,
+        "width": 99,
+        "height": 141
+      },
+      "bounds": {
+        "x": 1053,
+        "y": 819,
+        "width": 97,
+        "height": 139
+      }
+    },
+    "scared": {
+      "name": "scared",
+      "file": "/assets/character/interactions/scared.png",
+      "category": "interactions",
+      "index": 9,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 500,
+      "fps": 2,
+      "loop": false,
+      "source": {
+        "x": 1189,
+        "y": 825,
+        "width": 89,
+        "height": 134
+      },
+      "bounds": {
+        "x": 1190,
+        "y": 826,
+        "width": 87,
+        "height": 132
+      }
+    },
+    "angry": {
+      "name": "angry",
+      "file": "/assets/character/interactions/angry.png",
+      "category": "interactions",
+      "index": 10,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 500,
+      "fps": 2,
+      "loop": false,
+      "source": {
+        "x": 1305,
+        "y": 826,
+        "width": 100,
+        "height": 132
+      },
+      "bounds": {
+        "x": 1306,
+        "y": 827,
+        "width": 98,
+        "height": 130
+      }
+    },
+    "cool": {
+      "name": "cool",
+      "file": "/assets/character/interactions/cool.png",
+      "category": "interactions",
+      "index": 11,
+      "width": 144,
+      "height": 176,
+      "anchor": {
+        "x": 72,
+        "y": 168
+      },
+      "duration": 500,
+      "fps": 2,
+      "loop": false,
+      "source": {
+        "x": 1441,
+        "y": 824,
+        "width": 76,
+        "height": 135
+      },
+      "bounds": {
+        "x": 1442,
+        "y": 825,
+        "width": 74,
+        "height": 133
+      }
+    }
+  }
+}
