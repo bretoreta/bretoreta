@@ -26,139 +26,31 @@
           <div class="flex items-center px-2">
             <div class="flex shrink-0 items-center justify-around min-w-full animate-scroll">
               <NuxtImg
-                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                v-for="logo in logos"
+                :key="logo.name"
+                :src="logo.src"
+                :alt="`${logo.name} logo`"
                 format="webp,avif"
-                alt="Fairdeal Furniture's Logo"
-                src="/images/logo/fairdealfurniture.webp"
-              />
-              <NuxtImg
-                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                format="webp,avif"
-                alt="Craftex's Logo"
-                src="/images/logo/craftex.png"
-              />
-              <NuxtImg
-                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                format="webp,avif"
-                alt="Inkpot Group's Logo"
-                src="/images/logo/inkpotgroup.png"
-              />
-              <NuxtImg
-                class="h-12 mx-8 grayscale invert-100 hover:grayscale-0 hover:invert-0 transition-opacity"
-                format="webp,avif"
-                alt="Zurika by Wambui's Logo"
-                src="/images/logo/zurikabywambui.webp"
-              />
-              <NuxtImg
-                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                format="webp,avif"
-                alt="Craft Catalyst's Logo"
-                src="/images/logo/thecraftcatalyst.png"
-              />
-              <NuxtImg
-                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                format="webp,avif"
-                alt="Ashley Furniture's Logo"
-                src="/images/logo/ashleyfurniture.webp"
-              />
-              <NuxtImg
-                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                format="webp,avif"
-                alt="Koggs Adventures' Logo"
-                src="/images/logo/koggsadventures.webp"
-              />
-              <NuxtImg
-                class="h-12 mx-8 grayscale invert-100 hover:grayscale-0 transition-opacity"
-                format="webp,avif"
-                alt="Infinity Labs' Logo"
-                src="/images/logo/infinitylabs.png"
-              />
-              <NuxtImg
-                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                format="webp,avif"
-                alt="XIMI Vogue's Logo"
-                src="/images/logo/ximivogue.png"
-              />
-              <NuxtImg
-                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                format="webp,avif"
-                alt="Emerge Global's Logo"
-                src="/images/logo/emergeglobal.jpg"
-              />
-              <NuxtImg
-                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                format="webp,avif"
-                alt="Crafted's Logo"
-                src="/images/logo/crafted.png"
+                loading="lazy"
+                decoding="async"
+                draggable="false"
+                class="trusted-logo mx-6 h-10 w-auto max-w-36 object-contain sm:mx-8 sm:h-12"
+                :class="`trusted-logo--${logo.tone}`"
               />
             </div>
 
             <div class="flex shrink-0 items-center justify-around min-w-full animate-scroll" aria-hidden="true">
               <NuxtImg
-                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
+                v-for="logo in logos"
+                :key="`duplicate-${logo.name}`"
+                :src="logo.src"
+                alt=""
                 format="webp,avif"
-                alt="Fairdeal Furniture's Logo"
-                src="/images/logo/fairdealfurniture.webp"
-              />
-              <NuxtImg
-                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                format="webp,avif"
-                alt="Craftex's Logo"
-                src="/images/logo/craftex.png"
-              />
-              <NuxtImg
-                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                format="webp,avif"
-                alt="Inkpot Group's Logo"
-                src="/images/logo/inkpotgroup.png"
-              />
-              <NuxtImg
-                class="h-12 mx-8 grayscale invert-100 hover:grayscale-0 hover:invert-0 transition-opacity"
-                format="webp,avif"
-                alt="Zurika by Wambui's Logo"
-                src="/images/logo/zurikabywambui.webp"
-              />
-              <NuxtImg
-                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                format="webp,avif"
-                alt="Craft Catalyst's Logo"
-                src="/images/logo/thecraftcatalyst.png"
-              />
-              <NuxtImg
-                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                format="webp,avif"
-                alt="Ashley Furniture's Logo"
-                src="/images/logo/ashleyfurniture.webp"
-              />
-              <NuxtImg
-                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                format="webp,avif"
-                alt="Koggs Adventures' Logo"
-                src="/images/logo/koggsadventures.webp"
-              />
-              <NuxtImg
-                class="h-12 mx-8 grayscale invert-100 hover:grayscale-0 transition-opacity"
-                format="webp,avif"
-                alt="Infinity Labs' Logo"
-                src="/images/logo/infinitylabs.png"
-              />
-              <NuxtImg
-                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                format="webp,avif"
-                alt="XIMI Vogue's Logo"
-                src="/images/logo/ximivogue.png"
-              />
-              <NuxtImg
-                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                format="webp,avif"
-                alt="Emerge Global's Logo"
-                src="/images/logo/emergeglobal.jpg"
-              />
-              <NuxtImg
-                class="h-12 mx-8 grayscale hover:grayscale-0 transition-opacity"
-                format="webp,avif"
-                alt="Crafted's Logo"
-                src="/images/logo/crafted.png"
+                loading="lazy"
+                decoding="async"
+                draggable="false"
+                class="trusted-logo mx-6 h-10 w-auto max-w-36 object-contain sm:mx-8 sm:h-12"
+                :class="`trusted-logo--${logo.tone}`"
               />
             </div>
           </div>
@@ -167,28 +59,88 @@
     </div>
   </section>
 </template>
-  
-  <style>
-    @keyframes scroll {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
+
+<script setup lang="ts">
+/**
+ * Logo assets fall into three families:
+ * - light: white artwork made for dark backgrounds, inverted in light mode.
+ * - dark: dark/white-background artwork made for light backgrounds, inverted in dark mode.
+ * - color: artwork that remains legible in both themes; colour is revealed on hover.
+ */
+const logos = [
+  { name: 'Fairdeal Furniture', src: '/images/logo/fairdealfurniture.webp', tone: 'light' },
+  { name: 'Craftex', src: '/images/logo/craftex.png', tone: 'light' },
+  { name: 'Inkpot Group', src: '/images/logo/inkpotgroup.png', tone: 'dark' },
+  { name: 'Zurika by Wambui', src: '/images/logo/zurikabywambui.webp', tone: 'dark' },
+  { name: 'The Craft Catalyst', src: '/images/logo/thecraftcatalyst.png', tone: 'light' },
+  { name: 'Ashley Furniture', src: '/images/logo/ashleyfurniture.webp', tone: 'light' },
+  { name: 'Koggs Adventures', src: '/images/logo/koggsadventures.webp', tone: 'light' },
+  { name: 'Infinity Labs', src: '/images/logo/infinitylabs.png', tone: 'dark' },
+  { name: 'XIMI Vogue', src: '/images/logo/ximivogue.png', tone: 'color' },
+  { name: 'Emerge Global', src: '/images/logo/emergeglobal.jpg', tone: 'dark' },
+  { name: 'Crafted', src: '/images/logo/crafted.png', tone: 'dark' },
+] as const
+</script>
+
+<style>
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
     }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .animate-scroll {
+    animation: scroll 60s linear infinite;
+  }
+
+  .group:hover .animate-scroll {
+    animation-play-state: paused;
+  }
+
+  /* Logo wall: keep every mark legible in both themes. */
+  .trusted-logo {
+    filter: grayscale(1);
+    opacity: 0.82;
+    transition: opacity 200ms ease, filter 200ms ease;
+  }
+
+  .trusted-logo:hover {
+    opacity: 1;
+  }
+
+  /* White artwork: invert it for the light theme. */
+  .trusted-logo--light {
+    filter: grayscale(1) invert(1);
+  }
+
+  .dark .trusted-logo--light {
+    filter: grayscale(1);
+  }
+
+  /* Dark artwork (and white-background exports): invert it for the dark theme. */
+  .trusted-logo--dark {
+    filter: grayscale(1);
+  }
+
+  .dark .trusted-logo--dark {
+    filter: grayscale(1) invert(1);
+  }
+
+  /* Coloured marks: show their real colours on hover. */
+  .trusted-logo--color {
+    filter: grayscale(1);
+  }
+
+  .trusted-logo--color:hover {
+    filter: grayscale(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
     .animate-scroll {
-      animation: scroll 60s linear infinite;
+      animation: none !important;
+      transform: translateX(0) !important;
     }
-
-    .group:hover .animate-scroll {
-      animation-play-state: paused;
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      .animate-scroll {
-        animation: none !important;
-        transform: translateX(0) !important;
-      }
-    }
-  </style>
+  }
+</style>
